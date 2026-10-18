@@ -1,0 +1,54 @@
+{
+ "version": "world-descriptors-v1",
+ "grid": {
+  "source": "t0_raster",
+  "resolution_m": 0.05,
+  "seed": 2026
+ },
+ "area_m2": 515.4,
+ "clearance_m": {
+  "median": 0.95,
+  "p10": 0.25,
+  "p90": 1.671
+ },
+ "clearance_max_m": 2.3,
+ "char_dim_m": {
+  "median": 4.013,
+  "n": 400,
+  "mc_halfwidth": 0.163
+ },
+ "dispersion": {
+  "mean": 2.955,
+  "n": 400,
+  "mc_se": 0.055
+ },
+ "nav_complexity": {
+  "median": 1.0,
+  "p90": 1.0819,
+  "n": 400,
+  "grid_m": 0.05
+ },
+ "narrowest_passage_m": 3.0,
+ "min_gap_m": 3.0,
+ "loops": 12,
+ "loops_unsized": 12,
+ "dead_ends": 0,
+ "junctions": 16,
+ "regions": 1,
+ "robots": {
+  "mogi": {
+   "radius_m": 0.29,
+   "r_eff_m": 10.0,
+   "visible_area_m2": {
+    "mean": 91.43,
+    "n": 400,
+    "mc_se": 0.82
+   },
+   "visible_fraction": 0.1774,
+   "area_over_pi_r2": 1.6406,
+   "spawn_visible_fraction": {
+    "S1": 0.1472
+   }
+  }
+ }
+}

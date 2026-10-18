@@ -1,0 +1,539 @@
+{
+ "id": "P2",
+ "title": "Pilot lobby and wing",
+ "bounds": [
+  -16.6,
+  16.2,
+  -9.2,
+  9.6
+ ],
+ "floor_margin_m": 2.0,
+ "materials": {
+  "floor": [
+   0.86,
+   0.86,
+   0.84
+  ],
+  "boundary": [
+   0.62,
+   0.62,
+   0.62
+  ],
+  "inner": [
+   0.72,
+   0.66,
+   0.58
+  ],
+  "core": [
+   0.48,
+   0.48,
+   0.48
+  ],
+  "obstacle": [
+   0.4,
+   0.45,
+   0.52
+  ],
+  "landmark": [
+   0.2,
+   0.45,
+   0.8
+  ],
+  "furniture": [
+   0.55,
+   0.45,
+   0.35
+  ],
+  "moving": [
+   0.95,
+   0.55,
+   0.15
+  ]
+ },
+ "primitives": [
+  {
+   "name": "outer_e_00",
+   "kind": "box",
+   "x": 16.1,
+   "y": 0.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    18.0,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_00",
+   "kind": "box",
+   "x": -13.1,
+   "y": 9.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    6.2,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_01",
+   "kind": "box",
+   "x": 3.6,
+   "y": 9.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    25.2,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_00",
+   "kind": "box",
+   "x": 0.0,
+   "y": -9.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    32.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_00",
+   "kind": "box",
+   "x": -16.1,
+   "y": -6.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.5,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_01",
+   "kind": "box",
+   "x": -16.1,
+   "y": 3.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    11.5,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l1_a",
+   "kind": "box",
+   "x": -10.1,
+   "y": 9.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l1_b",
+   "kind": "box",
+   "x": -8.9,
+   "y": 9.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l1_back",
+   "kind": "box",
+   "x": -9.5,
+   "y": 9.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l2_a",
+   "kind": "box",
+   "x": -16.4,
+   "y": -3.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l2_b",
+   "kind": "box",
+   "x": -16.4,
+   "y": -2.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l2_back",
+   "kind": "box",
+   "x": -16.5,
+   "y": -3.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "core",
+   "kind": "box",
+   "x": 0.0,
+   "y": 0.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    8.0,
+    6.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "divider_n",
+   "kind": "box",
+   "x": 11.1,
+   "y": 5.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.6,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "divider_s",
+   "kind": "box",
+   "x": 11.1,
+   "y": -5.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.6,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "fill_n",
+   "kind": "box",
+   "x": 1.0,
+   "y": 7.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    10.0,
+    4.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "fill_s",
+   "kind": "box",
+   "x": 1.0,
+   "y": -7.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    10.0,
+    4.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "room_wall_nw",
+   "kind": "box",
+   "x": 6.1,
+   "y": 5.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.6,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "room_wall_sw",
+   "kind": "box",
+   "x": 6.1,
+   "y": -5.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.6,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wing_wall_n_00",
+   "kind": "box",
+   "x": 6.4,
+   "y": 1.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.8,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wing_wall_n_01",
+   "kind": "box",
+   "x": 11.0,
+   "y": 1.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    6.0,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wing_wall_n_02",
+   "kind": "box",
+   "x": 15.6,
+   "y": 1.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.8,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wing_wall_s_00",
+   "kind": "box",
+   "x": 7.15,
+   "y": -1.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.3,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wing_wall_s_01",
+   "kind": "box",
+   "x": 10.85,
+   "y": -1.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wing_wall_s_02",
+   "kind": "box",
+   "x": 14.7,
+   "y": -1.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.6,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "pillar_1",
+   "kind": "box",
+   "x": -12.0,
+   "y": 4.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.6,
+    0.6,
+    2.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "pillar_2",
+   "kind": "box",
+   "x": -8.0,
+   "y": -2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.6,
+    0.6,
+    2.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "pillar_3",
+   "kind": "box",
+   "x": -13.0,
+   "y": -6.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.6,
+    0.6,
+    2.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  }
+ ],
+ "spawns": [
+  {
+   "id": "S1",
+   "x": -12.0,
+   "y": 0.0,
+   "yaw": 0.0
+  },
+  {
+   "id": "S2",
+   "x": 13.6,
+   "y": 5.2,
+   "yaw": -1.570796
+  },
+  {
+   "id": "S3",
+   "x": 11.0,
+   "y": 0.0,
+   "yaw": 3.141593
+  }
+ ],
+ "notches": [
+  {
+   "id": "L1",
+   "polygon": [
+    [
+     -10.0,
+     9.0
+    ],
+    [
+     -9.0,
+     9.0
+    ],
+    [
+     -9.0,
+     9.4
+    ],
+    [
+     -10.0,
+     9.4
+    ]
+   ]
+  },
+  {
+   "id": "L2",
+   "polygon": [
+    [
+     -16.4,
+     -3.5
+    ],
+    [
+     -16.0,
+     -3.5
+    ],
+    [
+     -16.0,
+     -2.5
+    ],
+    [
+     -16.4,
+     -2.5
+    ]
+   ]
+  }
+ ]
+}

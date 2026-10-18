@@ -1,0 +1,112 @@
+id: SC1
+slug: square_loop
+title: Square loop
+tier: SC
+role: evaluation
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/B1-square-loop.md
+parameters: {}
+seed: null
+selection: null
+expected: {free_area_m2: 326.0, free_area_tolerance: 0.02, narrowest_passage_m: 3.0, minimum_passage_m: 1.0, loops: 1, loops_unsized: 1}
+measured: {free_area_m2: 326.0, narrowest_passage_m: 3.0, loops: 1, loops_unsized: 1}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 326.0
+  clearance_m: {median: 0.762, p10: 0.15, p90: 1.4}
+  clearance_max_m: 1.768
+  char_dim_m: {median: 3.025, n: 400, mc_halfwidth: 0.0}
+  dispersion: {mean: 3.2, n: 400, mc_se: 0.051}
+  nav_complexity: {median: 1.1552, p90: 1.3881, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 3.0
+  min_gap_m: 3.0
+  loops: 1
+  loops_unsized: 1
+  dead_ends: 0
+  junctions: 0
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 56.85, n: 400, mc_se: 0.24}
+      visible_fraction: 0.1744
+      area_over_pi_r2: 1.0377
+      spawn_visible_fraction: {S1: 0.185, S2: 0.1844, S3: 0.1839}
+spawns:
+- {id: S1, x: 0.0, y: -13.5, yaw: 0.0}
+- {id: S2, x: -13.5, y: 0.0, yaw: 1.570796}
+- {id: S3, x: 13.5, y: 13.5, yaw: 3.141593}
+inclusion:
+- - [-15.4, 5.0]
+  - [-15.0, 5.0]
+  - [-15.0, -15.0]
+  - [-6.5, -15.0]
+  - [-6.5, -15.4]
+  - [-5.5, -15.4]
+  - [-5.5, -15.0]
+  - [4.0, -15.0]
+  - [4.0, -15.4]
+  - [5.0, -15.4]
+  - [5.0, -15.0]
+  - [15.0, -15.0]
+  - [15.0, -2.5]
+  - [15.4, -2.5]
+  - [15.4, -1.5]
+  - [15.0, -1.5]
+  - [15.0, 15.0]
+  - [8.5, 15.0]
+  - [8.5, 15.4]
+  - [7.5, 15.4]
+  - [7.5, 15.0]
+  - [-15.0, 15.0]
+  - [-15.0, 6.0]
+  - [-15.4, 6.0]
+notches:
+- id: L3
+  polygon:
+  - [15.0, -2.5]
+  - [15.4, -2.5]
+  - [15.4, -1.5]
+  - [15.0, -1.5]
+- id: L4
+  polygon:
+  - [7.5, 15.0]
+  - [8.5, 15.0]
+  - [8.5, 15.4]
+  - [7.5, 15.4]
+- id: L1
+  polygon:
+  - [-6.5, -15.4]
+  - [-5.5, -15.4]
+  - [-5.5, -15.0]
+  - [-6.5, -15.0]
+- id: L2
+  polygon:
+  - [4.0, -15.4]
+  - [5.0, -15.4]
+  - [5.0, -15.0]
+  - [4.0, -15.0]
+- id: L5
+  polygon:
+  - [-15.4, 5.0]
+  - [-15.0, 5.0]
+  - [-15.0, 6.0]
+  - [-15.4, 6.0]
+doors: []
+moving_objects: null
+plan_data: {}
+sources:
+- {what: layout idea (loop scene), cite: xu2022explorebench}
+- {what: layout idea (loop map), cite: yan2016benchmarking}
+licence: Apache-2.0
+hashes: {sdf: e0cd4e888bc950156e1ee72d513e42db5d4eced4a2f27205b7fdc48c95b77d32, world_json: ad23d430a89c7c35c0e096fefa8139469f48262100d03682b8751e7475bd8924}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All six checklist items hold in plan.png and the five renders; all
+      eight T0 checks pass.}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: 'Inspected in the Gazebo GUI. Re-emitted with worldgen 1.0.1
+      (no pose relative_to attributes); world.json hash unchanged, so the geometry is identical.'}

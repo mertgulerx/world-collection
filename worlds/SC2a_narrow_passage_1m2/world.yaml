@@ -1,0 +1,118 @@
+id: SC2a
+slug: narrow_passage_1m2
+title: Narrow passage, 1.2 m corridor
+tier: SC
+role: evaluation
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/B2-narrow-passage.md
+parameters: {corridor_width_m: 1.2}
+seed: null
+selection: null
+expected: {free_area_m2: 459.2, free_area_tolerance: 0.02, narrowest_passage_m: 1.2, minimum_passage_m: 1.0, loops: 0, loops_unsized: 0}
+measured: {free_area_m2: 459.2, narrowest_passage_m: 1.2, loops: 0, loops_unsized: 0}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 459.2
+  clearance_m: {median: 2.15, p10: 0.39, p90: 5.15}
+  clearance_max_m: 7.5
+  char_dim_m: {median: 11.113, n: 400, mc_halfwidth: 0.638}
+  dispersion: {mean: 1.185, n: 400, mc_se: 0.058}
+  nav_complexity: {median: 1.0, p90: 1.1092, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.2
+  min_gap_m: null
+  loops: 0
+  loops_unsized: 0
+  dead_ends: 2
+  junctions: 0
+  regions: 2
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 159.98, n: 400, mc_se: 1.77}
+      visible_fraction: 0.3484
+      area_over_pi_r2: 1.4617
+      spawn_visible_fraction: {S1: 0.4953, S2: 0.2948, S3: 0.4096}
+spawns:
+- {id: S1, x: -10.5, y: 0.0, yaw: 0.0}
+- {id: S2, x: -15.5, y: -5.0, yaw: 1.570796}
+- {id: S3, x: 11.0, y: 4.0, yaw: 3.141593}
+inclusion:
+- - [-18.4, 3.0]
+  - [-18.0, 3.0]
+  - [-18.0, -7.5]
+  - [-13.5, -7.5]
+  - [-13.5, -7.9]
+  - [-12.5, -7.9]
+  - [-12.5, -7.5]
+  - [-3.0, -7.5]
+  - [-3.0, -0.6]
+  - [3.0, -0.6]
+  - [3.0, -7.5]
+  - [13.5, -7.5]
+  - [13.5, -7.9]
+  - [14.5, -7.9]
+  - [14.5, -7.5]
+  - [18.0, -7.5]
+  - [18.0, -5.0]
+  - [18.4, -5.0]
+  - [18.4, -4.0]
+  - [18.0, -4.0]
+  - [18.0, 7.5]
+  - [8.5, 7.5]
+  - [8.5, 7.9]
+  - [7.5, 7.9]
+  - [7.5, 7.5]
+  - [3.0, 7.5]
+  - [3.0, 0.6]
+  - [-3.0, 0.6]
+  - [-3.0, 7.5]
+  - [-18.0, 7.5]
+  - [-18.0, 4.0]
+  - [-18.4, 4.0]
+notches:
+- id: L1
+  polygon:
+  - [-13.5, -7.9]
+  - [-12.5, -7.9]
+  - [-12.5, -7.5]
+  - [-13.5, -7.5]
+- id: L2
+  polygon:
+  - [-18.4, 3.0]
+  - [-18.0, 3.0]
+  - [-18.0, 4.0]
+  - [-18.4, 4.0]
+- id: L3
+  polygon:
+  - [7.5, 7.5]
+  - [8.5, 7.5]
+  - [8.5, 7.9]
+  - [7.5, 7.9]
+- id: L4
+  polygon:
+  - [18.0, -5.0]
+  - [18.4, -5.0]
+  - [18.4, -4.0]
+  - [18.0, -4.0]
+- id: L5
+  polygon:
+  - [13.5, -7.9]
+  - [14.5, -7.9]
+  - [14.5, -7.5]
+  - [13.5, -7.5]
+doors: []
+moving_objects: null
+plan_data: {}
+sources:
+- {what: layout idea (narrow-corridor scene), cite: xu2022explorebench}
+licence: Apache-2.0
+hashes: {sdf: c71016e77900a0611d1177bef1422103b086578f8f80fc16570cd81212181b99, world_json: 7de074b742ccff67da234c00a67fc77f8b8bb8d2fa09e3e80ff52aa49fd0ee18}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All eight checklist items hold in plan.png and the five renders;
+      all T0 checks and the four B2 checks pass.}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

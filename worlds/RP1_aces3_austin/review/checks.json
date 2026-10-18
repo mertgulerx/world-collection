@@ -1,0 +1,95 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 3.862,
+    "S2": 0.7,
+    "S3": 0.95
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.8,
+   "detail": "expected 1.8 \u00b1 0.05 m (minimum 1.0 m) at (-19.32, -20.62)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 556.39,
+   "detail": "expected 556.36 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 4,
+    "loops_unsized": 4
+   },
+   "detail": "loops expected 4; loops_unsized expected 4"
+  },
+  {
+   "check": "RP1 layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "RP1 corridor widths: ring 1.8 m, north\u2013south arm 3.3 m, east\u2013west arm 2.4 m",
+   "passed": true,
+   "value": {
+    "ring_west": 1.8,
+    "ring_north": 1.8,
+    "cross_ns": 3.3,
+    "cross_ew": 2.4
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP1 ring centrelines about 40 m across (36\u201346 m; the source states ~40 m)",
+   "passed": true,
+   "value": {
+    "x_m": 43.4,
+    "y_m": 38.9
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP1 rotunda free to its radius",
+   "passed": true,
+   "value": 3.9,
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "a934293f1e517f8c",
+   "detail": ""
+  }
+ ]
+}

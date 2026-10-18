@@ -1,0 +1,337 @@
+id: MO1
+slug: office_strip_moving
+title: Office strip with moving objects (high density)
+tier: MO
+role: evaluation
+family: MO1
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/E1-office-strip-moving.md
+parameters: {}
+seed: 5101
+selection: null
+expected: {free_area_m2: 329.8, free_area_tolerance: 0.02, narrowest_passage_m: 1.2, minimum_passage_m: 1.0, loops: 0, loops_unsized: 0}
+measured: {free_area_m2: 329.8, narrowest_passage_m: 1.2, loops: 0, loops_unsized: 0}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 329.8
+  clearance_m: {median: 0.75, p10: 0.15, p90: 1.6}
+  clearance_max_m: 2.5
+  char_dim_m: {median: 3.275, n: 400, mc_halfwidth: 0.1}
+  dispersion: {mean: 2.925, n: 400, mc_se: 0.064}
+  nav_complexity: {median: 1.1388, p90: 1.5548, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.2
+  min_gap_m: null
+  loops: 0
+  loops_unsized: 0
+  dead_ends: 10
+  junctions: 8
+  regions: 11
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 40.48, n: 400, mc_se: 0.84}
+      visible_fraction: 0.1227
+      area_over_pi_r2: 1.0498
+      spawn_visible_fraction: {S1: 0.1591, S2: 0.2313, S3: 0.1149}
+spawns:
+- {id: S1, x: -11.0, y: 0.0, yaw: 0.0}
+- {id: S2, x: -1.0, y: 0.0, yaw: 0.0}
+- {id: S3, x: 5.2, y: 4.2, yaw: -1.570796}
+inclusion:
+- - [-12.9, -6.7]
+  - [-7.9, -6.7]
+  - [-7.9, -1.7]
+  - [-11.2, -1.7]
+  - [-11.2, -1.5]
+  - [-4.8, -1.5]
+  - [-4.8, -1.7]
+  - [-7.7, -1.7]
+  - [-7.7, -6.7]
+  - [-2.7, -6.7]
+  - [-2.7, -1.7]
+  - [-3.6, -1.7]
+  - [-3.6, -1.5]
+  - [-0.6, -1.5]
+  - [-0.6, -1.7]
+  - [-2.5, -1.7]
+  - [-2.5, -6.7]
+  - [2.5, -6.7]
+  - [2.5, -1.7]
+  - [0.6, -1.7]
+  - [0.6, -1.5]
+  - [4.1, -1.5]
+  - [4.1, -1.7]
+  - [2.7, -1.7]
+  - [2.7, -6.7]
+  - [7.7, -6.7]
+  - [7.7, -1.7]
+  - [5.3, -1.7]
+  - [5.3, -1.5]
+  - [11.2, -1.5]
+  - [11.2, -1.7]
+  - [7.9, -1.7]
+  - [7.9, -6.7]
+  - [12.9, -6.7]
+  - [12.9, -1.7]
+  - [12.4, -1.7]
+  - [12.4, -1.5]
+  - [12.9, -1.5]
+  - [12.9, 1.5]
+  - [10.0, 1.5]
+  - [10.0, 1.7]
+  - [12.9, 1.7]
+  - [12.9, 6.7]
+  - [7.9, 6.7]
+  - [7.9, 1.7]
+  - [8.8, 1.7]
+  - [8.8, 1.5]
+  - [5.8, 1.5]
+  - [5.8, 1.7]
+  - [7.7, 1.7]
+  - [7.7, 6.7]
+  - [2.7, 6.7]
+  - [2.7, 1.7]
+  - [4.6, 1.7]
+  - [4.6, 1.5]
+  - [2.0, 1.5]
+  - [2.0, 1.7]
+  - [2.5, 1.7]
+  - [2.5, 6.7]
+  - [-2.5, 6.7]
+  - [-2.5, 1.7]
+  - [0.8, 1.7]
+  - [0.8, 1.5]
+  - [-6.0, 1.5]
+  - [-6.0, 1.7]
+  - [-2.7, 1.7]
+  - [-2.7, 6.7]
+  - [-7.7, 6.7]
+  - [-7.7, 1.7]
+  - [-7.2, 1.7]
+  - [-7.2, 1.5]
+  - [-9.3, 1.5]
+  - [-9.3, 1.7]
+  - [-7.9, 1.7]
+  - [-7.9, 6.7]
+  - [-12.9, 6.7]
+  - [-12.9, 1.7]
+  - [-10.5, 1.7]
+  - [-10.5, 1.5]
+  - [-12.9, 1.5]
+  - [-12.9, -1.5]
+  - [-12.4, -1.5]
+  - [-12.4, -1.7]
+  - [-12.9, -1.7]
+notches: []
+doors:
+- id: D01
+  centre: [-11.8, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D02
+  centre: [-4.2, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D03
+  centre: [0.0, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D04
+  centre: [4.7, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D05
+  centre: [11.8, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D06
+  centre: [-9.9, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D07
+  centre: [-6.6, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D08
+  centre: [1.4, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D09
+  centre: [5.2, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D10
+  centre: [9.4, 1.6]
+  width_m: 1.2
+  wall_axis: x
+moving_objects:
+  system: benchmark::MovingObjects
+  format_version: 1
+  plan: docs/plans/worlds/E0-moving-object-system.md
+  density: high
+  area_per_object_m2: 60.0
+  free_area_m2: 329.8
+  count: 5
+  rejected_draws: 2
+  seed: 5101
+  seed_key: []
+  velocity_mode: pose_and_velocity
+  turn_rate_rad_s: 1.0
+  topic: /benchmark/moving_objects/pose
+  publish_period_ms: 50
+  check_horizon_s: 7800.0
+  blockage_limit_s: 10.0
+  doorway_dwell_limit_s: 12.0
+  spawn_exclusion_t0_m: 2.0
+  spawn_clearance_always_m: 1.0
+  doorways:
+  - id: D01
+    polygon:
+    - [-12.4, -2.2]
+    - [-11.2, -2.2]
+    - [-11.2, -1.0]
+    - [-12.4, -1.0]
+  - id: D02
+    polygon:
+    - [-4.8, -2.2]
+    - [-3.6, -2.2]
+    - [-3.6, -1.0]
+    - [-4.8, -1.0]
+  - id: D03
+    polygon:
+    - [-0.6, -2.2]
+    - [0.6, -2.2]
+    - [0.6, -1.0]
+    - [-0.6, -1.0]
+  - id: D04
+    polygon:
+    - [4.1, -2.2]
+    - [5.3, -2.2]
+    - [5.3, -1.0]
+    - [4.1, -1.0]
+  - id: D05
+    polygon:
+    - [11.2, -2.2]
+    - [12.4, -2.2]
+    - [12.4, -1.0]
+    - [11.2, -1.0]
+  - id: D06
+    polygon:
+    - [-10.5, 1.0]
+    - [-9.3, 1.0]
+    - [-9.3, 2.2]
+    - [-10.5, 2.2]
+  - id: D07
+    polygon:
+    - [-7.2, 1.0]
+    - [-6.0, 1.0]
+    - [-6.0, 2.2]
+    - [-7.2, 2.2]
+  - id: D08
+    polygon:
+    - [0.8, 1.0]
+    - [2.0, 1.0]
+    - [2.0, 2.2]
+    - [0.8, 2.2]
+  - id: D09
+    polygon:
+    - [4.6, 1.0]
+    - [5.8, 1.0]
+    - [5.8, 2.2]
+    - [4.6, 2.2]
+  - id: D10
+    polygon:
+    - [8.8, 1.0]
+    - [10.0, 1.0]
+    - [10.0, 2.2]
+    - [8.8, 2.2]
+  objects:
+  - id: mo_00
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.55
+    phase_ns: 21300000000
+    cycle_ns: 37378181818
+    waypoints:
+    - [1.3105, -0.9257, 2.0]
+    - [10.4895, -0.9257, 2.0]
+    template: corridor_lane_a
+  - id: mo_01
+    type: cyl_s
+    size: [0.5, 0.5, 1.2]
+    radius_m: 0.25
+    mode: patrol
+    yaw_mode: fixed
+    yaw: 0.0
+    speed_m_s: 0.9
+    phase_ns: 5100000000
+    cycle_ns: 12301505902
+    waypoints:
+    - [9.4, 1.1, 0.0]
+    - [9.4, 1.6, 0.0]
+    - [10.4, 4.2, 5.0]
+    template: room_visit_10
+  - id: mo_02
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.45
+    phase_ns: 27900000000
+    cycle_ns: 32930222222
+    waypoints:
+    - [-8.5895, 0.9257, 2.0]
+    - [-2.0802, 0.9257, 2.0]
+    template: corridor_lane_b
+  - id: mo_03
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.9
+    phase_ns: 16600000000
+    cycle_ns: 19616518640
+    waypoints:
+    - [-1.5, 2.7, 0.0]
+    - [1.5, 2.7, 0.0]
+    - [1.5, 5.7, 0.0]
+    - [-1.5, 5.7, 0.0]
+    template: room_loop_8
+  - id: mo_04
+    type: cyl_s
+    size: [0.5, 0.5, 1.2]
+    radius_m: 0.25
+    mode: patrol
+    yaw_mode: fixed
+    yaw: 0.0
+    speed_m_s: 0.35
+    phase_ns: 19900000000
+    cycle_ns: 54355428572
+    waypoints:
+    - [-10.4061, -1.1, 2.0]
+    - [-1.5939, -1.1, 2.0]
+    template: corridor_lane_a
+  measured: {min_static_clearance_margin_m: 0.0757, min_spawn_distance_t0_m: 2.4275, min_spawn_distance_any_t_m: 1.0001, min_object_separation_margin_m: 0.9182,
+    max_doorway_dwell_s: 6.6, max_blockage_s: 3.5}
+plan_data: {}
+sources:
+- {what: layout idea (rooms scene), cite: xu2022explorebench}
+- {what: layout idea (many-room and office maps), cite: holz2010evaluating}
+licence: Apache-2.0
+hashes: {sdf: 81959da08fb06e57aa8629029d3d1367d5295fba5c3fd0965fa377582c9313a0, world_json: a3df436c5580317f6f120ae3ff40ef4cdc6b53fb4d711c1e53aa4dff175c96b3}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

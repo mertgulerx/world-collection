@@ -1,0 +1,72 @@
+family: F3
+plan: docs/plans/worlds/C4-warehouse-aisles.md
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+seed_sequences: {evaluation: '400000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 450000 + 1000·j + i}
+rejected_total: 0
+instances:
+- id: F3-01
+  folder: F3_aisles_h30x20_a150_x1
+  parameters:
+    aisle_width_m: 1.5
+    cross_aisles: 1
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 5
+  seed: 401000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: ac9b58239bb53ba2ec484f86864c19b031090d3e60ce46b6c7b699151b29fef5
+- id: F3-02
+  folder: F3_aisles_h30x20_a150_x3
+  parameters:
+    aisle_width_m: 1.5
+    cross_aisles: 3
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 5
+  seed: 402000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: c201d23aeb057c0481e4766db9a0cad712af0cc634be48c7a479f7910439b24a
+- id: F3-03
+  folder: F3_aisles_h30x20_a300_x1
+  parameters:
+    aisle_width_m: 3.0
+    cross_aisles: 1
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 3
+  seed: 403000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: fb79f9b60f2fbf3cfb48bb53e015600e76db280a7ebe08b732e3a716706ccb0a
+- id: F3-04
+  folder: F3_aisles_h30x20_a300_x3
+  parameters:
+    aisle_width_m: 3.0
+    cross_aisles: 3
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 3
+  seed: 404000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 2c89c628d5d16fd04041d445d517e8c5d600025b2902c84da6d9f55b1217ee4d
+- id: F3-05
+  folder: F3_aisles_h60x40_a300_x1
+  parameters:
+    aisle_width_m: 3.0
+    cross_aisles: 1
+    hall_m: [60, 40]
+    rack_depth_m: 2.0
+    rows: 7
+  seed: 407000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: be48dca93bbed969f3b02f75450e212edb0f98576463c42495942f87223dcd5a

@@ -1,0 +1,173 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 4.931,
+    "S2": 1.45,
+    "S3": 1.4
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.2,
+   "detail": "expected 1.2 \u00b1 0.05 m (minimum 1.0 m) at (3.98, -5.07)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 907.74,
+   "detail": "expected 907.74 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 0,
+    "loops_unsized": 0
+   },
+   "detail": "loops expected 0; loops_unsized expected 0"
+  },
+  {
+   "check": "SC5 layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "SC5 every door and opening has its listed width",
+   "passed": true,
+   "value": {
+    "D_R1": 1.2,
+    "D_R2": 1.2,
+    "D_R3": 1.2,
+    "O_N1": 4.0,
+    "O_N2": 1.8,
+    "O_N3": 1.8,
+    "O_N4": 2.0,
+    "O_N5": 1.5,
+    "O_S1": 4.0,
+    "O_S2": 1.8,
+    "O_S3": 1.8,
+    "O_S4": 2.0,
+    "O_S5": 1.5,
+    "O_E1": 4.0,
+    "O_E2": 1.7,
+    "O_E3": 1.5,
+    "O_E4": 2.0,
+    "O_E5": 1.5
+   },
+   "detail": ""
+  },
+  {
+   "check": "SC5 cutting each door or opening separates exactly what lies behind it",
+   "passed": true,
+   "value": 18,
+   "detail": ""
+  },
+  {
+   "check": "SC5 every pocket chain shrinks inwards",
+   "passed": true,
+   "value": {
+    "H": 135.24,
+    "R1": 212.52,
+    "R2": 162.68,
+    "R3": 212.52,
+    "N1": 21.84,
+    "N2": 15.68,
+    "N3": 10.64,
+    "N4": 6.63,
+    "N5": 5.06,
+    "S1": 21.84,
+    "S2": 15.68,
+    "S3": 10.64,
+    "S4": 6.72,
+    "S5": 5.06,
+    "E1": 22.4,
+    "E2": 12.96,
+    "E3": 10.64,
+    "E4": 6.63,
+    "E5": 5.06
+   },
+   "detail": ""
+  },
+  {
+   "check": "SC5 the rooms hold more area than the pocket chains (\u2265 3\u00d7)",
+   "passed": true,
+   "value": {
+    "rooms_m2": 587.72,
+    "pockets_m2": 177.48
+   },
+   "detail": ""
+  },
+  {
+   "check": "SC5 the two innermost pockets are not visible from the hall (10 m lidar)",
+   "passed": true,
+   "value": {
+    "R1": 0.354,
+    "R2": 0.515,
+    "R3": 0.354,
+    "N1": 0.982,
+    "N2": 0.452,
+    "N3": 0.0,
+    "N4": 0.0,
+    "N5": 0.0,
+    "S1": 0.982,
+    "S2": 0.452,
+    "S3": 0.0,
+    "S4": 0.0,
+    "S5": 0.0,
+    "E1": 1.0,
+    "E2": 0.219,
+    "E3": 0.123,
+    "E4": 0.0,
+    "E5": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "SC5 from the third pocket, the fourth is partly hidden (< 90 %) and the fifth mostly (< 50 %)",
+   "passed": true,
+   "value": {
+    "N4": 0.753,
+    "N5": 0.303,
+    "S4": 0.803,
+    "S5": 0.452,
+    "E4": 0.736,
+    "E5": 0.279
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "4f7418ee3b42db85",
+   "detail": ""
+  }
+ ]
+}

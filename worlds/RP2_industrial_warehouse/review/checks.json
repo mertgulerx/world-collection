@@ -1,0 +1,202 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.55,
+    "S2": 2.45,
+    "S3": 2.55
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.2,
+   "detail": "expected 1.2 \u00b1 0.05 m (minimum 1.0 m) at (19.98, 9.93)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 1673.38,
+   "detail": "expected 1673.3 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 10,
+    "loops_unsized": 16
+   },
+   "detail": "loops expected 10"
+  },
+  {
+   "check": "RP2 dock, rack, column and office layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "RP2 no static geometry within 1.5 m of a patrol path (raster)",
+   "passed": true,
+   "value": {
+    "P-A": [
+     2.0,
+     -1.4,
+     -10.5
+    ],
+    "P-B": [
+     1.5,
+     -25.0,
+     0.9
+    ],
+    "P-C": [
+     2.0,
+     -7.0,
+     -8.0
+    ],
+    "P-D": [
+     2.0,
+     -26.0,
+     14.0
+    ],
+    "P-E": [
+     2.0,
+     14.0,
+     -6.0
+    ]
+   },
+   "detail": "per path: minimum distance (m) and the path point where it occurs"
+  },
+  {
+   "check": "RP2 every spawn is at least 2.5 m from every patrol path",
+   "passed": true,
+   "value": {
+    "S1": 2.5,
+    "S2": 3.506,
+    "S3": 5.22
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP2 every spawn is at least 1.5 m from walls and obstacles (raster)",
+   "passed": true,
+   "value": {
+    "S1": 1.5,
+    "S2": 2.4,
+    "S3": 2.5
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP2 both office doors are 1.2 m at their listed centres",
+   "passed": true,
+   "value": [
+    1.2,
+    1.2
+   ],
+   "detail": ""
+  },
+  {
+   "check": "RP2 office reached only through D01 (west room); east room only through D02",
+   "passed": true,
+   "value": {
+    "separates": [
+     true,
+     true
+    ],
+    "rooms connected to S1 with the door cut": {
+     "D01": {
+      "west": false,
+      "east": false
+     },
+     "D02": {
+      "west": true,
+      "east": false
+     }
+    }
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP2 office rooms: west 4.8 \u00d7 7.9 m less the cabinet, east 4.9 \u00d7 7.9 m",
+   "passed": true,
+   "value": {
+    "west": 37.12,
+    "east": 38.71
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP2 no slot narrower than 1.0 m between boxes",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "RP2 the narrowest passage lies in an office door",
+   "passed": true,
+   "value": [
+    19.98,
+    9.93
+   ],
+   "detail": ""
+  },
+  {
+   "check": "RP2 aisle widths match plan \u00a73.3",
+   "passed": true,
+   "value": {
+    "A1": 3.0,
+    "A2": 3.0,
+    "A3": 2.5,
+    "A4 + north aisle, R4 to R5": 7.6,
+    "A4 + north aisle at col_06": 7.2,
+    "cross aisle": 4.0,
+    "west aisle": 2.0,
+    "west aisle at lm_cabinet_w": 1.4,
+    "R3 bay with west aisle": 5.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP2 no third-party file or include (primitives only, no sources)",
+   "passed": true,
+   "value": {
+    "kinds": [
+     "box"
+    ],
+    "sources": 0
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "62ee3b0cc994a4ee",
+   "detail": ""
+  }
+ ]
+}

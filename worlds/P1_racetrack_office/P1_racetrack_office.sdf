@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Design ledger
+  Document: P1_racetrack_office.sdf, SDF 1.9, world `P1` (Pilot racetrack office).
+  Consumer: Gazebo Harmonic (gz-sim 8, sdformat14). Units: SI (metres, radians).
+  Frames: x east, y north, z up; world origin as in the plan. Every pose is written out and uses SDF's
+    default frame (model: world; link: model; collision and visual: link). Models and links sit at
+    their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
+    used: Gazebo skips serialising models that carry one.
+  Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
+  Generator: worldgen 1.0.1; plan docs/plans/worlds/P1-pilot-racetrack-office.md.
+  Parameters: none. Seed: none.
+  Sources: none.
+  Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).
+  Floor: a static box 0.05 m thick with its top face at z = 0 (as the Corridor floor).
+  Primitives by role: boundary wall: 20, wall: 13. Collision and visual geometry are identical.
+-->
+<sdf version="1.9">
+  <world name="p1_racetrack_office">
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type="adiabatic"/>
+
+    <physics name="default_physics" default="1" type="ode">
+      <max_step_size>0.01</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>200</real_time_update_rate>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <scene>
+      <ambient>0.72 0.72 0.72 1</ambient>
+      <background>0.95 0.95 0.95 1</background>
+      <shadows>false</shadows>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
+    </scene>
+
+    <light name="sun" type="directional">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.3 0.2 -1</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="ground_link">
+        <pose>0.0000 -0.2000 -0.0250 0 0 0</pose>
+        <collision name="ground_collision">
+          <geometry><box><size>35.2000 24.8000 0.0500</size></box></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name="ground_visual">
+          <geometry><box><size>35.2000 24.8000 0.0500</size></box></geometry>
+          <material><ambient>0.86 0.86 0.84 1</ambient><diffuse>0.86 0.86 0.84 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="P1_structure">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="structure_link">
+        <pose>0 0 0 0 0 0</pose>
+        <collision name="outer_e_00_col">
+          <pose>15.1000 -7.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 5.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_e_00_vis">
+          <pose>15.1000 -7.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 5.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_e_01_col">
+          <pose>15.1000 3.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 14.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_e_01_vis">
+          <pose>15.1000 3.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 14.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_n_00_col">
+          <pose>0.0000 10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>30.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_n_00_vis">
+          <pose>0.0000 10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>30.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_s_00_col">
+          <pose>-12.3500 -10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>5.7000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_s_00_vis">
+          <pose>-12.3500 -10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>5.7000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_s_01_col">
+          <pose>-2.5000 -10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>12.0000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_s_01_vis">
+          <pose>-2.5000 -10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>12.0000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_s_02_col">
+          <pose>9.8500 -10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>10.7000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_s_02_vis">
+          <pose>9.8500 -10.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>10.7000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_w_00_col">
+          <pose>-15.1000 -6.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 8.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_w_00_vis">
+          <pose>-15.1000 -6.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 8.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_w_01_col">
+          <pose>-15.1000 4.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 11.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_w_01_vis">
+          <pose>-15.1000 4.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 11.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l1_a_col">
+          <pose>-9.6000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l1_a_vis">
+          <pose>-9.6000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l1_b_col">
+          <pose>-8.4000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l1_b_vis">
+          <pose>-8.4000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l1_back_col">
+          <pose>-9.0000 -10.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l1_back_vis">
+          <pose>-9.0000 -10.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l2_a_col">
+          <pose>3.4000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l2_a_vis">
+          <pose>3.4000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l2_b_col">
+          <pose>4.6000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l2_b_vis">
+          <pose>4.6000 -10.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 0.4000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l2_back_col">
+          <pose>4.0000 -10.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l2_back_vis">
+          <pose>4.0000 -10.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l3_a_col">
+          <pose>15.4000 -5.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l3_a_vis">
+          <pose>15.4000 -5.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l3_b_col">
+          <pose>15.4000 -3.9000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l3_b_vis">
+          <pose>15.4000 -3.9000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l3_back_col">
+          <pose>15.5000 -4.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 1.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l3_back_vis">
+          <pose>15.5000 -4.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 1.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l4_a_col">
+          <pose>-15.4000 -2.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l4_a_vis">
+          <pose>-15.4000 -2.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l4_b_col">
+          <pose>-15.4000 -0.9000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l4_b_vis">
+          <pose>-15.4000 -0.9000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="recess_l4_back_col">
+          <pose>-15.5000 -1.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 1.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="recess_l4_back_vis">
+          <pose>-15.5000 -1.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 1.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_divider_col">
+          <pose>0.0000 -2.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 9.7000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="block_divider_vis">
+          <pose>0.0000 -2.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 9.7000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_e_col">
+          <pose>12.5000 -2.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 9.7000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="block_e_vis">
+          <pose>12.5000 -2.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 9.7000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_n_00_col">
+          <pose>-3.1000 2.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>19.0000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="block_n_00_vis">
+          <pose>-3.1000 2.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>19.0000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_n_01_col">
+          <pose>10.1000 2.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>5.0000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="block_n_01_vis">
+          <pose>10.1000 2.4000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>5.0000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_s_00_col">
+          <pose>-9.6000 -7.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>6.0000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="block_s_00_vis">
+          <pose>-9.6000 -7.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>6.0000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_s_01_col">
+          <pose>3.6000 -7.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>18.0000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="block_s_01_vis">
+          <pose>3.6000 -7.5000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>18.0000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_w_col">
+          <pose>-12.5000 -2.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 9.7000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="block_w_vis">
+          <pose>-12.5000 -2.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 9.7000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="partition_e_col">
+          <pose>5.0000 7.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 4.9000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="partition_e_vis">
+          <pose>5.0000 7.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 4.9000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="partition_w_col">
+          <pose>-5.0000 7.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 4.9000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="partition_w_vis">
+          <pose>-5.0000 7.5500 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 4.9000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="room_wall_n_00_col">
+          <pose>-12.8000 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>4.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="room_wall_n_00_vis">
+          <pose>-12.8000 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>4.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="room_wall_n_01_col">
+          <pose>-4.2500 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>10.3000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="room_wall_n_01_vis">
+          <pose>-4.2500 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>10.3000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="room_wall_n_02_col">
+          <pose>5.2500 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>6.3000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="room_wall_n_02_vis">
+          <pose>5.2500 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>6.3000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="room_wall_n_03_col">
+          <pose>12.3000 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>5.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="room_wall_n_03_vis">
+          <pose>12.3000 5.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>5.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.72 0.66 0.58 1</ambient>
+            <diffuse>0.72 0.66 0.58 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

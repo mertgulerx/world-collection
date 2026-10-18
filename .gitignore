@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Moving-object plugin: build output and the installed library (rebuilt locally)
+plugins/moving_objects/build/
+plugins/lib/
+
+# Local contact-pilot worlds used while developing the plugin
+plugins/moving_objects/pilot/
+
+# Third-party source data (not redistributed)
+sources/
+
+# Blender and editor temporary files
+*.blend1
+*.blend@
+.vscode/
+.idea/
+*.swp

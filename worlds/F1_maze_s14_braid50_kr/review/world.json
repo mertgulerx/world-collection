@@ -1,0 +1,2014 @@
+{
+ "id": "F1-08",
+ "title": "Maze 14\u00d714, braid 0.5, Kruskal",
+ "bounds": [
+  -17.6,
+  17.6,
+  -17.6,
+  17.6
+ ],
+ "floor_margin_m": 2.0,
+ "materials": {
+  "floor": [
+   0.86,
+   0.86,
+   0.84
+  ],
+  "boundary": [
+   0.62,
+   0.62,
+   0.62
+  ],
+  "inner": [
+   0.72,
+   0.66,
+   0.58
+  ],
+  "core": [
+   0.48,
+   0.48,
+   0.48
+  ],
+  "obstacle": [
+   0.4,
+   0.45,
+   0.52
+  ],
+  "landmark": [
+   0.2,
+   0.45,
+   0.8
+  ],
+  "furniture": [
+   0.55,
+   0.45,
+   0.35
+  ],
+  "moving": [
+   0.95,
+   0.55,
+   0.15
+  ]
+ },
+ "primitives": [
+  {
+   "name": "outer_e_00",
+   "kind": "box",
+   "x": 17.5,
+   "y": 0.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    34.8,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_00",
+   "kind": "box",
+   "x": 0.0,
+   "y": 17.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    35.2,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_00",
+   "kind": "box",
+   "x": 0.0,
+   "y": -17.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    35.2,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_00",
+   "kind": "box",
+   "x": -17.5,
+   "y": 0.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    34.8,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "wall_000",
+   "kind": "box",
+   "x": 5.0,
+   "y": -16.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_001",
+   "kind": "box",
+   "x": -5.0,
+   "y": -15.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_002",
+   "kind": "box",
+   "x": -13.75,
+   "y": -15.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_003",
+   "kind": "box",
+   "x": -8.75,
+   "y": -15.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_004",
+   "kind": "box",
+   "x": -1.25,
+   "y": -15.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_005",
+   "kind": "box",
+   "x": 7.5,
+   "y": -13.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_006",
+   "kind": "box",
+   "x": 15.0,
+   "y": -13.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_007",
+   "kind": "box",
+   "x": 10.0,
+   "y": -12.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_008",
+   "kind": "box",
+   "x": 2.5,
+   "y": -12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_009",
+   "kind": "box",
+   "x": -7.5,
+   "y": -13.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_010",
+   "kind": "box",
+   "x": -10.0,
+   "y": -12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_011",
+   "kind": "box",
+   "x": -14.9,
+   "y": -12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.0,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_012",
+   "kind": "box",
+   "x": -3.75,
+   "y": -12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_013",
+   "kind": "box",
+   "x": 6.25,
+   "y": -12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_014",
+   "kind": "box",
+   "x": 13.75,
+   "y": -12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_015",
+   "kind": "box",
+   "x": 0.0,
+   "y": -10.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_016",
+   "kind": "box",
+   "x": 12.5,
+   "y": -11.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_017",
+   "kind": "box",
+   "x": -15.0,
+   "y": -10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_018",
+   "kind": "box",
+   "x": -2.5,
+   "y": -10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_019",
+   "kind": "box",
+   "x": 5.0,
+   "y": -10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_020",
+   "kind": "box",
+   "x": -11.25,
+   "y": -10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_021",
+   "kind": "box",
+   "x": -6.25,
+   "y": -10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_022",
+   "kind": "box",
+   "x": 8.75,
+   "y": -10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_023",
+   "kind": "box",
+   "x": 16.15,
+   "y": -10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.5,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_024",
+   "kind": "box",
+   "x": -10.0,
+   "y": -8.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_025",
+   "kind": "box",
+   "x": -5.0,
+   "y": -8.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_026",
+   "kind": "box",
+   "x": 10.0,
+   "y": -7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_027",
+   "kind": "box",
+   "x": -10.0,
+   "y": -7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    10.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_028",
+   "kind": "box",
+   "x": 2.5,
+   "y": -7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    10.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_029",
+   "kind": "box",
+   "x": 13.75,
+   "y": -7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_030",
+   "kind": "box",
+   "x": -10.0,
+   "y": -6.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_031",
+   "kind": "box",
+   "x": -12.5,
+   "y": -4.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_032",
+   "kind": "box",
+   "x": -5.0,
+   "y": -3.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_033",
+   "kind": "box",
+   "x": -15.0,
+   "y": -3.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_034",
+   "kind": "box",
+   "x": 0.0,
+   "y": -2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    9.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_035",
+   "kind": "box",
+   "x": 3.75,
+   "y": -5.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_036",
+   "kind": "box",
+   "x": 8.75,
+   "y": -5.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_037",
+   "kind": "box",
+   "x": 16.15,
+   "y": -5.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.5,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_038",
+   "kind": "box",
+   "x": -7.5,
+   "y": -3.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_039",
+   "kind": "box",
+   "x": -2.5,
+   "y": -2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_040",
+   "kind": "box",
+   "x": 12.5,
+   "y": -0.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    10.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_041",
+   "kind": "box",
+   "x": 2.5,
+   "y": -3.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_042",
+   "kind": "box",
+   "x": -8.75,
+   "y": -2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_043",
+   "kind": "box",
+   "x": 7.5,
+   "y": -2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_044",
+   "kind": "box",
+   "x": 16.15,
+   "y": -2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.5,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_045",
+   "kind": "box",
+   "x": 10.0,
+   "y": -1.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_046",
+   "kind": "box",
+   "x": 15.0,
+   "y": 0.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_047",
+   "kind": "box",
+   "x": -6.25,
+   "y": 0.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_048",
+   "kind": "box",
+   "x": 3.75,
+   "y": 0.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_049",
+   "kind": "box",
+   "x": 8.75,
+   "y": 0.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_050",
+   "kind": "box",
+   "x": -12.5,
+   "y": 1.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_051",
+   "kind": "box",
+   "x": -7.5,
+   "y": 1.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_052",
+   "kind": "box",
+   "x": -5.0,
+   "y": 1.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_053",
+   "kind": "box",
+   "x": 7.5,
+   "y": 3.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_054",
+   "kind": "box",
+   "x": -11.25,
+   "y": 2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    7.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_055",
+   "kind": "box",
+   "x": -3.75,
+   "y": 2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_056",
+   "kind": "box",
+   "x": 2.5,
+   "y": 2.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_057",
+   "kind": "box",
+   "x": 10.0,
+   "y": 4.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_058",
+   "kind": "box",
+   "x": -7.5,
+   "y": 3.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_059",
+   "kind": "box",
+   "x": -2.5,
+   "y": 3.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_060",
+   "kind": "box",
+   "x": 5.0,
+   "y": 3.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_061",
+   "kind": "box",
+   "x": -5.0,
+   "y": 5.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_062",
+   "kind": "box",
+   "x": -12.5,
+   "y": 5.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_063",
+   "kind": "box",
+   "x": 1.25,
+   "y": 5.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_064",
+   "kind": "box",
+   "x": 13.75,
+   "y": 5.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_065",
+   "kind": "box",
+   "x": 2.5,
+   "y": 6.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_066",
+   "kind": "box",
+   "x": -12.5,
+   "y": 7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_067",
+   "kind": "box",
+   "x": 15.0,
+   "y": 10.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    10.0,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_068",
+   "kind": "box",
+   "x": -16.15,
+   "y": 7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.5,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_069",
+   "kind": "box",
+   "x": -5.0,
+   "y": 7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    10.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_070",
+   "kind": "box",
+   "x": 5.0,
+   "y": 7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_071",
+   "kind": "box",
+   "x": 11.25,
+   "y": 7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_072",
+   "kind": "box",
+   "x": 12.5,
+   "y": 10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_073",
+   "kind": "box",
+   "x": -12.5,
+   "y": 10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_074",
+   "kind": "box",
+   "x": -3.75,
+   "y": 10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    7.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_075",
+   "kind": "box",
+   "x": 5.0,
+   "y": 10.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_076",
+   "kind": "box",
+   "x": -10.0,
+   "y": 11.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_077",
+   "kind": "box",
+   "x": 7.5,
+   "y": 11.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_078",
+   "kind": "box",
+   "x": -7.5,
+   "y": 11.35,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_079",
+   "kind": "box",
+   "x": -16.15,
+   "y": 12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.5,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_080",
+   "kind": "box",
+   "x": -11.25,
+   "y": 12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_081",
+   "kind": "box",
+   "x": 2.5,
+   "y": 12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_082",
+   "kind": "box",
+   "x": 10.0,
+   "y": 12.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_083",
+   "kind": "box",
+   "x": -2.5,
+   "y": 13.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_084",
+   "kind": "box",
+   "x": -15.0,
+   "y": 13.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_085",
+   "kind": "box",
+   "x": -12.5,
+   "y": 13.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_086",
+   "kind": "box",
+   "x": 7.5,
+   "y": 13.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_087",
+   "kind": "box",
+   "x": -5.0,
+   "y": 15.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_088",
+   "kind": "box",
+   "x": 3.75,
+   "y": 15.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_089",
+   "kind": "box",
+   "x": 11.25,
+   "y": 15.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.7,
+    0.2,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_090",
+   "kind": "box",
+   "x": -10.0,
+   "y": 16.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_091",
+   "kind": "box",
+   "x": 0.0,
+   "y": 16.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "wall_092",
+   "kind": "box",
+   "x": -7.5,
+   "y": 16.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.3,
+    2.0
+   ],
+   "role": "wall",
+   "material": "inner"
+  },
+  {
+   "name": "landmark_00",
+   "kind": "box",
+   "x": 12.325,
+   "y": 9.05,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_01",
+   "kind": "box",
+   "x": -12.325,
+   "y": 5.95,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    1.0,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_02",
+   "kind": "box",
+   "x": -2.325,
+   "y": -11.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_03",
+   "kind": "box",
+   "x": 3.45,
+   "y": 12.325,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.6,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_04",
+   "kind": "box",
+   "x": 7.325,
+   "y": 13.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_05",
+   "kind": "box",
+   "x": -13.75,
+   "y": 4.825,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_06",
+   "kind": "box",
+   "x": 15.175,
+   "y": -13.45,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_07",
+   "kind": "box",
+   "x": -2.675,
+   "y": -11.35,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_08",
+   "kind": "box",
+   "x": 0.175,
+   "y": 15.95,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_09",
+   "kind": "box",
+   "x": -6.35,
+   "y": -7.325,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.6,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_10",
+   "kind": "box",
+   "x": 7.325,
+   "y": 6.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_11",
+   "kind": "box",
+   "x": -7.675,
+   "y": -3.55,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_12",
+   "kind": "box",
+   "x": -9.825,
+   "y": -6.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    1.0,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_13",
+   "kind": "box",
+   "x": -13.65,
+   "y": -12.325,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.6,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_14",
+   "kind": "box",
+   "x": 12.325,
+   "y": -3.45,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    1.0,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_15",
+   "kind": "box",
+   "x": 14.825,
+   "y": -0.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_16",
+   "kind": "box",
+   "x": 17.325,
+   "y": 8.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    1.0,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_17",
+   "kind": "box",
+   "x": 3.85,
+   "y": 14.825,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_18",
+   "kind": "box",
+   "x": 17.325,
+   "y": -6.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_19",
+   "kind": "box",
+   "x": -5.175,
+   "y": -16.15,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_20",
+   "kind": "box",
+   "x": -7.675,
+   "y": 11.35,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    1.0,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_21",
+   "kind": "box",
+   "x": -16.05,
+   "y": 17.325,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_22",
+   "kind": "box",
+   "x": 6.15,
+   "y": 9.825,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_23",
+   "kind": "box",
+   "x": -14.825,
+   "y": 13.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    1.0,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_24",
+   "kind": "box",
+   "x": 12.675,
+   "y": 3.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_25",
+   "kind": "box",
+   "x": -12.325,
+   "y": -3.95,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_26",
+   "kind": "box",
+   "x": 13.75,
+   "y": -7.675,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_27",
+   "kind": "box",
+   "x": 8.15,
+   "y": -17.325,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_28",
+   "kind": "box",
+   "x": 4.825,
+   "y": -11.95,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_29",
+   "kind": "box",
+   "x": -11.35,
+   "y": -10.175,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_30",
+   "kind": "box",
+   "x": -5.175,
+   "y": 1.05,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.6,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_31",
+   "kind": "box",
+   "x": -7.325,
+   "y": -3.95,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.15,
+    0.3,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "landmark_32",
+   "kind": "box",
+   "x": -16.65,
+   "y": -12.675,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3,
+    0.15,
+    2.0
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  }
+ ],
+ "spawns": [
+  {
+   "id": "S1",
+   "x": -3.75,
+   "y": 13.75,
+   "yaw": 3.141593
+  }
+ ],
+ "notches": []
+}

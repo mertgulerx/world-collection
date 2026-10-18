@@ -1,0 +1,265 @@
+id: RP1
+slug: aces3_austin
+title: ACES3 Austin (rebuilt from the map image)
+tier: RP
+role: evaluation
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/R3-aces3-austin.md
+parameters: {}
+seed: null
+selection: null
+expected: {free_area_m2: 556.36, free_area_tolerance: 0.02, narrowest_passage_m: 1.8, minimum_passage_m: 1.0, loops: 4, loops_unsized: 4}
+measured: {free_area_m2: 556.385, narrowest_passage_m: 1.8, loops: 4, loops_unsized: 4}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 556.39
+  clearance_m: {median: 0.6, p10: 0.15, p90: 1.3}
+  clearance_max_m: 3.867
+  char_dim_m: {median: 2.225, n: 400, mc_halfwidth: 0.225}
+  dispersion: {mean: 3.655, n: 400, mc_se: 0.05}
+  nav_complexity: {median: 1.1507, p90: 1.2866, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.8
+  min_gap_m: 1.8
+  loops: 4
+  loops_unsized: 4
+  dead_ends: 3
+  junctions: 7
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 55.89, n: 400, mc_se: 1.29}
+      visible_fraction: 0.1004
+      area_over_pi_r2: 1.771
+      spawn_visible_fraction: {S1: 0.2173, S2: 0.0636, S3: 0.1053}
+spawns:
+- {id: S1, x: 0.0, y: 0.0, yaw: 1.570796}
+- {id: S2, x: 24.23, y: -20.82, yaw: 1.570796}
+- {id: S3, x: 24.0, y: -0.2, yaw: 3.141593}
+inclusion:
+- - [-20.7, -19.0]
+  - [-20.3, -19.0]
+  - [-20.3, -21.5]
+  - [-12.5, -21.5]
+  - [-12.5, -21.9]
+  - [-11.5, -21.9]
+  - [-11.5, -21.5]
+  - [-8.0, -21.5]
+  - [-8.0, -21.9]
+  - [-7.0, -21.9]
+  - [-7.0, -21.5]
+  - [-1.2, -21.5]
+  - [-1.2, -24.0]
+  - [1.7, -24.0]
+  - [1.7, -21.5]
+  - [5.5, -21.5]
+  - [5.5, -21.9]
+  - [6.5, -21.9]
+  - [6.5, -21.5]
+  - [10.5, -21.5]
+  - [10.5, -21.9]
+  - [11.5, -21.9]
+  - [11.5, -21.5]
+  - [15.0, -21.5]
+  - [15.0, -21.9]
+  - [16.0, -21.9]
+  - [16.0, -21.5]
+  - [24.9, -21.5]
+  - [24.9, -15.5]
+  - [25.3, -15.5]
+  - [25.3, -14.5]
+  - [24.9, -14.5]
+  - [24.9, -11.5]
+  - [25.3, -11.5]
+  - [25.3, -10.5]
+  - [24.9, -10.5]
+  - [24.9, -7.0]
+  - [25.3, -7.0]
+  - [25.3, -6.0]
+  - [24.9, -6.0]
+  - [24.9, -3.5]
+  - [25.3, -3.5]
+  - [25.3, -2.5]
+  - [24.9, -2.5]
+  - [24.9, 1.5]
+  - [25.3, 1.5]
+  - [25.3, 2.5]
+  - [24.9, 2.5]
+  - [24.9, 19.2]
+  - [22.5, 19.2]
+  - [22.5, 19.6]
+  - [21.5, 19.6]
+  - [21.5, 19.2]
+  - [5.5, 19.2]
+  - [5.5, 19.6]
+  - [4.5, 19.6]
+  - [4.5, 19.2]
+  - [1.7, 19.2]
+  - [1.7, 21.7]
+  - [-1.6, 21.7]
+  - [-1.6, 19.2]
+  - [-3.0, 19.2]
+  - [-3.0, 19.6]
+  - [-4.0, 19.6]
+  - [-4.0, 19.2]
+  - [-12.0, 19.2]
+  - [-12.0, 19.6]
+  - [-13.0, 19.6]
+  - [-13.0, 19.2]
+  - [-16.3, 19.2]
+  - [-16.3, 19.6]
+  - [-17.3, 19.6]
+  - [-17.3, 19.2]
+  - [-20.3, 19.2]
+  - [-20.3, 10.0]
+  - [-20.7, 10.0]
+  - [-20.7, 9.0]
+  - [-20.3, 9.0]
+  - [-20.3, 2.5]
+  - [-20.7, 2.5]
+  - [-20.7, 1.5]
+  - [-20.3, 1.5]
+  - [-20.3, -18.0]
+  - [-20.7, -18.0]
+notches:
+- id: DE1
+  polygon:
+  - [24.9, 1.5]
+  - [25.3, 1.5]
+  - [25.3, 2.5]
+  - [24.9, 2.5]
+- id: DE2
+  polygon:
+  - [24.9, -3.5]
+  - [25.3, -3.5]
+  - [25.3, -2.5]
+  - [24.9, -2.5]
+- id: DE3
+  polygon:
+  - [24.9, -7.0]
+  - [25.3, -7.0]
+  - [25.3, -6.0]
+  - [24.9, -6.0]
+- id: DE4
+  polygon:
+  - [24.9, -11.5]
+  - [25.3, -11.5]
+  - [25.3, -10.5]
+  - [24.9, -10.5]
+- id: DE5
+  polygon:
+  - [24.9, -15.5]
+  - [25.3, -15.5]
+  - [25.3, -14.5]
+  - [24.9, -14.5]
+- id: VN
+  polygon:
+  - [-1.6, 19.2]
+  - [1.7, 19.2]
+  - [1.7, 21.7]
+  - [-1.6, 21.7]
+- id: DN1
+  polygon:
+  - [-17.3, 19.2]
+  - [-16.3, 19.2]
+  - [-16.3, 19.6]
+  - [-17.3, 19.6]
+- id: DN2
+  polygon:
+  - [-13.0, 19.2]
+  - [-12.0, 19.2]
+  - [-12.0, 19.6]
+  - [-13.0, 19.6]
+- id: DN3
+  polygon:
+  - [-4.0, 19.2]
+  - [-3.0, 19.2]
+  - [-3.0, 19.6]
+  - [-4.0, 19.6]
+- id: DN4
+  polygon:
+  - [4.5, 19.2]
+  - [5.5, 19.2]
+  - [5.5, 19.6]
+  - [4.5, 19.6]
+- id: DN5
+  polygon:
+  - [21.5, 19.2]
+  - [22.5, 19.2]
+  - [22.5, 19.6]
+  - [21.5, 19.6]
+- id: VS
+  polygon:
+  - [-1.2, -24.0]
+  - [1.7, -24.0]
+  - [1.7, -21.5]
+  - [-1.2, -21.5]
+- id: DS1
+  polygon:
+  - [-12.5, -21.9]
+  - [-11.5, -21.9]
+  - [-11.5, -21.5]
+  - [-12.5, -21.5]
+- id: DS2
+  polygon:
+  - [-8.0, -21.9]
+  - [-7.0, -21.9]
+  - [-7.0, -21.5]
+  - [-8.0, -21.5]
+- id: DS3
+  polygon:
+  - [5.5, -21.9]
+  - [6.5, -21.9]
+  - [6.5, -21.5]
+  - [5.5, -21.5]
+- id: DS4
+  polygon:
+  - [10.5, -21.9]
+  - [11.5, -21.9]
+  - [11.5, -21.5]
+  - [10.5, -21.5]
+- id: DS5
+  polygon:
+  - [15.0, -21.9]
+  - [16.0, -21.9]
+  - [16.0, -21.5]
+  - [15.0, -21.5]
+- id: DW1
+  polygon:
+  - [-20.7, 9.0]
+  - [-20.3, 9.0]
+  - [-20.3, 10.0]
+  - [-20.7, 10.0]
+- id: DW2
+  polygon:
+  - [-20.7, 1.5]
+  - [-20.3, 1.5]
+  - [-20.3, 2.5]
+  - [-20.7, 2.5]
+- id: DW3
+  polygon:
+  - [-20.7, -19.0]
+  - [-20.3, -19.0]
+  - [-20.3, -18.0]
+  - [-20.7, -18.0]
+doors: []
+moving_objects: null
+plan_data:
+  construction_free_area_m2: 556.362
+  grid: [452, 407]
+  ring_centrelines_m: [43.4, 38.9]
+  scale_m_per_px: 0.05
+sources:
+- {what: 'layout of the ACES3 floor (map image; rebuilt, not converted)', cite: howard2003radish}
+- {what: ACES3 data set in the SLAM benchmark, cite: kummerle2009slam}
+licence: Apache-2.0
+hashes: {sdf: a934293f1e517f8cac10bbc026417dd0c6e1572cf83bf0fe9276cd53c0d18a72, world_json: 441f9843d0f289da880778a6a144a91b007b4c32db2fef3017bd27ddf9b9024f}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

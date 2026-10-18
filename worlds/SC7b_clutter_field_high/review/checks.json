@@ -1,0 +1,104 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 2.081,
+    "S2": 2.0,
+    "S3": 2.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 0.9849,
+   "detail": "expected 1.0 \u00b1 0.05 m (minimum 1.0 m) at (8.68, 7.28)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 785.98,
+   "detail": "expected 785.98 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 8,
+    "loops_unsized": 90
+   },
+   "detail": "loops expected 8; loops_unsized expected 90"
+  },
+  {
+   "check": "SC7 block layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "SC7 blocks are the first blocks of SC7b's list",
+   "passed": true,
+   "value": 90,
+   "detail": ""
+  },
+  {
+   "check": "SC7 gaps \u2265 1.0 m between blocks and to the wall; \u2265 1.5 m to spawns",
+   "passed": true,
+   "value": {
+    "block_m": 1.0,
+    "wall_m": 1.0,
+    "spawn_m": 2.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "SC7 free space is one component, also inflated by 0.29 m and 0.42 m",
+   "passed": true,
+   "value": {
+    "free": 1,
+    "mogi_0.29": 1,
+    "lynx_0.42": 1
+   },
+   "detail": ""
+  },
+  {
+   "check": "SC7 free area equals 900.0 \u2212 \u03a3 block areas",
+   "passed": true,
+   "value": {
+    "raster": 785.98,
+    "exact": 785.98
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "363edbd1ae3a9d85",
+   "detail": ""
+  }
+ ]
+}

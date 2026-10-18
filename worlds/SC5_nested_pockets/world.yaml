@@ -1,0 +1,238 @@
+id: SC5
+slug: nested_pockets
+title: Nested pockets
+tier: SC
+role: evaluation
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/B5-nested-pockets.md
+parameters: {}
+seed: null
+selection: null
+expected: {free_area_m2: 907.74, free_area_tolerance: 0.02, narrowest_passage_m: 1.2, minimum_passage_m: 1.0, loops: 0, loops_unsized: 0}
+measured: {free_area_m2: 907.74, narrowest_passage_m: 1.2, loops: 0, loops_unsized: 0}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 907.74
+  clearance_m: {median: 1.5, p10: 0.292, p90: 4.3}
+  clearance_max_m: 6.9
+  char_dim_m: {median: 8.288, n: 400, mc_halfwidth: 0.7}
+  dispersion: {mean: 1.74, n: 400, mc_se: 0.069}
+  nav_complexity: {median: 1.0532, p90: 1.3786, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.2
+  min_gap_m: null
+  loops: 0
+  loops_unsized: 0
+  dead_ends: 8
+  junctions: 4
+  regions: 5
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 135.27, n: 400, mc_se: 2.63}
+      visible_fraction: 0.149
+      area_over_pi_r2: 2.8894
+      spawn_visible_fraction: {S1: 0.21, S2: 0.1305, S3: 0.1241}
+spawns:
+- {id: S1, x: 0.0, y: 0.0, yaw: 0.0}
+- {id: S2, x: 5.5, y: 3.5, yaw: 3.141593}
+- {id: S3, x: -5.5, y: -3.5, yaw: 0.0}
+inclusion:
+- - [-23.7, -4.9]
+  - [-7.1, -4.9]
+  - [-7.1, -0.6]
+  - [-6.9, -0.6]
+  - [-6.9, -4.9]
+  - [-3.5, -4.9]
+  - [-3.5, -5.1]
+  - [-6.9, -5.1]
+  - [-6.9, -6.1]
+  - [-7.1, -6.1]
+  - [-7.1, -5.7]
+  - [-9.9, -5.7]
+  - [-9.9, -11.3]
+  - [-7.1, -11.3]
+  - [-7.1, -10.9]
+  - [-6.9, -10.9]
+  - [-6.9, -11.9]
+  - [-5.1, -11.9]
+  - [-5.1, -12.1]
+  - [-7.9, -12.1]
+  - [-7.9, -13.7]
+  - [-8.7, -13.7]
+  - [-8.7, -15.9]
+  - [-6.4, -15.9]
+  - [-6.4, -13.5]
+  - [-3.1, -13.5]
+  - [-3.1, -9.1]
+  - [-7.1, -9.1]
+  - [-7.1, -7.9]
+  - [0.9, -7.9]
+  - [0.9, -5.1]
+  - [0.5, -5.1]
+  - [0.5, -4.9]
+  - [3.4, -4.9]
+  - [3.4, -5.1]
+  - [2.1, -5.1]
+  - [2.1, -20.5]
+  - [15.9, -20.5]
+  - [15.9, -5.1]
+  - [4.6, -5.1]
+  - [4.6, -4.9]
+  - [6.9, -4.9]
+  - [6.9, -2.0]
+  - [12.7, -2.0]
+  - [12.7, 2.2]
+  - [13.9, 2.2]
+  - [13.9, 3.0]
+  - [14.1, 3.0]
+  - [14.1, 1.1]
+  - [18.4, 1.1]
+  - [18.4, 4.7]
+  - [20.9, 4.7]
+  - [20.9, 6.9]
+  - [18.6, 6.9]
+  - [18.6, 6.2]
+  - [17.1, 6.2]
+  - [17.1, 3.1]
+  - [16.9, 3.1]
+  - [16.9, 4.9]
+  - [14.1, 4.9]
+  - [14.1, 4.5]
+  - [13.9, 4.5]
+  - [13.9, 4.9]
+  - [9.1, 4.9]
+  - [9.1, 2.2]
+  - [11.0, 2.2]
+  - [11.0, 2.0]
+  - [6.9, 2.0]
+  - [6.9, 4.9]
+  - [4.6, 4.9]
+  - [4.6, 5.1]
+  - [15.9, 5.1]
+  - [15.9, 20.5]
+  - [2.1, 20.5]
+  - [2.1, 5.1]
+  - [3.4, 5.1]
+  - [3.4, 4.9]
+  - [0.5, 4.9]
+  - [0.5, 5.1]
+  - [0.9, 5.1]
+  - [0.9, 7.9]
+  - [-7.1, 7.9]
+  - [-7.1, 9.1]
+  - [-3.1, 9.1]
+  - [-3.1, 13.4]
+  - [-6.7, 13.4]
+  - [-6.7, 15.8]
+  - [-9.0, 15.8]
+  - [-9.0, 13.6]
+  - [-8.2, 13.6]
+  - [-8.2, 12.1]
+  - [-5.1, 12.1]
+  - [-5.1, 11.9]
+  - [-6.9, 11.9]
+  - [-6.9, 10.9]
+  - [-7.1, 10.9]
+  - [-7.1, 11.3]
+  - [-9.9, 11.3]
+  - [-9.9, 5.7]
+  - [-7.1, 5.7]
+  - [-7.1, 6.1]
+  - [-6.9, 6.1]
+  - [-6.9, 5.1]
+  - [-3.5, 5.1]
+  - [-3.5, 4.9]
+  - [-6.9, 4.9]
+  - [-6.9, 0.6]
+  - [-7.1, 0.6]
+  - [-7.1, 4.9]
+  - [-23.7, 4.9]
+notches: []
+doors:
+- id: D_R1
+  centre: [4.0, 5.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D_R2
+  centre: [-7.0, 0.0]
+  width_m: 1.2
+  wall_axis: y
+- id: D_R3
+  centre: [4.0, -5.0]
+  width_m: 1.2
+  wall_axis: x
+- id: O_N1
+  centre: [-1.5, 5.0]
+  width_m: 4.0
+  wall_axis: x
+- id: O_N2
+  centre: [-7.0, 7.0]
+  width_m: 1.8
+  wall_axis: y
+- id: O_N3
+  centre: [-7.0, 10.0]
+  width_m: 1.8
+  wall_axis: y
+- id: O_N4
+  centre: [-4.1, 12.0]
+  width_m: 2.0
+  wall_axis: x
+- id: O_N5
+  centre: [-7.45, 13.5]
+  width_m: 1.5
+  wall_axis: x
+- id: O_S1
+  centre: [-1.5, -5.0]
+  width_m: 4.0
+  wall_axis: x
+- id: O_S2
+  centre: [-7.0, -7.0]
+  width_m: 1.8
+  wall_axis: y
+- id: O_S3
+  centre: [-7.0, -10.0]
+  width_m: 1.8
+  wall_axis: y
+- id: O_S4
+  centre: [-4.1, -12.0]
+  width_m: 2.0
+  wall_axis: x
+- id: O_S5
+  centre: [-7.15, -13.6]
+  width_m: 1.5
+  wall_axis: x
+- id: O_E1
+  centre: [7.0, 0.0]
+  width_m: 4.0
+  wall_axis: y
+- id: O_E2
+  centre: [11.85, 2.1]
+  width_m: 1.7
+  wall_axis: x
+- id: O_E3
+  centre: [14.0, 3.75]
+  width_m: 1.5
+  wall_axis: y
+- id: O_E4
+  centre: [17.0, 2.1]
+  width_m: 2.0
+  wall_axis: y
+- id: O_E5
+  centre: [18.5, 5.45]
+  width_m: 1.5
+  wall_axis: y
+moving_objects: null
+plan_data: {}
+sources:
+- {what: 'layout idea (frontier utility, missed small areas)', cite: xu2022explorebench}
+licence: Apache-2.0
+hashes: {sdf: 4f7418ee3b42db85103f50d3b67eb5b719c68b7966702d5918a12f6454f2cdff, world_json: ae8f0c3d34dc543de87da1430261466ecd1792d5b84fb257956b23210fa8d773}
+status: confirmed
+review:
+  image_review: {date: '2026-10-19', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-19', result: confirmed, notes: Inspected in the Gazebo GUI.}

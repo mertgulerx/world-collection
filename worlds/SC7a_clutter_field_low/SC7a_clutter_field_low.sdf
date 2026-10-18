@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Design ledger
+  Document: SC7a_clutter_field_low.sdf, SDF 1.9, world `SC7a` (Clutter field, 45 blocks).
+  Consumer: Gazebo Harmonic (gz-sim 8, sdformat14). Units: SI (metres, radians).
+  Frames: x east, y north, z up; world origin as in the plan. Every pose is written out and uses SDF's
+    default frame (model: world; link: model; collision and visual: link). Models and links sit at
+    their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
+    used: Gazebo skips serialising models that carry one.
+  Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
+  Generator: worldgen 1.0.1; plan docs/plans/worlds/B7-clutter-field.md.
+  Parameters: attempt_limit=20000, block_height_m=1.2, block_side_m=[0.5, 2.0, 0.1], blocks=45, generator=numpy.random.Generator(PCG64(seed)).random(4) per attempt, min_gap_blocks_m=1.0, min_gap_wall_m=1.0, spawn_exclusion_m=1.5. Seed: 7100.
+  Sources: obstacle-field difficulty measures (perille2020barn); cluttered scene (xu2022explorebench).
+  Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).
+  Floor: a static box 0.05 m thick with its top face at z = 0 (as the Corridor floor).
+  Primitives by role: boundary wall: 4, obstacle: 45. Collision and visual geometry are identical.
+-->
+<sdf version="1.9">
+  <world name="sc7a_clutter_field_low">
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type="adiabatic"/>
+
+    <physics name="default_physics" default="1" type="ode">
+      <max_step_size>0.01</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>200</real_time_update_rate>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <scene>
+      <ambient>0.72 0.72 0.72 1</ambient>
+      <background>0.95 0.95 0.95 1</background>
+      <shadows>false</shadows>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
+    </scene>
+
+    <light name="sun" type="directional">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.3 0.2 -1</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="ground_link">
+        <pose>0.0000 0.0000 -0.0250 0 0 0</pose>
+        <collision name="ground_collision">
+          <geometry><box><size>34.4000 34.4000 0.0500</size></box></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name="ground_visual">
+          <geometry><box><size>34.4000 34.4000 0.0500</size></box></geometry>
+          <material><ambient>0.86 0.86 0.84 1</ambient><diffuse>0.86 0.86 0.84 1</diffuse><specular>0.05 0.05 0.05 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="SC7a_structure">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="structure_link">
+        <pose>0 0 0 0 0 0</pose>
+        <collision name="outer_e_00_col">
+          <pose>15.1000 0.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 30.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_e_00_vis">
+          <pose>15.1000 0.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 30.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_n_00_col">
+          <pose>0.0000 15.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>30.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_n_00_vis">
+          <pose>0.0000 15.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>30.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_s_00_col">
+          <pose>0.0000 -15.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>30.4000 0.2000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_s_00_vis">
+          <pose>0.0000 -15.1000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>30.4000 0.2000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="outer_w_00_col">
+          <pose>-15.1000 0.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 30.0000 2.0000</size></box></geometry>
+        </collision>
+        <visual name="outer_w_00_vis">
+          <pose>-15.1000 0.0000 1.0000 0 0 0.000000</pose>
+          <geometry><box><size>0.2000 30.0000 2.0000</size></box></geometry>
+          <material>
+            <ambient>0.62 0.62 0.62 1</ambient>
+            <diffuse>0.62 0.62 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_001_col">
+          <pose>-3.1500 0.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 1.2000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_001_vis">
+          <pose>-3.1500 0.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 1.2000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_002_col">
+          <pose>-7.7500 2.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.9000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_002_vis">
+          <pose>-7.7500 2.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.9000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_003_col">
+          <pose>13.2500 0.4000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 1.0000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_003_vis">
+          <pose>13.2500 0.4000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 1.0000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_004_col">
+          <pose>-4.8500 -4.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.8000 0.6000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_004_vis">
+          <pose>-4.8500 -4.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.8000 0.6000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_005_col">
+          <pose>8.6500 3.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.5000 1.0000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_005_vis">
+          <pose>8.6500 3.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.5000 1.0000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_006_col">
+          <pose>11.3000 9.9000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.8000 0.8000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_006_vis">
+          <pose>11.3000 9.9000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.8000 0.8000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_007_col">
+          <pose>4.4000 0.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.8000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_007_vis">
+          <pose>4.4000 0.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.8000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_008_col">
+          <pose>1.2000 3.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.9000 2.0000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_008_vis">
+          <pose>1.2000 3.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.9000 2.0000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_009_col">
+          <pose>-1.1000 8.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_009_vis">
+          <pose>-1.1000 8.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_010_col">
+          <pose>-6.6000 11.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.3000 1.7000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_010_vis">
+          <pose>-6.6000 11.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.3000 1.7000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_011_col">
+          <pose>0.1000 12.4000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.5000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_011_vis">
+          <pose>0.1000 12.4000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.5000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_012_col">
+          <pose>-4.1000 -9.6500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.3000 1.5000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_012_vis">
+          <pose>-4.1000 -9.6500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.3000 1.5000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_013_col">
+          <pose>7.4500 8.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_013_vis">
+          <pose>7.4500 8.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_014_col">
+          <pose>-6.7000 -8.7500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.7000 2.0000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_014_vis">
+          <pose>-6.7000 -8.7500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.7000 2.0000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_015_col">
+          <pose>-10.3000 -5.7500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_015_vis">
+          <pose>-10.3000 -5.7500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_016_col">
+          <pose>9.0000 -0.8500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.9000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_016_vis">
+          <pose>9.0000 -0.8500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.9000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_017_col">
+          <pose>7.1500 -12.9500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 0.7000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_017_vis">
+          <pose>7.1500 -12.9500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 0.7000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_018_col">
+          <pose>13.0500 11.5000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 0.6000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_018_vis">
+          <pose>13.0500 11.5000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 0.6000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_019_col">
+          <pose>4.2500 -6.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.5000 0.6000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_019_vis">
+          <pose>4.2500 -6.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.5000 0.6000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_020_col">
+          <pose>-6.9000 -2.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.2000 0.6000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_020_vis">
+          <pose>-6.9000 -2.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.2000 0.6000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_021_col">
+          <pose>-5.6500 -0.7500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_021_vis">
+          <pose>-5.6500 -0.7500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_022_col">
+          <pose>-8.2500 -11.9000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 1.7000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_022_vis">
+          <pose>-8.2500 -11.9000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 1.7000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_023_col">
+          <pose>9.1000 -9.3000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 1.9000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_023_vis">
+          <pose>9.1000 -9.3000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.9000 1.9000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_024_col">
+          <pose>2.8000 -12.6000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 0.5000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_024_vis">
+          <pose>2.8000 -12.6000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 0.5000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_025_col">
+          <pose>8.4000 -6.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.5000 0.5000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_025_vis">
+          <pose>8.4000 -6.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.5000 0.5000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_026_col">
+          <pose>-7.3000 7.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.5000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_026_vis">
+          <pose>-7.3000 7.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.5000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_027_col">
+          <pose>4.6000 9.5500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.8000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_027_vis">
+          <pose>4.6000 9.5500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.8000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_028_col">
+          <pose>12.9000 -10.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 0.8000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_028_vis">
+          <pose>12.9000 -10.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 0.8000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_029_col">
+          <pose>-11.1500 5.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 0.8000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_029_vis">
+          <pose>-11.1500 5.4500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 0.8000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_030_col">
+          <pose>-2.2000 -6.2000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 2.0000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_030_vis">
+          <pose>-2.2000 -6.2000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.4000 2.0000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_031_col">
+          <pose>12.3500 -3.9000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.7000 0.5000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_031_vis">
+          <pose>12.3500 -3.9000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.7000 0.5000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_032_col">
+          <pose>0.2000 -4.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 0.6000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_032_vis">
+          <pose>0.2000 -4.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 0.6000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_033_col">
+          <pose>-3.1000 -2.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>2.0000 1.7000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_033_vis">
+          <pose>-3.1000 -2.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>2.0000 1.7000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_034_col">
+          <pose>-13.4500 1.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 0.6000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_034_vis">
+          <pose>-13.4500 1.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.1000 0.6000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_035_col">
+          <pose>-4.2000 11.0500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 1.2000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_035_vis">
+          <pose>-4.2000 11.0500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 1.2000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_036_col">
+          <pose>-13.2500 -0.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.8000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_036_vis">
+          <pose>-13.2500 -0.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>0.8000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_037_col">
+          <pose>0.4500 -11.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.3000 0.9000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_037_vis">
+          <pose>0.4500 -11.8000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.3000 0.9000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_038_col">
+          <pose>-8.4000 0.6500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>2.0000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_038_vis">
+          <pose>-8.4000 0.6500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>2.0000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_039_col">
+          <pose>-10.6500 2.5500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.7000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_039_vis">
+          <pose>-10.6500 2.5500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.7000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_040_col">
+          <pose>-7.2500 -6.0000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.5000 1.1000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_040_vis">
+          <pose>-7.2500 -6.0000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.5000 1.1000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_041_col">
+          <pose>-9.2500 -3.3500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 1.2000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_041_vis">
+          <pose>-9.2500 -3.3500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.0000 1.2000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_042_col">
+          <pose>5.3500 5.8500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.9000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_042_vis">
+          <pose>5.3500 5.8500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 0.9000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_043_col">
+          <pose>12.8000 -6.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>2.0000 0.8000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_043_vis">
+          <pose>12.8000 -6.1500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>2.0000 0.8000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_044_col">
+          <pose>4.6500 12.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.5000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_044_vis">
+          <pose>4.6500 12.7000 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.6000 1.5000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+        <collision name="block_045_col">
+          <pose>-12.9500 -9.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.7000 1.7000 1.2000</size></box></geometry>
+        </collision>
+        <visual name="block_045_vis">
+          <pose>-12.9500 -9.2500 0.6000 0 0 0.000000</pose>
+          <geometry><box><size>1.7000 1.7000 1.2000</size></box></geometry>
+          <material>
+            <ambient>0.40 0.45 0.52 1</ambient>
+            <diffuse>0.40 0.45 0.52 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

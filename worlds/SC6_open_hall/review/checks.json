@@ -1,0 +1,75 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 3.483,
+    "S2": 2.85,
+    "S3": 2.11
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 3.7,
+   "detail": "expected 3.7 \u00b1 0.05 m (minimum 1.0 m) at (-5.12, -18.17)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 1587.04,
+   "detail": "expected 1587.04 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 0,
+    "loops_unsized": 36
+   },
+   "detail": "loops expected 0; loops_unsized expected 36"
+  },
+  {
+   "check": "SC6 pillar layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "SC6 largest clearance 4.3 m \u00b1 0.1 m",
+   "passed": true,
+   "value": 4.311,
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "31a10bdb3a0de8aa",
+   "detail": ""
+  }
+ ]
+}

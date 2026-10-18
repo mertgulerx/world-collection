@@ -1,0 +1,114 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.079
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 2.0,
+   "detail": "expected 2.1 \u00b1 0.1 m (minimum 2.0 m) at (3.93, 11.27)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 1123.32,
+   "detail": "expected 1123.32 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 0,
+    "loops_unsized": 0
+   },
+   "detail": "loops expected 0; loops_unsized expected 0"
+  },
+  {
+   "check": "F1 cell graph: every cell reachable, open edges = N\u00b2 \u2212 1 + k (raster loops = k \u2212 u)",
+   "passed": true,
+   "value": {
+    "reachable": 196,
+    "open_edges": 195,
+    "k": 0,
+    "open_squares_u": 0
+   },
+   "detail": ""
+  },
+  {
+   "check": "F1 narrowest passage (T0 reading) within 2.0\u20132.2 m",
+   "passed": true,
+   "value": 2.0,
+   "detail": ""
+  },
+  {
+   "check": "F1 landmarks: \u039b = round(N\u00b2/6), at most one per cell, ends \u2265 0.3 m from the side ends",
+   "passed": true,
+   "value": {
+    "count": 33,
+    "expected": 33,
+    "min_end_m": 0.3
+   },
+   "detail": ""
+  },
+  {
+   "check": "F1 wall boxes disjoint and on the 0.1 m grid",
+   "passed": true,
+   "value": {
+    "boxes": 113,
+    "overlap_m2": 0.0,
+    "on_grid": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F1 values inside the plan's planning ranges (outside: stop for review)",
+   "passed": true,
+   "value": {
+    "free_area_m2": 1123.32,
+    "k": 0,
+    "dead_end_cells": 23
+   },
+   "detail": "ranges ((1122.9, 1123.9), (0, 0), (17, 27))"
+  },
+  {
+   "check": "F1 dead-end fraction (recorded, not a rule)",
+   "passed": true,
+   "value": 0.1173,
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "e9f8debec7967960",
+   "detail": ""
+  }
+ ]
+}

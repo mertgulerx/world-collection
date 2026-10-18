@@ -1,0 +1,5 @@
+RP1 ACES3 Austin is a clean rebuild, in our own geometry, of the layout of the third floor of the ACES
+building, University of Texas at Austin, as mapped in the data set ut_austin_aces3 of the Robotics
+Data Set Repository (Radish; A. Howard and N. Roy, 2003), provided by Patrick Beeson, and published
+as a map image by Cyrill Stachniss. No data from the source is included: positions were measured on
+the map image (0.05 m per pixel) and rounded to 0.1 m.

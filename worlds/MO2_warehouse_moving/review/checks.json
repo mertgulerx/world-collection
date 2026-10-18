@@ -1,0 +1,162 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.55,
+    "S2": 2.45,
+    "S3": 2.55
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.2,
+   "detail": "expected 1.2 \u00b1 0.05 m (minimum 1.0 m) at (19.98, 9.93)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 1673.38,
+   "detail": "expected 1673.3 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 10,
+    "loops_unsized": 16
+   },
+   "detail": "loops expected 10"
+  },
+  {
+   "check": "MO2-1 passing gap",
+   "passed": true,
+   "value": 1.11,
+   "detail": ">= 1.0 m on the wider side at every run point; per run (wider, narrower side): mo_01 5.41/1.21, mo_03 4.41/2.21, mo_05 1.21/1.2, mo_07 1.71/1.7, mo_09 1.21/1.2, mo_11 4.41/2.21, mo_13 5.41/1.21, mo_17 1.11/1.1, mo_21 1.21/1.2"
+  },
+  {
+   "check": "MO2-2 regions",
+   "passed": true,
+   "value": 0.0,
+   "detail": "<= 10.0 s per office room and rack aisle; 0 instants with U(t) in more than one component; regions with a cut-off run: none"
+  },
+  {
+   "check": "MO2-3 aisle mouth dwell",
+   "passed": true,
+   "value": 3.3,
+   "detail": "<= 12.0 s; 12 mouths; longest per object and mouth: mo_17 A2_cross_w 3.3 s, mo_17 A2_west 3.3 s"
+  },
+  {
+   "check": "MO2-4 rack faces",
+   "passed": true,
+   "value": 1.0,
+   "detail": "min over rectangle outlines (heading, corner turns) of clearance - 0.1 m; per object: mo_00 1.6, mo_01 1.1, mo_02 1.5, mo_03 1.65, mo_04 1.5, mo_05 1.1, mo_06 1.5, mo_07 1.6, mo_08 1.6, mo_09 1.15, mo_10 1.05, mo_11 2.1, mo_12 1.6, mo_13 1.1, mo_14 1.5, mo_15 1.5, mo_16 1.6, mo_17 1.0, mo_18 1.25, mo_19 1.6, mo_20 1.6, mo_21 1.1, mo_22 1.05, mo_23 1.6, mo_24 1.5, mo_25 1.05, mo_26 1.5, mo_27 1.6"
+  },
+  {
+   "check": "MO2-5 nesting",
+   "passed": true,
+   "value": "28 of 28",
+   "detail": "high density objects equal the first 28 high-density objects"
+  },
+  {
+   "check": "MO2-6 templates",
+   "passed": true,
+   "value": 1.181,
+   "detail": "min footprint distance across templates (mo_07/mo_24); convoy spacing: staging_convoy 5.57 > 3.60 m, east_convoy 5.75 > 3.60 m"
+  },
+  {
+   "check": "M1 static clearance",
+   "passed": true,
+   "value": 0.5055728090000841,
+   "detail": "min over path points of clearance - r - 0.1 m"
+  },
+  {
+   "check": "M2 spawn exclusion at t = 0",
+   "passed": true,
+   "value": 2.8915849300974164,
+   "detail": ">= 2.0 m"
+  },
+  {
+   "check": "M3 spawn clearance at all times",
+   "passed": true,
+   "value": 2.1,
+   "detail": ">= 1.0 m over 7800 s"
+  },
+  {
+   "check": "M4 object separation",
+   "passed": true,
+   "value": 1.0813087876871987,
+   "detail": "min footprint distance - 0.1 m"
+  },
+  {
+   "check": "M5 doorway dwell",
+   "passed": true,
+   "value": 0.0,
+   "detail": "<= 12.0 s; dwell waypoints in doorways: none"
+  },
+  {
+   "check": "M6 route blockage",
+   "passed": true,
+   "value": 0.0,
+   "detail": "<= 10.0 s"
+  },
+  {
+   "check": "M7 count",
+   "passed": true,
+   "value": 28,
+   "detail": "round_half_up(1673.38 / 60) = 28; recorded A 1673.3800000000003"
+  },
+  {
+   "check": "M8 consistency",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "M9 static structure unchanged",
+   "passed": true,
+   "value": "identical",
+   "detail": "ground_plane and RP2_structure against RP2"
+  },
+  {
+   "check": "M10 reference exclusion",
+   "passed": true,
+   "value": {
+    "moving_non_static": 28,
+    "static_models": 2
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "6398e2ddefdd39df",
+   "detail": ""
+  }
+ ]
+}

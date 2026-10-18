@@ -1,0 +1,127 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 0.75
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.2,
+   "detail": "expected 1.2 \u00b1 0.05 m (minimum 1.2 m) at (-15.17, -13.12)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 1455.43,
+   "detail": "expected 1455.42 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 8,
+    "loops_unsized": 8
+   },
+   "detail": "loops_unsized expected 8"
+  },
+  {
+   "check": "F2 rooms: R rooms, clear sides \u2265 2.5 m, interiors free",
+   "passed": true,
+   "value": {
+    "rooms": 8,
+    "min_side_m": 7.8
+   },
+   "detail": ""
+  },
+  {
+   "check": "F2 doors: d\u00b7R openings of 1.2 m, \u2265 0.5 m from junctions, spacing on wall lines",
+   "passed": true,
+   "value": {
+    "openings": 16,
+    "widths_m": [
+     1.2
+    ],
+    "min_margin_m": 0.6,
+    "min_wall_between_m": 7.8
+   },
+   "detail": ""
+  },
+  {
+   "check": "F2 door graph connected with (d \u2212 1)\u00b7R cycles",
+   "passed": true,
+   "value": {
+    "components": 1,
+    "cycles": 8
+   },
+   "detail": ""
+  },
+  {
+   "check": "F2 corridors 2.0 m clear wall to wall except pilasters",
+   "passed": true,
+   "value": [
+    true,
+    true,
+    true
+   ],
+   "detail": ""
+  },
+  {
+   "check": "F2 wall boxes disjoint and on the 0.1 m grid",
+   "passed": true,
+   "value": {
+    "boxes": 36,
+    "overlap_m2": 0.0,
+    "on_grid": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F2 values inside the plan's planning ranges (outside: stop for review)",
+   "passed": true,
+   "value": {
+    "partition_length_m": 27.6,
+    "free_area_m2": 1455.43
+   },
+   "detail": "ranges ((27.6, 33.8), (1452.9, 1455.8))"
+  },
+  {
+   "check": "F2 partitions = R \u2212 2(k + 1)",
+   "passed": true,
+   "value": 2,
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "29a4e4c779a51836",
+   "detail": ""
+  }
+ ]
+}

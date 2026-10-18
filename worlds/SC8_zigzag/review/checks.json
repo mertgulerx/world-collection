@@ -1,0 +1,96 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.5,
+    "S2": 2.0,
+    "S3": 1.5
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 3.7,
+   "detail": "expected 3.7 \u00b1 0.05 m (minimum 1.0 m) at (5.38, -8.57)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 601.94,
+   "detail": "expected 601.94 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 0,
+    "loops_unsized": 0
+   },
+   "detail": "loops expected 0; loops_unsized expected 0"
+  },
+  {
+   "check": "SC8 pilaster layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "SC8 S2 is equally far from both ends (< 1.0 m apart)",
+   "passed": true,
+   "value": {
+    "S2-S1 m": 61.26,
+    "S2-S3 m": 61.33
+   },
+   "detail": ""
+  },
+  {
+   "check": "SC8 every leg is 4.0 m wide",
+   "passed": true,
+   "value": [
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0
+   ],
+   "detail": ""
+  },
+  {
+   "check": "SC8 cutting a leg splits the path in two",
+   "passed": true,
+   "value": 2,
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "32ce8f8e891cc62a",
+   "detail": ""
+  }
+ ]
+}

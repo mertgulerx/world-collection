@@ -1,0 +1,152 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 2.811
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 5.9841,
+   "detail": "expected 6.0 \u00b1 0.1 m (minimum 5.9 m) at (-21.43, -47.08)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 6112.15,
+   "detail": "expected 6112.17 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 16,
+    "loops_unsized": 16
+   },
+   "detail": "loops expected 16; loops_unsized expected 16"
+  },
+  {
+   "check": "F5 grid: n_b\u00b2 block slots; every street, the perimeter street included, w wide and clear",
+   "passed": true,
+   "value": {
+    "blocks_per_side": 4,
+    "streets_m": [
+     6.0
+    ],
+    "block_sides_m": [
+     17.5
+    ],
+    "no_primitive_in_streets": true,
+    "raster_clear": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F5 plazas: p removed blocks, one monument each, at least 3.0 m from the plaza edges",
+   "passed": true,
+   "value": {
+    "plazas": [
+     0,
+     10,
+     14
+    ],
+    "min_inset_m": 4.9465
+   },
+   "detail": ""
+  },
+  {
+   "check": "F5 recesses: 0\u20132 per face, \u2265 3.0 m from corners, \u2265 4.0 m apart; wall notches \u2265 3.0 m apart",
+   "passed": true,
+   "value": {
+    "facade_recesses": 49,
+    "per_face": {
+     "0": 19,
+     "1": 17,
+     "2": 16
+    },
+    "min_corner_m": 3.2,
+    "min_apart_m": 4.0,
+    "min_wall_gap_m": 3.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "F5 loops: the T0 count equals n_b\u00b2",
+   "passed": true,
+   "value": {
+    "loops": 16,
+    "loops_unsized": 16,
+    "n_b2": 16
+   },
+   "detail": ""
+  },
+  {
+   "check": "F5 heights: buildings 6.0 m, monuments 3.0 m, walls 3.0 m, all from z = 0",
+   "passed": true,
+   "value": {
+    "buildings": 114,
+    "monuments": 3,
+    "walls": 164
+   },
+   "detail": ""
+  },
+  {
+   "check": "F5 wall boxes disjoint and on the 0.1 m grid",
+   "passed": true,
+   "value": {
+    "boxes": 164,
+    "overlap_m2": 0.0,
+    "on_grid": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F5 building boxes disjoint and on the 0.0001 m construction grid",
+   "passed": true,
+   "value": {
+    "boxes": 114,
+    "overlapping_pairs": 0,
+    "on_grid": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F5 free area inside the plan's planning range (outside: stop for review)",
+   "passed": true,
+   "value": 6112.15,
+   "detail": "range (6085.0, 6140.0)"
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "b6b3c7be62760813",
+   "detail": ""
+  }
+ ]
+}

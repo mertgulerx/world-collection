@@ -1,0 +1,35 @@
+# Copyright 2026 Mert Güler
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+[project]
+name = "worldgen"
+version = "1.0.1"  # equal to worldgen.WORLDGEN_VERSION (worldgen/__init__.py)
+description = "Generator, checks and review images for the benchmark's world collection"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+authors = [{name = "Mert Güler"}]
+dependencies = ["numpy==2.2.6", "scipy==1.15.3", "matplotlib==3.10.3", "PyYAML==6.0.2"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+exclude = ["worldgen/blender_scene\\.py$"]
+
+[[tool.mypy.overrides]]
+module = ["scipy", "scipy.*"]
+ignore_missing_imports = true

@@ -1,0 +1,5239 @@
+{
+ "id": "F4-03",
+ "title": "Walled forest 80\u00d780 m, 0.03 trunks per m\u00b2",
+ "bounds": [
+  -40.6,
+  40.6,
+  -40.6,
+  40.6
+ ],
+ "floor_margin_m": 2.0,
+ "materials": {
+  "floor": [
+   0.86,
+   0.86,
+   0.84
+  ],
+  "boundary": [
+   0.62,
+   0.62,
+   0.62
+  ],
+  "inner": [
+   0.72,
+   0.66,
+   0.58
+  ],
+  "core": [
+   0.48,
+   0.48,
+   0.48
+  ],
+  "obstacle": [
+   0.4,
+   0.45,
+   0.52
+  ],
+  "landmark": [
+   0.2,
+   0.45,
+   0.8
+  ],
+  "furniture": [
+   0.55,
+   0.45,
+   0.35
+  ],
+  "moving": [
+   0.95,
+   0.55,
+   0.15
+  ]
+ },
+ "primitives": [
+  {
+   "name": "outer_e_00",
+   "kind": "box",
+   "x": 40.1,
+   "y": -37.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.8,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_01",
+   "kind": "box",
+   "x": 40.1,
+   "y": -17.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    33.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_02",
+   "kind": "box",
+   "x": 40.1,
+   "y": 1.45,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_03",
+   "kind": "box",
+   "x": 40.1,
+   "y": 7.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.6,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_04",
+   "kind": "box",
+   "x": 40.1,
+   "y": 13.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_05",
+   "kind": "box",
+   "x": 40.1,
+   "y": 17.45,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    3.5,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_06",
+   "kind": "box",
+   "x": 40.1,
+   "y": 22.8,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_07",
+   "kind": "box",
+   "x": 40.1,
+   "y": 29.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_e_08",
+   "kind": "box",
+   "x": 40.1,
+   "y": 36.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    7.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_00",
+   "kind": "box",
+   "x": -26.15,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    28.1,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_01",
+   "kind": "box",
+   "x": -7.45,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    7.3,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_02",
+   "kind": "box",
+   "x": -0.6,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    4.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_03",
+   "kind": "box",
+   "x": 3.6,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_04",
+   "kind": "box",
+   "x": 7.35,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    3.5,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_05",
+   "kind": "box",
+   "x": 12.15,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    4.1,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_06",
+   "kind": "box",
+   "x": 19.1,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    7.8,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_07",
+   "kind": "box",
+   "x": 26.25,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    4.5,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_n_08",
+   "kind": "box",
+   "x": 34.85,
+   "y": 40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    10.7,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_00",
+   "kind": "box",
+   "x": -35.8,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    8.8,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_01",
+   "kind": "box",
+   "x": -23.5,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    13.8,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_02",
+   "kind": "box",
+   "x": -12.95,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.3,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_03",
+   "kind": "box",
+   "x": -1.35,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    15.9,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_04",
+   "kind": "box",
+   "x": 11.85,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    8.5,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_05",
+   "kind": "box",
+   "x": 18.55,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    2.9,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_06",
+   "kind": "box",
+   "x": 25.1,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    8.2,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_07",
+   "kind": "box",
+   "x": 32.8,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.2,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_s_08",
+   "kind": "box",
+   "x": 38.3,
+   "y": -40.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    3.8,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_00",
+   "kind": "box",
+   "x": -40.1,
+   "y": -37.45,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.1,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_01",
+   "kind": "box",
+   "x": -40.1,
+   "y": -25.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    16.8,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_02",
+   "kind": "box",
+   "x": -40.1,
+   "y": -14.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_03",
+   "kind": "box",
+   "x": -40.1,
+   "y": -4.65,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    12.5,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_04",
+   "kind": "box",
+   "x": -40.1,
+   "y": 5.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_05",
+   "kind": "box",
+   "x": -40.1,
+   "y": 13.55,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    9.5,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_06",
+   "kind": "box",
+   "x": -40.1,
+   "y": 21.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    4.9,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_07",
+   "kind": "box",
+   "x": -40.1,
+   "y": 27.85,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    5.3,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "outer_w_08",
+   "kind": "box",
+   "x": -40.1,
+   "y": 35.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    8.5,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e1_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": -35.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e1_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": -34.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e1_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": -34.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e2_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": -0.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e2_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": 0.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e2_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": -0.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e3_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": 2.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e3_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": 3.8,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e3_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": 3.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e4_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": 11.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e4_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": 12.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e4_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": 11.8,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e5_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": 14.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e5_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": 15.8,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e5_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": 15.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e6_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": 19.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e6_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": 20.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e6_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": 19.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e7_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": 25.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e7_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": 26.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e7_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": 25.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e8_a",
+   "kind": "box",
+   "x": 40.4,
+   "y": 31.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e8_b",
+   "kind": "box",
+   "x": 40.4,
+   "y": 32.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_e8_back",
+   "kind": "box",
+   "x": 40.5,
+   "y": 32.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n1_a",
+   "kind": "box",
+   "x": -12.2,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n1_b",
+   "kind": "box",
+   "x": -11.0,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n1_back",
+   "kind": "box",
+   "x": -11.6,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n2_a",
+   "kind": "box",
+   "x": -3.9,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n2_b",
+   "kind": "box",
+   "x": -2.7,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n2_back",
+   "kind": "box",
+   "x": -3.3,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n3_a",
+   "kind": "box",
+   "x": 1.5,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n3_b",
+   "kind": "box",
+   "x": 2.7,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n3_back",
+   "kind": "box",
+   "x": 2.1,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n4_a",
+   "kind": "box",
+   "x": 4.5,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n4_b",
+   "kind": "box",
+   "x": 5.7,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n4_back",
+   "kind": "box",
+   "x": 5.1,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n5_a",
+   "kind": "box",
+   "x": 9.0,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n5_b",
+   "kind": "box",
+   "x": 10.2,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n5_back",
+   "kind": "box",
+   "x": 9.6,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n6_a",
+   "kind": "box",
+   "x": 14.1,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n6_b",
+   "kind": "box",
+   "x": 15.3,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n6_back",
+   "kind": "box",
+   "x": 14.7,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n7_a",
+   "kind": "box",
+   "x": 22.9,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n7_b",
+   "kind": "box",
+   "x": 24.1,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n7_back",
+   "kind": "box",
+   "x": 23.5,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n8_a",
+   "kind": "box",
+   "x": 28.4,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n8_b",
+   "kind": "box",
+   "x": 29.6,
+   "y": 40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_n8_back",
+   "kind": "box",
+   "x": 29.0,
+   "y": 40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s1_a",
+   "kind": "box",
+   "x": -31.5,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s1_b",
+   "kind": "box",
+   "x": -30.3,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s1_back",
+   "kind": "box",
+   "x": -30.9,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s2_a",
+   "kind": "box",
+   "x": -16.7,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s2_b",
+   "kind": "box",
+   "x": -15.5,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s2_back",
+   "kind": "box",
+   "x": -16.1,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s3_a",
+   "kind": "box",
+   "x": -10.4,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s3_b",
+   "kind": "box",
+   "x": -9.2,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s3_back",
+   "kind": "box",
+   "x": -9.8,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s4_a",
+   "kind": "box",
+   "x": 6.5,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s4_b",
+   "kind": "box",
+   "x": 7.7,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s4_back",
+   "kind": "box",
+   "x": 7.1,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s5_a",
+   "kind": "box",
+   "x": 16.0,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s5_b",
+   "kind": "box",
+   "x": 17.2,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s5_back",
+   "kind": "box",
+   "x": 16.6,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s6_a",
+   "kind": "box",
+   "x": 19.9,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s6_b",
+   "kind": "box",
+   "x": 21.1,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s6_back",
+   "kind": "box",
+   "x": 20.5,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s7_a",
+   "kind": "box",
+   "x": 29.1,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s7_b",
+   "kind": "box",
+   "x": 30.3,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s7_back",
+   "kind": "box",
+   "x": 29.7,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s8_a",
+   "kind": "box",
+   "x": 35.3,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s8_b",
+   "kind": "box",
+   "x": 36.5,
+   "y": -40.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_s8_back",
+   "kind": "box",
+   "x": 35.9,
+   "y": -40.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w1_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": -35.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w1_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": -33.8,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w1_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": -34.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w2_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": -17.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w2_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": -16.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w2_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": -16.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w3_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": -12.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w3_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": -10.8,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w3_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": -11.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w4_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": 1.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w4_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": 2.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w4_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": 2.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w5_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": 7.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w5_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": 8.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w5_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": 8.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w6_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": 18.2,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w6_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": 19.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w6_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": 18.8,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w7_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": 24.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w7_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": 25.3,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w7_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": 24.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w8_a",
+   "kind": "box",
+   "x": -40.4,
+   "y": 30.4,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w8_b",
+   "kind": "box",
+   "x": -40.4,
+   "y": 31.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_w8_back",
+   "kind": "box",
+   "x": -40.5,
+   "y": 31.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    3.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "trunk_0000",
+   "kind": "cylinder",
+   "x": 10.2049,
+   "y": -23.4395,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1593,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0001",
+   "kind": "cylinder",
+   "x": -35.9368,
+   "y": -4.2212,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2303,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0002",
+   "kind": "cylinder",
+   "x": 5.9963,
+   "y": -20.3101,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2506,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0003",
+   "kind": "cylinder",
+   "x": 25.8108,
+   "y": -24.8902,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2429,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0004",
+   "kind": "cylinder",
+   "x": 20.6089,
+   "y": 4.4072,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2171,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0005",
+   "kind": "cylinder",
+   "x": 16.3162,
+   "y": -18.021,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2902,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0006",
+   "kind": "cylinder",
+   "x": -15.3275,
+   "y": -4.8261,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3844,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0007",
+   "kind": "cylinder",
+   "x": 35.5106,
+   "y": 27.1101,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2412,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0008",
+   "kind": "cylinder",
+   "x": -22.3423,
+   "y": -5.4112,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3038,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0009",
+   "kind": "cylinder",
+   "x": 37.3336,
+   "y": 27.0462,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2649,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0010",
+   "kind": "cylinder",
+   "x": -0.0877,
+   "y": -16.6345,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1689,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0011",
+   "kind": "cylinder",
+   "x": -35.7368,
+   "y": 34.9037,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3409,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0012",
+   "kind": "cylinder",
+   "x": -3.8739,
+   "y": 12.002,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3693,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0013",
+   "kind": "cylinder",
+   "x": -30.3197,
+   "y": 15.8926,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2419,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0014",
+   "kind": "cylinder",
+   "x": -15.2645,
+   "y": -38.6836,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1805,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0015",
+   "kind": "cylinder",
+   "x": 28.1204,
+   "y": -16.6414,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2087,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0016",
+   "kind": "cylinder",
+   "x": -32.9063,
+   "y": 13.4657,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2784,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0017",
+   "kind": "cylinder",
+   "x": -33.4584,
+   "y": -19.6207,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1543,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0018",
+   "kind": "cylinder",
+   "x": -2.5665,
+   "y": -13.7429,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2892,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0019",
+   "kind": "cylinder",
+   "x": -35.659,
+   "y": -12.785,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1561,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0020",
+   "kind": "cylinder",
+   "x": -33.3834,
+   "y": -10.4088,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1518,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0021",
+   "kind": "cylinder",
+   "x": -13.8441,
+   "y": 31.2972,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3788,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0022",
+   "kind": "cylinder",
+   "x": -32.844,
+   "y": -27.3163,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2386,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0023",
+   "kind": "cylinder",
+   "x": 13.7357,
+   "y": 3.8519,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1993,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0024",
+   "kind": "cylinder",
+   "x": 38.405,
+   "y": 1.6379,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2889,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0025",
+   "kind": "cylinder",
+   "x": 30.1377,
+   "y": 11.0227,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2606,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0026",
+   "kind": "cylinder",
+   "x": 27.9251,
+   "y": 19.0734,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3831,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0027",
+   "kind": "cylinder",
+   "x": 30.2101,
+   "y": -12.2662,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3543,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0028",
+   "kind": "cylinder",
+   "x": -2.6492,
+   "y": 10.3845,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3478,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0029",
+   "kind": "cylinder",
+   "x": -9.5269,
+   "y": 15.6077,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3936,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0030",
+   "kind": "cylinder",
+   "x": 28.8399,
+   "y": -14.5867,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3367,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0031",
+   "kind": "cylinder",
+   "x": 12.6816,
+   "y": 24.6801,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1944,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0032",
+   "kind": "cylinder",
+   "x": 37.5466,
+   "y": -14.9659,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3568,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0033",
+   "kind": "cylinder",
+   "x": 27.4448,
+   "y": 8.5119,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1938,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0034",
+   "kind": "cylinder",
+   "x": 26.9108,
+   "y": 30.877,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2531,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0035",
+   "kind": "cylinder",
+   "x": -31.8941,
+   "y": 7.3559,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3531,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0036",
+   "kind": "cylinder",
+   "x": 5.5801,
+   "y": 24.4276,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3247,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0037",
+   "kind": "cylinder",
+   "x": 2.2747,
+   "y": -30.5297,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3996,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0038",
+   "kind": "cylinder",
+   "x": 2.4426,
+   "y": -11.7144,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1766,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0039",
+   "kind": "cylinder",
+   "x": 25.7059,
+   "y": -11.0465,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1981,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0040",
+   "kind": "cylinder",
+   "x": -27.583,
+   "y": 15.6519,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3897,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0041",
+   "kind": "cylinder",
+   "x": 31.4176,
+   "y": 3.1802,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2803,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0042",
+   "kind": "cylinder",
+   "x": -2.8459,
+   "y": -27.8884,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1806,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0043",
+   "kind": "cylinder",
+   "x": 16.7727,
+   "y": 17.1987,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3301,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0044",
+   "kind": "cylinder",
+   "x": -30.7646,
+   "y": -11.0793,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1709,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0045",
+   "kind": "cylinder",
+   "x": -21.2186,
+   "y": -19.6974,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2541,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0046",
+   "kind": "cylinder",
+   "x": 31.2574,
+   "y": 20.3713,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2899,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0047",
+   "kind": "cylinder",
+   "x": 15.8263,
+   "y": -23.7343,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.186,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0048",
+   "kind": "cylinder",
+   "x": -4.5754,
+   "y": 5.0275,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.218,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0049",
+   "kind": "cylinder",
+   "x": 13.6007,
+   "y": 21.4796,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1744,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0050",
+   "kind": "cylinder",
+   "x": -27.0875,
+   "y": -31.7967,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1596,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0051",
+   "kind": "cylinder",
+   "x": 12.8643,
+   "y": -12.244,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1653,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0052",
+   "kind": "cylinder",
+   "x": 17.4935,
+   "y": 2.8672,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3006,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0053",
+   "kind": "cylinder",
+   "x": 3.1609,
+   "y": -5.9726,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3156,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0054",
+   "kind": "cylinder",
+   "x": 22.2471,
+   "y": -33.5491,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.153,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0055",
+   "kind": "cylinder",
+   "x": -0.6182,
+   "y": 20.5956,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.258,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0056",
+   "kind": "cylinder",
+   "x": -18.595,
+   "y": -15.9798,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2576,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0057",
+   "kind": "cylinder",
+   "x": -25.4383,
+   "y": 35.5562,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2049,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0058",
+   "kind": "cylinder",
+   "x": 8.3271,
+   "y": 10.517,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.303,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0059",
+   "kind": "cylinder",
+   "x": 31.7203,
+   "y": -35.2509,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.317,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0060",
+   "kind": "cylinder",
+   "x": -31.8855,
+   "y": -16.3196,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3449,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0061",
+   "kind": "cylinder",
+   "x": -14.322,
+   "y": -13.565,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3702,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0062",
+   "kind": "cylinder",
+   "x": 10.4144,
+   "y": 16.059,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2104,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0063",
+   "kind": "cylinder",
+   "x": 26.203,
+   "y": -18.6095,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3947,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0064",
+   "kind": "cylinder",
+   "x": 0.2532,
+   "y": -25.4752,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3944,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0065",
+   "kind": "cylinder",
+   "x": -17.332,
+   "y": -33.4172,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3647,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0066",
+   "kind": "cylinder",
+   "x": -30.4576,
+   "y": -23.4244,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1787,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0067",
+   "kind": "cylinder",
+   "x": -6.496,
+   "y": -24.8493,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2449,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0068",
+   "kind": "cylinder",
+   "x": -12.446,
+   "y": 38.3728,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.355,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0069",
+   "kind": "cylinder",
+   "x": 37.7799,
+   "y": 12.0184,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2692,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0070",
+   "kind": "cylinder",
+   "x": 21.9013,
+   "y": 8.0252,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3979,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0071",
+   "kind": "cylinder",
+   "x": -18.4556,
+   "y": 20.8767,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2096,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0072",
+   "kind": "cylinder",
+   "x": -9.4151,
+   "y": -13.3286,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3054,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0073",
+   "kind": "cylinder",
+   "x": -1.7488,
+   "y": -25.3625,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1684,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0074",
+   "kind": "cylinder",
+   "x": -12.8469,
+   "y": -4.1519,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1733,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0075",
+   "kind": "cylinder",
+   "x": -23.6364,
+   "y": 11.8025,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1695,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0076",
+   "kind": "cylinder",
+   "x": -1.8549,
+   "y": 33.1783,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2205,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0077",
+   "kind": "cylinder",
+   "x": -33.9234,
+   "y": 8.194,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2652,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0078",
+   "kind": "cylinder",
+   "x": 30.2343,
+   "y": 25.9403,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1666,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0079",
+   "kind": "cylinder",
+   "x": 25.4306,
+   "y": 3.7021,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1668,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0080",
+   "kind": "cylinder",
+   "x": 29.5559,
+   "y": -36.2993,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3546,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0081",
+   "kind": "cylinder",
+   "x": 7.0231,
+   "y": -38.4895,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2628,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0082",
+   "kind": "cylinder",
+   "x": -3.436,
+   "y": -1.1411,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3943,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0083",
+   "kind": "cylinder",
+   "x": 27.6046,
+   "y": -6.7384,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3204,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0084",
+   "kind": "cylinder",
+   "x": -7.3454,
+   "y": -2.5345,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1825,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0085",
+   "kind": "cylinder",
+   "x": -34.5685,
+   "y": 29.7385,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2924,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0086",
+   "kind": "cylinder",
+   "x": -6.2666,
+   "y": 30.9341,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2775,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0087",
+   "kind": "cylinder",
+   "x": 38.3438,
+   "y": 3.4591,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1646,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0088",
+   "kind": "cylinder",
+   "x": 4.6066,
+   "y": 5.523,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3105,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0089",
+   "kind": "cylinder",
+   "x": -26.599,
+   "y": -10.8883,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3705,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0090",
+   "kind": "cylinder",
+   "x": 25.8885,
+   "y": 25.4321,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3943,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0091",
+   "kind": "cylinder",
+   "x": 7.6234,
+   "y": -33.3822,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3202,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0092",
+   "kind": "cylinder",
+   "x": -6.158,
+   "y": 33.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2506,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0093",
+   "kind": "cylinder",
+   "x": -6.7915,
+   "y": 11.5803,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2661,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0094",
+   "kind": "cylinder",
+   "x": 33.2189,
+   "y": -28.31,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3505,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0095",
+   "kind": "cylinder",
+   "x": -1.8223,
+   "y": -11.5928,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3502,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0096",
+   "kind": "cylinder",
+   "x": -33.1247,
+   "y": 3.2363,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3053,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0097",
+   "kind": "cylinder",
+   "x": -2.0806,
+   "y": -36.1995,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1918,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0098",
+   "kind": "cylinder",
+   "x": -27.9953,
+   "y": 11.8782,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2791,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0099",
+   "kind": "cylinder",
+   "x": 13.1956,
+   "y": 8.9506,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3516,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0100",
+   "kind": "cylinder",
+   "x": -2.7139,
+   "y": 15.6447,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2549,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0101",
+   "kind": "cylinder",
+   "x": -11.6635,
+   "y": -20.3288,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3935,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0102",
+   "kind": "cylinder",
+   "x": 10.7072,
+   "y": -20.8953,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1709,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0103",
+   "kind": "cylinder",
+   "x": -29.4478,
+   "y": -21.8753,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2646,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0104",
+   "kind": "cylinder",
+   "x": -8.0505,
+   "y": -28.451,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.163,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0105",
+   "kind": "cylinder",
+   "x": -1.9087,
+   "y": -7.6785,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.25,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0106",
+   "kind": "cylinder",
+   "x": 34.6268,
+   "y": 22.2035,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2601,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0107",
+   "kind": "cylinder",
+   "x": 18.5592,
+   "y": 1.2139,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.31,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0108",
+   "kind": "cylinder",
+   "x": -34.3026,
+   "y": 38.5044,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2413,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0109",
+   "kind": "cylinder",
+   "x": 33.2297,
+   "y": -19.6846,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3351,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0110",
+   "kind": "cylinder",
+   "x": -24.8007,
+   "y": -6.6845,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3665,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0111",
+   "kind": "cylinder",
+   "x": 0.6785,
+   "y": 19.1708,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2343,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0112",
+   "kind": "cylinder",
+   "x": 36.0821,
+   "y": 6.7899,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2319,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0113",
+   "kind": "cylinder",
+   "x": 35.8595,
+   "y": -29.387,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2772,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0114",
+   "kind": "cylinder",
+   "x": 19.3873,
+   "y": -20.6709,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2266,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0115",
+   "kind": "cylinder",
+   "x": -25.591,
+   "y": -28.78,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3619,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0116",
+   "kind": "cylinder",
+   "x": -33.1615,
+   "y": -8.2327,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2721,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0117",
+   "kind": "cylinder",
+   "x": -28.0594,
+   "y": -28.0691,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2207,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0118",
+   "kind": "cylinder",
+   "x": -19.0823,
+   "y": -29.2157,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1748,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0119",
+   "kind": "cylinder",
+   "x": 9.6761,
+   "y": -22.0319,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2366,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0120",
+   "kind": "cylinder",
+   "x": -21.0371,
+   "y": -12.7209,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3619,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0121",
+   "kind": "cylinder",
+   "x": 8.9606,
+   "y": -6.6764,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3549,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0122",
+   "kind": "cylinder",
+   "x": 4.0833,
+   "y": -34.8714,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3945,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0123",
+   "kind": "cylinder",
+   "x": 12.1987,
+   "y": -29.7435,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1859,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0124",
+   "kind": "cylinder",
+   "x": -33.1518,
+   "y": 31.4716,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2956,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0125",
+   "kind": "cylinder",
+   "x": 16.8929,
+   "y": 37.4397,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3284,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0126",
+   "kind": "cylinder",
+   "x": 22.1181,
+   "y": -4.1183,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3366,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0127",
+   "kind": "cylinder",
+   "x": -31.8896,
+   "y": 19.7062,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3934,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0128",
+   "kind": "cylinder",
+   "x": 25.304,
+   "y": -3.8947,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2301,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0129",
+   "kind": "cylinder",
+   "x": 38.3068,
+   "y": 8.0666,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3932,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0130",
+   "kind": "cylinder",
+   "x": 5.5272,
+   "y": 30.222,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2577,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0131",
+   "kind": "cylinder",
+   "x": 34.2922,
+   "y": 16.8124,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3679,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0132",
+   "kind": "cylinder",
+   "x": 31.4587,
+   "y": -19.7007,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3348,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0133",
+   "kind": "cylinder",
+   "x": 15.2456,
+   "y": -32.0649,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2387,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0134",
+   "kind": "cylinder",
+   "x": 22.8829,
+   "y": -20.939,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2119,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0135",
+   "kind": "cylinder",
+   "x": 14.2963,
+   "y": 32.7624,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2235,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0136",
+   "kind": "cylinder",
+   "x": -38.5816,
+   "y": 3.6758,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2564,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0137",
+   "kind": "cylinder",
+   "x": -23.7393,
+   "y": -26.3219,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.284,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0138",
+   "kind": "cylinder",
+   "x": 9.4028,
+   "y": 12.7411,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2094,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0139",
+   "kind": "cylinder",
+   "x": -7.055,
+   "y": 35.0878,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2644,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0140",
+   "kind": "cylinder",
+   "x": -19.4889,
+   "y": 16.6728,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3023,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0141",
+   "kind": "cylinder",
+   "x": -23.1845,
+   "y": 2.2001,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1765,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0142",
+   "kind": "cylinder",
+   "x": -12.195,
+   "y": -31.4393,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1971,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0143",
+   "kind": "cylinder",
+   "x": -18.2792,
+   "y": 4.6865,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3312,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0144",
+   "kind": "cylinder",
+   "x": -0.205,
+   "y": 18.009,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1554,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0145",
+   "kind": "cylinder",
+   "x": 36.335,
+   "y": 32.4919,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3489,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0146",
+   "kind": "cylinder",
+   "x": 14.5085,
+   "y": 10.8887,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3695,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0147",
+   "kind": "cylinder",
+   "x": -36.6801,
+   "y": -11.4155,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3298,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0148",
+   "kind": "cylinder",
+   "x": 1.577,
+   "y": 7.0106,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2828,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0149",
+   "kind": "cylinder",
+   "x": 14.1773,
+   "y": -1.8406,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2288,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0150",
+   "kind": "cylinder",
+   "x": 23.0157,
+   "y": 21.6304,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2668,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0151",
+   "kind": "cylinder",
+   "x": -36.3251,
+   "y": 17.3265,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2732,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0152",
+   "kind": "cylinder",
+   "x": 21.8929,
+   "y": 22.7043,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2098,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0153",
+   "kind": "cylinder",
+   "x": -9.4689,
+   "y": 23.9586,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3576,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0154",
+   "kind": "cylinder",
+   "x": 12.9564,
+   "y": 22.9328,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3981,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0155",
+   "kind": "cylinder",
+   "x": -8.4303,
+   "y": -0.5813,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2125,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0156",
+   "kind": "cylinder",
+   "x": 6.2389,
+   "y": 0.4726,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2933,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0157",
+   "kind": "cylinder",
+   "x": 33.8968,
+   "y": 28.2988,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2608,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0158",
+   "kind": "cylinder",
+   "x": -2.3644,
+   "y": -18.2372,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.3509,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0159",
+   "kind": "cylinder",
+   "x": -8.4355,
+   "y": 16.7841,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.205,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0160",
+   "kind": "cylinder",
+   "x": -15.8273,
+   "y": -28.9588,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.387,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0161",
+   "kind": "cylinder",
+   "x": 14.8884,
+   "y": 28.3605,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2009,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "trunk_0162",
+   "kind": "cylinder",
+   "x": -4.8032,
+   "y": 21.6732,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.1855,
+    4.0
+   ],
+   "role": "obstacle",
+   "material": "obstacle"
+  },
+  {
+   "name": "boulder_00",
+   "kind": "box",
+   "x": 28.3282,
+   "y": -23.8019,
+   "z_min": 0.0,
+   "yaw": 1.301494,
+   "size": [
+    2.3,
+    1.7,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_01",
+   "kind": "box",
+   "x": -5.6276,
+   "y": -6.6163,
+   "z_min": 0.0,
+   "yaw": 0.331906,
+   "size": [
+    2.8,
+    1.4,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_02",
+   "kind": "box",
+   "x": -28.0248,
+   "y": -19.118,
+   "z_min": 0.0,
+   "yaw": 0.9806,
+   "size": [
+    3.0,
+    1.4,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_03",
+   "kind": "box",
+   "x": 9.8519,
+   "y": 0.2094,
+   "z_min": 0.0,
+   "yaw": 0.004182,
+   "size": [
+    2.4,
+    1.1,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_04",
+   "kind": "box",
+   "x": 5.2399,
+   "y": 8.2898,
+   "z_min": 0.0,
+   "yaw": 1.807567,
+   "size": [
+    2.0,
+    1.9,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_05",
+   "kind": "box",
+   "x": 7.6899,
+   "y": 31.7792,
+   "z_min": 0.0,
+   "yaw": 1.541366,
+   "size": [
+    2.1,
+    1.6,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_06",
+   "kind": "box",
+   "x": 24.5644,
+   "y": 34.1235,
+   "z_min": 0.0,
+   "yaw": 1.250554,
+   "size": [
+    2.2,
+    1.5,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_07",
+   "kind": "box",
+   "x": 22.9564,
+   "y": -0.7833,
+   "z_min": 0.0,
+   "yaw": 2.31378,
+   "size": [
+    2.1,
+    2.0,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_08",
+   "kind": "box",
+   "x": -36.0129,
+   "y": 13.0272,
+   "z_min": 0.0,
+   "yaw": 2.051136,
+   "size": [
+    2.7,
+    1.7,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_09",
+   "kind": "box",
+   "x": -27.4056,
+   "y": 1.1977,
+   "z_min": 0.0,
+   "yaw": 2.683712,
+   "size": [
+    2.5,
+    1.4,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_10",
+   "kind": "box",
+   "x": -12.3508,
+   "y": 19.4669,
+   "z_min": 0.0,
+   "yaw": 2.470966,
+   "size": [
+    2.4,
+    1.5,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_11",
+   "kind": "box",
+   "x": -37.0883,
+   "y": 26.1875,
+   "z_min": 0.0,
+   "yaw": 0.816461,
+   "size": [
+    3.0,
+    1.7,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_12",
+   "kind": "box",
+   "x": -23.6773,
+   "y": 15.7974,
+   "z_min": 0.0,
+   "yaw": 2.900739,
+   "size": [
+    2.9,
+    1.3,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_13",
+   "kind": "box",
+   "x": 6.2429,
+   "y": 36.1505,
+   "z_min": 0.0,
+   "yaw": 0.954634,
+   "size": [
+    2.8,
+    1.1,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_14",
+   "kind": "box",
+   "x": 31.8633,
+   "y": -1.2638,
+   "z_min": 0.0,
+   "yaw": 1.263282,
+   "size": [
+    2.4,
+    1.8,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  },
+  {
+   "name": "boulder_15",
+   "kind": "box",
+   "x": 30.0868,
+   "y": 33.061,
+   "z_min": 0.0,
+   "yaw": 2.898851,
+   "size": [
+    2.7,
+    1.3,
+    1.5
+   ],
+   "role": "landmark",
+   "material": "landmark"
+  }
+ ],
+ "spawns": [
+  {
+   "id": "S1",
+   "x": -25.975,
+   "y": -25.125,
+   "yaw": 0.0
+  }
+ ],
+ "notches": [
+  {
+   "id": "E1",
+   "polygon": [
+    [
+     40.0,
+     -35.2
+    ],
+    [
+     40.4,
+     -35.2
+    ],
+    [
+     40.4,
+     -34.2
+    ],
+    [
+     40.0,
+     -34.2
+    ]
+   ]
+  },
+  {
+   "id": "E2",
+   "polygon": [
+    [
+     40.0,
+     -0.8
+    ],
+    [
+     40.4,
+     -0.8
+    ],
+    [
+     40.4,
+     0.2
+    ],
+    [
+     40.0,
+     0.2
+    ]
+   ]
+  },
+  {
+   "id": "E3",
+   "polygon": [
+    [
+     40.0,
+     2.7
+    ],
+    [
+     40.4,
+     2.7
+    ],
+    [
+     40.4,
+     3.7
+    ],
+    [
+     40.0,
+     3.7
+    ]
+   ]
+  },
+  {
+   "id": "E4",
+   "polygon": [
+    [
+     40.0,
+     11.3
+    ],
+    [
+     40.4,
+     11.3
+    ],
+    [
+     40.4,
+     12.3
+    ],
+    [
+     40.0,
+     12.3
+    ]
+   ]
+  },
+  {
+   "id": "E5",
+   "polygon": [
+    [
+     40.0,
+     14.7
+    ],
+    [
+     40.4,
+     14.7
+    ],
+    [
+     40.4,
+     15.7
+    ],
+    [
+     40.0,
+     15.7
+    ]
+   ]
+  },
+  {
+   "id": "E6",
+   "polygon": [
+    [
+     40.0,
+     19.2
+    ],
+    [
+     40.4,
+     19.2
+    ],
+    [
+     40.4,
+     20.2
+    ],
+    [
+     40.0,
+     20.2
+    ]
+   ]
+  },
+  {
+   "id": "E7",
+   "polygon": [
+    [
+     40.0,
+     25.4
+    ],
+    [
+     40.4,
+     25.4
+    ],
+    [
+     40.4,
+     26.4
+    ],
+    [
+     40.0,
+     26.4
+    ]
+   ]
+  },
+  {
+   "id": "E8",
+   "polygon": [
+    [
+     40.0,
+     31.6
+    ],
+    [
+     40.4,
+     31.6
+    ],
+    [
+     40.4,
+     32.6
+    ],
+    [
+     40.0,
+     32.6
+    ]
+   ]
+  },
+  {
+   "id": "N1",
+   "polygon": [
+    [
+     -12.1,
+     40.0
+    ],
+    [
+     -11.1,
+     40.0
+    ],
+    [
+     -11.1,
+     40.4
+    ],
+    [
+     -12.1,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "N2",
+   "polygon": [
+    [
+     -3.8,
+     40.0
+    ],
+    [
+     -2.8,
+     40.0
+    ],
+    [
+     -2.8,
+     40.4
+    ],
+    [
+     -3.8,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "N3",
+   "polygon": [
+    [
+     1.6,
+     40.0
+    ],
+    [
+     2.6,
+     40.0
+    ],
+    [
+     2.6,
+     40.4
+    ],
+    [
+     1.6,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "N4",
+   "polygon": [
+    [
+     4.6,
+     40.0
+    ],
+    [
+     5.6,
+     40.0
+    ],
+    [
+     5.6,
+     40.4
+    ],
+    [
+     4.6,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "N5",
+   "polygon": [
+    [
+     9.1,
+     40.0
+    ],
+    [
+     10.1,
+     40.0
+    ],
+    [
+     10.1,
+     40.4
+    ],
+    [
+     9.1,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "N6",
+   "polygon": [
+    [
+     14.2,
+     40.0
+    ],
+    [
+     15.2,
+     40.0
+    ],
+    [
+     15.2,
+     40.4
+    ],
+    [
+     14.2,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "N7",
+   "polygon": [
+    [
+     23.0,
+     40.0
+    ],
+    [
+     24.0,
+     40.0
+    ],
+    [
+     24.0,
+     40.4
+    ],
+    [
+     23.0,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "N8",
+   "polygon": [
+    [
+     28.5,
+     40.0
+    ],
+    [
+     29.5,
+     40.0
+    ],
+    [
+     29.5,
+     40.4
+    ],
+    [
+     28.5,
+     40.4
+    ]
+   ]
+  },
+  {
+   "id": "S1",
+   "polygon": [
+    [
+     -31.4,
+     -40.4
+    ],
+    [
+     -30.4,
+     -40.4
+    ],
+    [
+     -30.4,
+     -40.0
+    ],
+    [
+     -31.4,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "polygon": [
+    [
+     -16.6,
+     -40.4
+    ],
+    [
+     -15.6,
+     -40.4
+    ],
+    [
+     -15.6,
+     -40.0
+    ],
+    [
+     -16.6,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "polygon": [
+    [
+     -10.3,
+     -40.4
+    ],
+    [
+     -9.3,
+     -40.4
+    ],
+    [
+     -9.3,
+     -40.0
+    ],
+    [
+     -10.3,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "polygon": [
+    [
+     6.6,
+     -40.4
+    ],
+    [
+     7.6,
+     -40.4
+    ],
+    [
+     7.6,
+     -40.0
+    ],
+    [
+     6.6,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "S5",
+   "polygon": [
+    [
+     16.1,
+     -40.4
+    ],
+    [
+     17.1,
+     -40.4
+    ],
+    [
+     17.1,
+     -40.0
+    ],
+    [
+     16.1,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "polygon": [
+    [
+     20.0,
+     -40.4
+    ],
+    [
+     21.0,
+     -40.4
+    ],
+    [
+     21.0,
+     -40.0
+    ],
+    [
+     20.0,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "S7",
+   "polygon": [
+    [
+     29.2,
+     -40.4
+    ],
+    [
+     30.2,
+     -40.4
+    ],
+    [
+     30.2,
+     -40.0
+    ],
+    [
+     29.2,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "S8",
+   "polygon": [
+    [
+     35.4,
+     -40.4
+    ],
+    [
+     36.4,
+     -40.4
+    ],
+    [
+     36.4,
+     -40.0
+    ],
+    [
+     35.4,
+     -40.0
+    ]
+   ]
+  },
+  {
+   "id": "W1",
+   "polygon": [
+    [
+     -40.4,
+     -34.9
+    ],
+    [
+     -40.0,
+     -34.9
+    ],
+    [
+     -40.0,
+     -33.9
+    ],
+    [
+     -40.4,
+     -33.9
+    ]
+   ]
+  },
+  {
+   "id": "W2",
+   "polygon": [
+    [
+     -40.4,
+     -17.1
+    ],
+    [
+     -40.0,
+     -17.1
+    ],
+    [
+     -40.0,
+     -16.1
+    ],
+    [
+     -40.4,
+     -16.1
+    ]
+   ]
+  },
+  {
+   "id": "W3",
+   "polygon": [
+    [
+     -40.4,
+     -11.9
+    ],
+    [
+     -40.0,
+     -11.9
+    ],
+    [
+     -40.0,
+     -10.9
+    ],
+    [
+     -40.4,
+     -10.9
+    ]
+   ]
+  },
+  {
+   "id": "W4",
+   "polygon": [
+    [
+     -40.4,
+     1.6
+    ],
+    [
+     -40.0,
+     1.6
+    ],
+    [
+     -40.0,
+     2.6
+    ],
+    [
+     -40.4,
+     2.6
+    ]
+   ]
+  },
+  {
+   "id": "W5",
+   "polygon": [
+    [
+     -40.4,
+     7.8
+    ],
+    [
+     -40.0,
+     7.8
+    ],
+    [
+     -40.0,
+     8.8
+    ],
+    [
+     -40.4,
+     8.8
+    ]
+   ]
+  },
+  {
+   "id": "W6",
+   "polygon": [
+    [
+     -40.4,
+     18.3
+    ],
+    [
+     -40.0,
+     18.3
+    ],
+    [
+     -40.0,
+     19.3
+    ],
+    [
+     -40.4,
+     19.3
+    ]
+   ]
+  },
+  {
+   "id": "W7",
+   "polygon": [
+    [
+     -40.4,
+     24.2
+    ],
+    [
+     -40.0,
+     24.2
+    ],
+    [
+     -40.0,
+     25.2
+    ],
+    [
+     -40.4,
+     25.2
+    ]
+   ]
+  },
+  {
+   "id": "W8",
+   "polygon": [
+    [
+     -40.4,
+     30.5
+    ],
+    [
+     -40.0,
+     30.5
+    ],
+    [
+     -40.0,
+     31.5
+    ],
+    [
+     -40.4,
+     31.5
+    ]
+   ]
+  }
+ ]
+}

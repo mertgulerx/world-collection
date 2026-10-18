@@ -1,0 +1,16 @@
+family: F5
+plan: docs/plans/worlds/C6-walled-urban-blocks.md
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+seed_sequences: {evaluation: '600000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 650000 + 1000·j + i}
+rejected_total: 0
+instances:
+- id: F5-01
+  folder: F5_urban_w06_b15
+  parameters: {block_side_m: 17.5, blocks_per_side: 4, building_height_m: 6.0, nominal_block_m: 15.0, plazas: 3, street_width_m: 6.0,
+    wall_height_m: 3.0}
+  seed: 601000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: b6b3c7be627608133886b18750c4c6f0a48d1d65e66395cab2fd8a2425fafbfe

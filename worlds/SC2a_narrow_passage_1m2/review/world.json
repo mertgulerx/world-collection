@@ -1,0 +1,662 @@
+{
+ "id": "SC2a",
+ "title": "Narrow passage, 1.2 m corridor",
+ "bounds": [
+  -18.6,
+  18.6,
+  -8.1,
+  8.1
+ ],
+ "floor_margin_m": 2.0,
+ "materials": {
+  "floor": [
+   0.86,
+   0.86,
+   0.84
+  ],
+  "boundary": [
+   0.62,
+   0.62,
+   0.62
+  ],
+  "inner": [
+   0.72,
+   0.66,
+   0.58
+  ],
+  "core": [
+   0.48,
+   0.48,
+   0.48
+  ],
+  "obstacle": [
+   0.4,
+   0.45,
+   0.52
+  ],
+  "landmark": [
+   0.2,
+   0.45,
+   0.8
+  ],
+  "furniture": [
+   0.55,
+   0.45,
+   0.35
+  ],
+  "moving": [
+   0.95,
+   0.55,
+   0.15
+  ]
+ },
+ "primitives": [
+  {
+   "name": "corridor_n_00",
+   "kind": "box",
+   "x": 0.0,
+   "y": 0.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.6,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "corridor_s_00",
+   "kind": "box",
+   "x": 0.0,
+   "y": -0.7,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    5.6,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_e_00",
+   "kind": "box",
+   "x": 18.1,
+   "y": -6.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    2.5,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_e_01",
+   "kind": "box",
+   "x": 18.1,
+   "y": 1.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    11.5,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_lower_w_00",
+   "kind": "box",
+   "x": 2.9,
+   "y": -4.05,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    6.9,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_n_00",
+   "kind": "box",
+   "x": 5.15,
+   "y": 7.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    4.7,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_n_01",
+   "kind": "box",
+   "x": 13.35,
+   "y": 7.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    9.7,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_s_00",
+   "kind": "box",
+   "x": 8.15,
+   "y": -7.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    10.7,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_s_01",
+   "kind": "box",
+   "x": 16.35,
+   "y": -7.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    3.7,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "e_hall_upper_w_00",
+   "kind": "box",
+   "x": 2.9,
+   "y": 4.05,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    6.9,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l1_a",
+   "kind": "box",
+   "x": -13.6,
+   "y": -7.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l1_b",
+   "kind": "box",
+   "x": -12.4,
+   "y": -7.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l1_back",
+   "kind": "box",
+   "x": -13.0,
+   "y": -8.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l2_a",
+   "kind": "box",
+   "x": -18.4,
+   "y": 2.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l2_b",
+   "kind": "box",
+   "x": -18.4,
+   "y": 4.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l2_back",
+   "kind": "box",
+   "x": -18.5,
+   "y": 3.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l3_a",
+   "kind": "box",
+   "x": 7.4,
+   "y": 7.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l3_b",
+   "kind": "box",
+   "x": 8.6,
+   "y": 7.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l3_back",
+   "kind": "box",
+   "x": 8.0,
+   "y": 8.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l4_a",
+   "kind": "box",
+   "x": 18.4,
+   "y": -5.1,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l4_b",
+   "kind": "box",
+   "x": 18.4,
+   "y": -3.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l4_back",
+   "kind": "box",
+   "x": 18.5,
+   "y": -4.5,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    1.0,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l5_a",
+   "kind": "box",
+   "x": 13.4,
+   "y": -7.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l5_b",
+   "kind": "box",
+   "x": 14.6,
+   "y": -7.9,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    0.4,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "recess_l5_back",
+   "kind": "box",
+   "x": 14.0,
+   "y": -8.0,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    1.0,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "w_hall_lower_e_00",
+   "kind": "box",
+   "x": -2.9,
+   "y": -4.05,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    6.9,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "w_hall_n_00",
+   "kind": "box",
+   "x": -10.5,
+   "y": 7.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    15.4,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "w_hall_s_00",
+   "kind": "box",
+   "x": -15.85,
+   "y": -7.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    4.7,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "w_hall_s_01",
+   "kind": "box",
+   "x": -7.65,
+   "y": -7.6,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    9.7,
+    0.2,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "w_hall_upper_e_00",
+   "kind": "box",
+   "x": -2.9,
+   "y": 4.05,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    6.9,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "w_hall_w_00",
+   "kind": "box",
+   "x": -18.1,
+   "y": -2.25,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    10.5,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  },
+  {
+   "name": "w_hall_w_01",
+   "kind": "box",
+   "x": -18.1,
+   "y": 5.75,
+   "z_min": 0.0,
+   "yaw": 0.0,
+   "size": [
+    0.2,
+    3.5,
+    2.0
+   ],
+   "role": "boundary wall",
+   "material": "boundary"
+  }
+ ],
+ "spawns": [
+  {
+   "id": "S1",
+   "x": -10.5,
+   "y": 0.0,
+   "yaw": 0.0
+  },
+  {
+   "id": "S2",
+   "x": -15.5,
+   "y": -5.0,
+   "yaw": 1.570796
+  },
+  {
+   "id": "S3",
+   "x": 11.0,
+   "y": 4.0,
+   "yaw": 3.141593
+  }
+ ],
+ "notches": [
+  {
+   "id": "L1",
+   "polygon": [
+    [
+     -13.5,
+     -7.9
+    ],
+    [
+     -12.5,
+     -7.9
+    ],
+    [
+     -12.5,
+     -7.5
+    ],
+    [
+     -13.5,
+     -7.5
+    ]
+   ]
+  },
+  {
+   "id": "L2",
+   "polygon": [
+    [
+     -18.4,
+     3.0
+    ],
+    [
+     -18.0,
+     3.0
+    ],
+    [
+     -18.0,
+     4.0
+    ],
+    [
+     -18.4,
+     4.0
+    ]
+   ]
+  },
+  {
+   "id": "L3",
+   "polygon": [
+    [
+     7.5,
+     7.5
+    ],
+    [
+     8.5,
+     7.5
+    ],
+    [
+     8.5,
+     7.9
+    ],
+    [
+     7.5,
+     7.9
+    ]
+   ]
+  },
+  {
+   "id": "L4",
+   "polygon": [
+    [
+     18.0,
+     -5.0
+    ],
+    [
+     18.4,
+     -5.0
+    ],
+    [
+     18.4,
+     -4.0
+    ],
+    [
+     18.0,
+     -4.0
+    ]
+   ]
+  },
+  {
+   "id": "L5",
+   "polygon": [
+    [
+     13.5,
+     -7.9
+    ],
+    [
+     14.5,
+     -7.9
+    ],
+    [
+     14.5,
+     -7.5
+    ],
+    [
+     13.5,
+     -7.5
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.5,
+    "S2": 1.5,
+    "S3": 2.5
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.2,
+   "detail": "expected 1.2 \u00b1 0.05 m (minimum 1.0 m) at (-11.82, -1.67)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 329.8,
+   "detail": "expected 329.8 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 0,
+    "loops_unsized": 0
+   },
+   "detail": "loops expected 0; loops_unsized expected 0"
+  },
+  {
+   "check": "MO1-1 passing gap",
+   "passed": true,
+   "value": 2.1257,
+   "detail": "min free width beside a lane object >= 1.0 m; lane types {'a': ['cyl_s', 'box', 'cart'], 'b': ['cyl_s', 'box', 'cart']}; failing: none"
+  },
+  {
+   "check": "MO1-2 door use",
+   "passed": true,
+   "value": {
+    "D10": [
+     "mo_01"
+    ]
+   },
+   "detail": "each door at most one room_visit path; only cyl_s crosses doors"
+  },
+  {
+   "check": "MO1-3 room blockage",
+   "passed": true,
+   "value": 2.1,
+   "detail": "longest cut-off per room (s): {'R01': 0.0, 'R02': 0.7, 'R03': 0.0, 'R04': 0.8, 'R05': 0.0, 'R06': 0.0, 'R07': 0.9, 'R08': 0.0, 'R09': 0.0, 'R10': 2.1}; limit 10.0 s"
+  },
+  {
+   "check": "MO1-4 lane length",
+   "passed": true,
+   "value": {
+    "mo_00": 9.179,
+    "mo_02": 6.5093,
+    "mo_04": 8.8122
+   },
+   "detail": ">= 3.0 m"
+  },
+  {
+   "check": "MO1-5 nesting",
+   "passed": true,
+   "value": {
+    "objects": 5,
+    "high": 5
+   },
+   "detail": "objects equal the first n of the high density, value for value"
+  },
+  {
+   "check": "M1 static clearance",
+   "passed": true,
+   "value": 0.07573593128807157,
+   "detail": "min over path points of clearance - r - 0.1 m"
+  },
+  {
+   "check": "M2 spawn exclusion at t = 0",
+   "passed": true,
+   "value": 2.4274930831630317,
+   "detail": ">= 2.0 m"
+  },
+  {
+   "check": "M3 spawn clearance at all times",
+   "passed": true,
+   "value": 1.000086880980678,
+   "detail": ">= 1.0 m over 7800 s"
+  },
+  {
+   "check": "M4 object separation",
+   "passed": true,
+   "value": 0.9182264072337957,
+   "detail": "min footprint distance - 0.1 m"
+  },
+  {
+   "check": "M5 doorway dwell",
+   "passed": true,
+   "value": 6.6000000000000005,
+   "detail": "<= 12.0 s; dwell waypoints in doorways: none"
+  },
+  {
+   "check": "M6 route blockage",
+   "passed": true,
+   "value": 3.5,
+   "detail": "<= 10.0 s"
+  },
+  {
+   "check": "M7 count",
+   "passed": true,
+   "value": 5,
+   "detail": "round_half_up(329.80 / 60) = 5; recorded A 329.80000000000007"
+  },
+  {
+   "check": "M8 consistency",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "M9 static structure unchanged",
+   "passed": true,
+   "value": "identical",
+   "detail": "ground_plane and SC4_structure against SC4"
+  },
+  {
+   "check": "M10 reference exclusion",
+   "passed": true,
+   "value": {
+    "moving_non_static": 5,
+    "static_models": 2
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "81959da08fb06e57",
+   "detail": ""
+  }
+ ]
+}

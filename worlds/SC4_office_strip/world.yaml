@@ -1,0 +1,180 @@
+id: SC4
+slug: office_strip
+title: Office strip
+tier: SC
+role: evaluation
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/B4-office-strip.md
+parameters: {}
+seed: null
+selection: null
+expected: {free_area_m2: 329.8, free_area_tolerance: 0.02, narrowest_passage_m: 1.2, minimum_passage_m: 1.0, loops: 0, loops_unsized: 0}
+measured: {free_area_m2: 329.8, narrowest_passage_m: 1.2, loops: 0, loops_unsized: 0}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 329.8
+  clearance_m: {median: 0.75, p10: 0.15, p90: 1.6}
+  clearance_max_m: 2.5
+  char_dim_m: {median: 3.275, n: 400, mc_halfwidth: 0.1}
+  dispersion: {mean: 2.925, n: 400, mc_se: 0.064}
+  nav_complexity: {median: 1.1388, p90: 1.5548, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.2
+  min_gap_m: null
+  loops: 0
+  loops_unsized: 0
+  dead_ends: 10
+  junctions: 8
+  regions: 11
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 40.48, n: 400, mc_se: 0.84}
+      visible_fraction: 0.1227
+      area_over_pi_r2: 1.0498
+      spawn_visible_fraction: {S1: 0.1591, S2: 0.2313, S3: 0.1149}
+spawns:
+- {id: S1, x: -11.0, y: 0.0, yaw: 0.0}
+- {id: S2, x: -1.0, y: 0.0, yaw: 0.0}
+- {id: S3, x: 5.2, y: 4.2, yaw: -1.570796}
+inclusion:
+- - [-12.9, -6.7]
+  - [-7.9, -6.7]
+  - [-7.9, -1.7]
+  - [-11.2, -1.7]
+  - [-11.2, -1.5]
+  - [-4.8, -1.5]
+  - [-4.8, -1.7]
+  - [-7.7, -1.7]
+  - [-7.7, -6.7]
+  - [-2.7, -6.7]
+  - [-2.7, -1.7]
+  - [-3.6, -1.7]
+  - [-3.6, -1.5]
+  - [-0.6, -1.5]
+  - [-0.6, -1.7]
+  - [-2.5, -1.7]
+  - [-2.5, -6.7]
+  - [2.5, -6.7]
+  - [2.5, -1.7]
+  - [0.6, -1.7]
+  - [0.6, -1.5]
+  - [4.1, -1.5]
+  - [4.1, -1.7]
+  - [2.7, -1.7]
+  - [2.7, -6.7]
+  - [7.7, -6.7]
+  - [7.7, -1.7]
+  - [5.3, -1.7]
+  - [5.3, -1.5]
+  - [11.2, -1.5]
+  - [11.2, -1.7]
+  - [7.9, -1.7]
+  - [7.9, -6.7]
+  - [12.9, -6.7]
+  - [12.9, -1.7]
+  - [12.4, -1.7]
+  - [12.4, -1.5]
+  - [12.9, -1.5]
+  - [12.9, 1.5]
+  - [10.0, 1.5]
+  - [10.0, 1.7]
+  - [12.9, 1.7]
+  - [12.9, 6.7]
+  - [7.9, 6.7]
+  - [7.9, 1.7]
+  - [8.8, 1.7]
+  - [8.8, 1.5]
+  - [5.8, 1.5]
+  - [5.8, 1.7]
+  - [7.7, 1.7]
+  - [7.7, 6.7]
+  - [2.7, 6.7]
+  - [2.7, 1.7]
+  - [4.6, 1.7]
+  - [4.6, 1.5]
+  - [2.0, 1.5]
+  - [2.0, 1.7]
+  - [2.5, 1.7]
+  - [2.5, 6.7]
+  - [-2.5, 6.7]
+  - [-2.5, 1.7]
+  - [0.8, 1.7]
+  - [0.8, 1.5]
+  - [-6.0, 1.5]
+  - [-6.0, 1.7]
+  - [-2.7, 1.7]
+  - [-2.7, 6.7]
+  - [-7.7, 6.7]
+  - [-7.7, 1.7]
+  - [-7.2, 1.7]
+  - [-7.2, 1.5]
+  - [-9.3, 1.5]
+  - [-9.3, 1.7]
+  - [-7.9, 1.7]
+  - [-7.9, 6.7]
+  - [-12.9, 6.7]
+  - [-12.9, 1.7]
+  - [-10.5, 1.7]
+  - [-10.5, 1.5]
+  - [-12.9, 1.5]
+  - [-12.9, -1.5]
+  - [-12.4, -1.5]
+  - [-12.4, -1.7]
+  - [-12.9, -1.7]
+notches: []
+doors:
+- id: D01
+  centre: [-11.8, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D02
+  centre: [-4.2, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D03
+  centre: [0.0, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D04
+  centre: [4.7, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D05
+  centre: [11.8, -1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D06
+  centre: [-9.9, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D07
+  centre: [-6.6, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D08
+  centre: [1.4, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D09
+  centre: [5.2, 1.6]
+  width_m: 1.2
+  wall_axis: x
+- id: D10
+  centre: [9.4, 1.6]
+  width_m: 1.2
+  wall_axis: x
+moving_objects: null
+plan_data: {}
+sources:
+- {what: layout idea (rooms scene), cite: xu2022explorebench}
+- {what: layout idea (many-room and office maps), cite: holz2010evaluating}
+licence: Apache-2.0
+hashes: {sdf: 87190b9b58a28e71d3661f2636aca0d10fe1411030d26d6378de7f0eee438f70, world_json: a5bbb0a8d09e27413a3b3ff9051f558a9d3dfd8a97827fff5730b8e54805dc64}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: Rebuilt with 1.2 m doors; all checklist items hold; all checks pass.}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

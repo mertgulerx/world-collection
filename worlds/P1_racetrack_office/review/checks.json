@@ -1,0 +1,110 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.2,
+    "S2": 1.2,
+    "S3": 4.85
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.2,
+   "detail": "expected 1.2 \u00b1 0.05 m (minimum 1.0 m) at (-6.03, -7.57)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 578.94,
+   "detail": "expected 578.94 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 1,
+    "loops_unsized": 1
+   },
+   "detail": "loops expected 1; loops_unsized expected 1"
+  },
+  {
+   "check": "P1 door and recess layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "P1 room interiors match the room table",
+   "passed": true,
+   "value": {
+    "NW": 48.51,
+    "N": 48.02,
+    "NE": 48.51,
+    "BW": 119.31,
+    "BE": 119.31
+   },
+   "detail": ""
+  },
+  {
+   "check": "P1 every door is 1.2 m at its listed centre",
+   "passed": true,
+   "value": [
+    1.2,
+    1.2,
+    1.2,
+    1.2,
+    1.2
+   ],
+   "detail": ""
+  },
+  {
+   "check": "P1 cutting each door separates exactly its room",
+   "passed": true,
+   "value": 5,
+   "detail": ""
+  },
+  {
+   "check": "P1 ring is 2.4 m wide on every side",
+   "passed": true,
+   "value": {
+    "south": 2.4,
+    "north": 2.4,
+    "west": 2.4,
+    "east": 2.4
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "20a6ca8683b15194",
+   "detail": ""
+  }
+ ]
+}

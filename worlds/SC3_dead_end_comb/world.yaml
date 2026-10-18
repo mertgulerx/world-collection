@@ -1,0 +1,114 @@
+id: SC3
+slug: dead_end_comb
+title: Dead-end comb
+tier: SC
+role: evaluation
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/B3-dead-end-comb.md
+parameters: {}
+seed: null
+selection: null
+expected: {free_area_m2: 222.0, free_area_tolerance: 0.02, narrowest_passage_m: 2.0, minimum_passage_m: 1.0, loops: 0, loops_unsized: 0}
+measured: {free_area_m2: 222.0, narrowest_passage_m: 2.0, loops: 0, loops_unsized: 0}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 222.0
+  clearance_m: {median: 0.65, p10: 0.15, p90: 1.25}
+  clearance_max_m: 1.68
+  char_dim_m: {median: 3.025, n: 400, mc_halfwidth: 0.375}
+  dispersion: {mean: 3.545, n: 400, mc_se: 0.059}
+  nav_complexity: {median: 1.0065, p90: 1.2062, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 2.0
+  min_gap_m: null
+  loops: 0
+  loops_unsized: 0
+  dead_ends: 8
+  junctions: 6
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 45.38, n: 400, mc_se: 1.04}
+      visible_fraction: 0.2044
+      area_over_pi_r2: 0.7066
+      spawn_visible_fraction: {S1: 0.1989, S2: 0.2932, S3: 0.1104}
+spawns:
+- {id: S1, x: -17.0, y: 0.0, yaw: 0.0}
+- {id: S2, x: 3.5, y: 0.0, yaw: 3.141593}
+- {id: S3, x: 1.0, y: 8.0, yaw: -1.570796}
+inclusion:
+- - [-20.0, -1.5]
+  - [-15.0, -1.5]
+  - [-15.0, -8.0]
+  - [-13.0, -8.0]
+  - [-13.0, -1.5]
+  - [-5.0, -1.5]
+  - [-5.0, -10.0]
+  - [-3.0, -10.0]
+  - [-3.0, -1.5]
+  - [5.0, -1.5]
+  - [5.0, -6.0]
+  - [7.0, -6.0]
+  - [7.0, -1.5]
+  - [18.0, -1.5]
+  - [18.0, -7.0]
+  - [20.0, -7.0]
+  - [20.0, 1.5]
+  - [12.0, 1.5]
+  - [12.0, 7.0]
+  - [10.0, 7.0]
+  - [10.0, 1.5]
+  - [2.0, 1.5]
+  - [2.0, 10.0]
+  - [0.0, 10.0]
+  - [0.0, 1.5]
+  - [-8.0, 1.5]
+  - [-8.0, 6.0]
+  - [-10.0, 6.0]
+  - [-10.0, 1.5]
+  - [-18.0, 1.5]
+  - [-18.0, 9.0]
+  - [-20.0, 9.0]
+notches: []
+doors: []
+moving_objects: null
+plan_data:
+  branches:
+    BN1:
+      x: [-20.0, -18.0]
+      end_y: 9.0
+    BN2:
+      x: [-10.0, -8.0]
+      end_y: 6.0
+    BN3:
+      x: [0.0, 2.0]
+      end_y: 10.0
+    BN4:
+      x: [10.0, 12.0]
+      end_y: 7.0
+    BS1:
+      x: [-15.0, -13.0]
+      end_y: -8.0
+    BS2:
+      x: [-5.0, -3.0]
+      end_y: -10.0
+    BS3:
+      x: [5.0, 7.0]
+      end_y: -6.0
+    BS4:
+      x: [18.0, 20.0]
+      end_y: -7.0
+sources:
+- {what: layout idea (maze and corridor maps), cite: yan2016benchmarking}
+- {what: layout idea (corridor and maze worlds), cite: liu2025enhancing}
+licence: Apache-2.0
+hashes: {sdf: b538a8062cf67ca113b769cb5a3ed9e662310eae49bedf9e55c8d75465608f0b, world_json: 1a3cbf5fff867141e3bd37808ec082388057a08f70bf12124ecf2b1bc48b110b}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

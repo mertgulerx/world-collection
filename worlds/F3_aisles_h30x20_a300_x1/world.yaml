@@ -1,0 +1,182 @@
+id: F3-03
+slug: aisles_h30x20_a300_x1
+title: Warehouse aisles 30×20 m, 3.0 m aisles, 1 cross-aisle
+tier: F
+role: evaluation
+family: F3
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/C4-warehouse-aisles.md
+parameters:
+  aisle_width_m: 3.0
+  cross_aisles: 1
+  hall_m: [30, 20]
+  rack_depth_m: 2.0
+  rows: 3
+seed: 403000
+selection:
+  candidate: 0
+  rejected: []
+expected: {free_area_m2: 478.5, free_area_tolerance: 0.02, narrowest_passage_m: 3.0, minimum_passage_m: 3.0, loops: 6, loops_unsized: 6}
+measured: {free_area_m2: 478.5, narrowest_passage_m: 3.0, loops: 6, loops_unsized: 6}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 478.5
+  clearance_m: {median: 0.901, p10: 0.2, p90: 1.65}
+  clearance_max_m: 2.3
+  char_dim_m: {median: 3.375, n: 400, mc_halfwidth: 0.375}
+  dispersion: {mean: 2.985, n: 400, mc_se: 0.054}
+  nav_complexity: {median: 1.0435, p90: 1.2755, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 3.0
+  min_gap_m: 3.0
+  loops: 6
+  loops_unsized: 6
+  dead_ends: 0
+  junctions: 8
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 79.5, n: 400, mc_se: 0.82}
+      visible_fraction: 0.1661
+      area_over_pi_r2: 1.5231
+      spawn_visible_fraction: {S1: 0.1468}
+spawns:
+- {id: S1, x: 7.425, y: -6.525, yaw: 3.141593}
+inclusion:
+- - [-15.4, -8.3]
+  - [-15.0, -8.3]
+  - [-15.0, -10.0]
+  - [15.0, -10.0]
+  - [15.0, -5.2]
+  - [15.4, -5.2]
+  - [15.4, -4.2]
+  - [15.0, -4.2]
+  - [15.0, -1.5]
+  - [15.4, -1.5]
+  - [15.4, -0.5]
+  - [15.0, -0.5]
+  - [15.0, 3.0]
+  - [15.4, 3.0]
+  - [15.4, 4.0]
+  - [15.0, 4.0]
+  - [15.0, 10.0]
+  - [-15.0, 10.0]
+  - [-15.0, 7.6]
+  - [-15.4, 7.6]
+  - [-15.4, 6.6]
+  - [-15.0, 6.6]
+  - [-15.0, 1.7]
+  - [-15.4, 1.7]
+  - [-15.4, 0.7]
+  - [-15.0, 0.7]
+  - [-15.0, -7.3]
+  - [-15.4, -7.3]
+notches:
+- id: E1
+  polygon:
+  - [15.0, -5.2]
+  - [15.4, -5.2]
+  - [15.4, -4.2]
+  - [15.0, -4.2]
+- id: E2
+  polygon:
+  - [15.0, -1.5]
+  - [15.4, -1.5]
+  - [15.4, -0.5]
+  - [15.0, -0.5]
+- id: E3
+  polygon:
+  - [15.0, 3.0]
+  - [15.4, 3.0]
+  - [15.4, 4.0]
+  - [15.0, 4.0]
+- id: W1
+  polygon:
+  - [-15.4, -8.3]
+  - [-15.0, -8.3]
+  - [-15.0, -7.3]
+  - [-15.4, -7.3]
+- id: W2
+  polygon:
+  - [-15.4, 0.7]
+  - [-15.0, 0.7]
+  - [-15.0, 1.7]
+  - [-15.4, 1.7]
+- id: W3
+  polygon:
+  - [-15.4, 6.6]
+  - [-15.0, 6.6]
+  - [-15.0, 7.6]
+  - [-15.4, 7.6]
+- id: R001
+  polygon:
+  - [-7.2, -6.0]
+  - [-6.2, -6.0]
+  - [-6.2, -5.7]
+  - [-7.2, -5.7]
+- id: R002
+  polygon:
+  - [-11.0, -1.0]
+  - [-10.0, -1.0]
+  - [-10.0, -0.7]
+  - [-11.0, -0.7]
+- id: R003
+  polygon:
+  - [8.9, -1.0]
+  - [9.9, -1.0]
+  - [9.9, -0.7]
+  - [8.9, -0.7]
+- id: R004
+  polygon:
+  - [5.5, 0.7]
+  - [6.5, 0.7]
+  - [6.5, 1.0]
+  - [5.5, 1.0]
+- id: R005
+  polygon:
+  - [-8.5, 5.7]
+  - [-7.5, 5.7]
+  - [-7.5, 6.0]
+  - [-8.5, 6.0]
+- id: R006
+  polygon:
+  - [4.5, 4.0]
+  - [5.5, 4.0]
+  - [5.5, 4.3]
+  - [4.5, 4.3]
+- id: R007
+  polygon:
+  - [-1.6, 5.7]
+  - [-0.6, 5.7]
+  - [-0.6, 6.0]
+  - [-1.6, 6.0]
+doors: []
+moving_objects: null
+plan_data:
+  construction_free_area_m2: 478.5
+  min_segment_m: 5.3
+  rack_recesses: 7
+  rows_y_m:
+  - [-6.0, -4.0]
+  - [-1.0, 1.0]
+  - [4.0, 6.0]
+  segments_x_m:
+  - [-12.0, -5.2]
+  - [-2.2, 12.0]
+  sheet_label: 3 rows, loops 6, 7 rack recesses
+  wall_recesses:
+    w: [-7.8, 1.2, 7.1]
+    e: [-4.7, -1.0, 3.5]
+sources:
+- {what: loops and revisits, cite: xu2022explorebench}
+- {what: narrow passages, cite: wettach2016experimental}
+licence: Apache-2.0
+hashes: {sdf: fb79f9b60f2fbf3cfb48bb53e015600e76db280a7ebe08b732e3a716706ccb0a, world_json: 9560067409a9a1a06ffe96b73ff6684f37562bb507abcdece14f400a025fe0fa}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

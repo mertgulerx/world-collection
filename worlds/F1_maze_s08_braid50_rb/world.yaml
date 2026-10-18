@@ -1,0 +1,62 @@
+id: F1-03
+slug: maze_s08_braid50_rb
+title: Maze 8×8, braid 0.5, recursive backtracker
+tier: F
+role: evaluation
+family: F1
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/C1-mazes.md
+parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: braid 0.5}
+seed: 103000
+selection:
+  candidate: 0
+  rejected: []
+expected: {free_area_m2: 369.04, free_area_tolerance: 0.02, narrowest_passage_m: 2.1, minimum_passage_m: 2.0, narrowest_tolerance_m: 0.1,
+  loops: 4, loops_unsized: 4}
+measured: {free_area_m2: 369.04, narrowest_passage_m: 2.2, loops: 4, loops_unsized: 4}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 369.04
+  clearance_m: {median: 0.65, p10: 0.15, p90: 1.1}
+  clearance_max_m: 2.4
+  char_dim_m: {median: 2.325, n: 400, mc_halfwidth: 0.062}
+  dispersion: {mean: 3.79, n: 400, mc_se: 0.06}
+  nav_complexity: {median: 1.5035, p90: 2.813, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 2.2
+  min_gap_m: 2.15
+  loops: 4
+  loops_unsized: 4
+  dead_ends: 3
+  junctions: 9
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 37.07, n: 400, mc_se: 0.54}
+      visible_fraction: 0.1004
+      area_over_pi_r2: 1.1747
+      spawn_visible_fraction: {S1: 0.0834}
+spawns:
+- {id: S1, x: -1.25, y: 3.75, yaw: 1.570796}
+inclusion:
+- - [-9.9, -9.9]
+  - [9.9, -9.9]
+  - [9.9, 9.9]
+  - [-9.9, 9.9]
+notches: []
+doors: []
+moving_objects: null
+plan_data: {braided_walls: 5, construction_free_area_m2: 369.04, dead_end_cells: 3, dead_end_fraction: 0.0469, open_squares: 1,
+  spawn_cell: 43}
+sources:
+- {what: maze generation algorithms, cite: bellot2021mazes}
+licence: Apache-2.0
+hashes: {sdf: ff5eada6e8ba7f4bc26a485db67f96e3a5cb81fc5d835bbdbcfc739961e51f07, world_json: dae6d32813db9b1fcfeee6176cfd6acd73f685cb6836546e6fd2c21297ead706}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

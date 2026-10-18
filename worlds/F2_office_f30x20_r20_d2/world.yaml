@@ -1,0 +1,240 @@
+id: F2-04
+slug: office_f30x20_r20_d2
+title: Office 30×20 m, 20 rooms, 2 doors per room
+tier: F
+role: evaluation
+family: F2
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/C2-offices.md
+parameters:
+  corridor_width_m: 2.0
+  cross_corridors: 1
+  door_width_m: 1.2
+  doors_per_room: 2
+  floor_m: [30, 20]
+  rooms: 20
+seed: 204000
+selection:
+  candidate: 0
+  rejected: []
+expected: {free_area_m2: 569.36, free_area_tolerance: 0.02, narrowest_passage_m: 1.2, minimum_passage_m: 1.2, loops_unsized: 20}
+measured: {free_area_m2: 569.36, narrowest_passage_m: 1.2, loops: 20, loops_unsized: 20}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 569.36
+  clearance_m: {median: 0.696, p10: 0.15, p90: 1.55}
+  clearance_max_m: 2.787
+  char_dim_m: {median: 3.275, n: 400, mc_halfwidth: 0.187}
+  dispersion: {mean: 3.58, n: 400, mc_se: 0.082}
+  nav_complexity: {median: 1.0404, p90: 1.1897, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.2
+  min_gap_m: 1.2
+  loops: 20
+  loops_unsized: 20
+  dead_ends: 5
+  junctions: 42
+  regions: 21
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 50.56, n: 400, mc_se: 0.54}
+      visible_fraction: 0.0888
+      area_over_pi_r2: 1.8123
+      spawn_visible_fraction: {S1: 0.0959}
+spawns:
+- {id: S1, x: -11.175, y: -2.475, yaw: 1.570796}
+inclusion:
+- - [-15.0, -10.0]
+  - [15.0, -10.0]
+  - [15.0, 10.0]
+  - [-15.0, 10.0]
+notches: []
+doors:
+- id: D01
+  centre: [-2.5, -7.9]
+  width_m: 1.2
+  wall_axis: y
+- id: D02
+  centre: [-6.6, -0.2]
+  width_m: 1.2
+  wall_axis: x
+- id: D03
+  centre: [-11.7, -0.2]
+  width_m: 1.2
+  wall_axis: x
+- id: D04
+  centre: [-2.5, -2.7]
+  width_m: 1.2
+  wall_axis: y
+- id: D05
+  centre: [-13.7, 2.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D06
+  centre: [-6.7, 2.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D07
+  centre: [-2.5, 7.8]
+  width_m: 1.2
+  wall_axis: y
+- id: D08
+  centre: [-0.3, -5.6]
+  width_m: 1.2
+  wall_axis: y
+- id: D09
+  centre: [11.6, -0.2]
+  width_m: 1.2
+  wall_axis: x
+- id: D10
+  centre: [1.5, -0.2]
+  width_m: 1.2
+  wall_axis: x
+- id: D11
+  centre: [6.1, -0.2]
+  width_m: 1.2
+  wall_axis: x
+- id: D12
+  centre: [-0.3, 3.3]
+  width_m: 1.2
+  wall_axis: y
+- id: D13
+  centre: [7.8, 2.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D14
+  centre: [12.9, 2.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D15
+  centre: [-0.3, 7.3]
+  width_m: 1.2
+  wall_axis: y
+- id: D16
+  centre: [-9.0, -7.9]
+  width_m: 1.2
+  wall_axis: y
+- id: D17
+  centre: [-12.6, 5.2]
+  width_m: 1.2
+  wall_axis: x
+- id: D18
+  centre: [11.5, -5.3]
+  width_m: 1.2
+  wall_axis: x
+- id: D19
+  centre: [4.6, -7.2]
+  width_m: 1.2
+  wall_axis: y
+- id: D20
+  centre: [11.5, 8.5]
+  width_m: 1.2
+  wall_axis: y
+- id: D21
+  centre: [-10.2, -5.9]
+  width_m: 1.2
+  wall_axis: x
+- id: D22
+  centre: [-7.0, -5.8]
+  width_m: 1.2
+  wall_axis: x
+- id: D23
+  centre: [-9.0, -3.3]
+  width_m: 1.2
+  wall_axis: y
+- id: D24
+  centre: [-13.7, -5.9]
+  width_m: 1.2
+  wall_axis: x
+- id: D25
+  centre: [-5.2, -1.9]
+  width_m: 1.2
+  wall_axis: y
+- id: D26
+  centre: [-9.9, 3.2]
+  width_m: 1.2
+  wall_axis: y
+- id: D27
+  centre: [-8.5, 6.2]
+  width_m: 1.2
+  wall_axis: x
+- id: D28
+  centre: [-9.9, 7.8]
+  width_m: 1.2
+  wall_axis: y
+- id: D29
+  centre: [1.5, -3.9]
+  width_m: 1.2
+  wall_axis: x
+- id: D30
+  centre: [9.3, -6.9]
+  width_m: 1.2
+  wall_axis: y
+- id: D31
+  centre: [6.3, -5.1]
+  width_m: 1.2
+  wall_axis: x
+- id: D32
+  centre: [9.3, -1.7]
+  width_m: 1.2
+  wall_axis: y
+- id: D33
+  centre: [4.6, -1.4]
+  width_m: 1.2
+  wall_axis: y
+- id: D34
+  centre: [5.4, 4.0]
+  width_m: 1.2
+  wall_axis: y
+- id: D35
+  centre: [11.5, 4.5]
+  width_m: 1.2
+  wall_axis: y
+- id: D36
+  centre: [9.4, 6.7]
+  width_m: 1.2
+  wall_axis: x
+- id: D37
+  centre: [5.4, 8.3]
+  width_m: 1.2
+  wall_axis: y
+- id: D38
+  centre: [-0.3, -8.8]
+  width_m: 1.2
+  wall_axis: y
+- id: D39
+  centre: [3.5, 5.4]
+  width_m: 1.2
+  wall_axis: x
+- id: D40
+  centre: [-3.9, -5.8]
+  width_m: 1.2
+  wall_axis: x
+moving_objects: null
+plan_data:
+  construction_free_area_m2: 569.36
+  cross_x_m: [-1.4]
+  landmarks: 3
+  leaf_rooms: 0
+  openings: 40
+  partition_length_m: 108.8
+  rooms_per_block: [5, 4, 6, 5]
+  second_doors_passed_on:
+  - [8, 9]
+  - [14, 15]
+  - [17, 1]
+  sheet_label: 20 rooms, 40 doors, loops 20
+  spine_y_m: 0.9
+sources:
+- {what: room segmentation in exploration, cite: holz2010evaluating}
+- {what: loops cause revisits, cite: xu2022explorebench}
+licence: Apache-2.0
+hashes: {sdf: 342ab70fe72fcb1d458efbd278c20a6f93a80ab61b907f0d64f9365aee20c320, world_json: 837efb52c285253f6cbb88dbb2d34452392feb68955e635abbf5b24fb9896c52}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

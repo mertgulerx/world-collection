@@ -1,0 +1,276 @@
+id: F3-02
+slug: aisles_h30x20_a150_x3
+title: Warehouse aisles 30×20 m, 1.5 m aisles, 3 cross-aisles
+tier: F
+role: evaluation
+family: F3
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/C4-warehouse-aisles.md
+parameters:
+  aisle_width_m: 1.5
+  cross_aisles: 3
+  hall_m: [30, 20]
+  rack_depth_m: 2.0
+  rows: 5
+seed: 402000
+selection:
+  candidate: 0
+  rejected: []
+expected: {free_area_m2: 459.0, free_area_tolerance: 0.02, narrowest_passage_m: 1.5, minimum_passage_m: 1.5, loops: 20, loops_unsized: 20}
+measured: {free_area_m2: 459.0, narrowest_passage_m: 1.5, loops: 20, loops_unsized: 20}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 459.0
+  clearance_m: {median: 0.65, p10: 0.15, p90: 1.3}
+  clearance_max_m: 1.677
+  char_dim_m: {median: 3.025, n: 400, mc_halfwidth: 0.0}
+  dispersion: {mean: 4.055, n: 400, mc_se: 0.067}
+  nav_complexity: {median: 1.0176, p90: 1.13, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.5
+  min_gap_m: 1.5
+  loops: 20
+  loops_unsized: 20
+  dead_ends: 0
+  junctions: 26
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 59.12, n: 400, mc_se: 0.74}
+      visible_fraction: 0.1288
+      area_over_pi_r2: 1.461
+      spawn_visible_fraction: {S1: 0.1812}
+spawns:
+- {id: S1, x: -7.525, y: 2.175, yaw: 0.0}
+inclusion:
+- - [-15.4, -8.0]
+  - [-15.0, -8.0]
+  - [-15.0, -10.0]
+  - [15.0, -10.0]
+  - [15.0, -7.9]
+  - [15.4, -7.9]
+  - [15.4, -6.9]
+  - [15.0, -6.9]
+  - [15.0, 3.7]
+  - [15.4, 3.7]
+  - [15.4, 4.7]
+  - [15.0, 4.7]
+  - [15.0, 7.5]
+  - [15.4, 7.5]
+  - [15.4, 8.5]
+  - [15.0, 8.5]
+  - [15.0, 10.0]
+  - [-15.0, 10.0]
+  - [-15.0, 6.2]
+  - [-15.4, 6.2]
+  - [-15.4, 5.2]
+  - [-15.0, 5.2]
+  - [-15.0, 2.0]
+  - [-15.4, 2.0]
+  - [-15.4, 1.0]
+  - [-15.0, 1.0]
+  - [-15.0, -7.0]
+  - [-15.4, -7.0]
+notches:
+- id: E1
+  polygon:
+  - [15.0, -7.9]
+  - [15.4, -7.9]
+  - [15.4, -6.9]
+  - [15.0, -6.9]
+- id: E2
+  polygon:
+  - [15.0, 3.7]
+  - [15.4, 3.7]
+  - [15.4, 4.7]
+  - [15.0, 4.7]
+- id: E3
+  polygon:
+  - [15.0, 7.5]
+  - [15.4, 7.5]
+  - [15.4, 8.5]
+  - [15.0, 8.5]
+- id: W1
+  polygon:
+  - [-15.4, -8.0]
+  - [-15.0, -8.0]
+  - [-15.0, -7.0]
+  - [-15.4, -7.0]
+- id: W2
+  polygon:
+  - [-15.4, 1.0]
+  - [-15.0, 1.0]
+  - [-15.0, 2.0]
+  - [-15.4, 2.0]
+- id: W3
+  polygon:
+  - [-15.4, 5.2]
+  - [-15.0, 5.2]
+  - [-15.0, 6.2]
+  - [-15.4, 6.2]
+- id: R001
+  polygon:
+  - [-10.9, -8.0]
+  - [-9.9, -8.0]
+  - [-9.9, -7.7]
+  - [-10.9, -7.7]
+- id: R002
+  polygon:
+  - [-10.6, -6.3]
+  - [-9.6, -6.3]
+  - [-9.6, -6.0]
+  - [-10.6, -6.0]
+- id: R003
+  polygon:
+  - [-3.4, -6.3]
+  - [-2.4, -6.3]
+  - [-2.4, -6.0]
+  - [-3.4, -6.0]
+- id: R004
+  polygon:
+  - [3.6, -8.0]
+  - [4.6, -8.0]
+  - [4.6, -7.7]
+  - [3.6, -7.7]
+- id: R005
+  polygon:
+  - [8.9, -8.0]
+  - [9.9, -8.0]
+  - [9.9, -7.7]
+  - [8.9, -7.7]
+- id: R006
+  polygon:
+  - [8.8, -6.3]
+  - [9.8, -6.3]
+  - [9.8, -6.0]
+  - [8.8, -6.0]
+- id: R007
+  polygon:
+  - [-11.4, -2.8]
+  - [-10.4, -2.8]
+  - [-10.4, -2.5]
+  - [-11.4, -2.5]
+- id: R008
+  polygon:
+  - [-5.0, -4.5]
+  - [-4.0, -4.5]
+  - [-4.0, -4.2]
+  - [-5.0, -4.2]
+- id: R009
+  polygon:
+  - [-3.5, -2.8]
+  - [-2.5, -2.8]
+  - [-2.5, -2.5]
+  - [-3.5, -2.5]
+- id: R010
+  polygon:
+  - [3.6, -2.8]
+  - [4.6, -2.8]
+  - [4.6, -2.5]
+  - [3.6, -2.5]
+- id: R011
+  polygon:
+  - [9.0, -2.8]
+  - [10.0, -2.8]
+  - [10.0, -2.5]
+  - [9.0, -2.5]
+- id: R012
+  polygon:
+  - [-11.4, 0.7]
+  - [-10.4, 0.7]
+  - [-10.4, 1.0]
+  - [-11.4, 1.0]
+- id: R013
+  polygon:
+  - [8.9, -1.0]
+  - [9.9, -1.0]
+  - [9.9, -0.7]
+  - [8.9, -0.7]
+- id: R014
+  polygon:
+  - [9.5, 0.7]
+  - [10.5, 0.7]
+  - [10.5, 1.0]
+  - [9.5, 1.0]
+- id: R015
+  polygon:
+  - [-11.0, 4.2]
+  - [-10.0, 4.2]
+  - [-10.0, 4.5]
+  - [-11.0, 4.5]
+- id: R016
+  polygon:
+  - [-3.3, 2.5]
+  - [-2.3, 2.5]
+  - [-2.3, 2.8]
+  - [-3.3, 2.8]
+- id: R017
+  polygon:
+  - [-4.7, 4.2]
+  - [-3.7, 4.2]
+  - [-3.7, 4.5]
+  - [-4.7, 4.5]
+- id: R018
+  polygon:
+  - [3.0, 4.2]
+  - [4.0, 4.2]
+  - [4.0, 4.5]
+  - [3.0, 4.5]
+- id: R019
+  polygon:
+  - [10.4, 2.5]
+  - [11.4, 2.5]
+  - [11.4, 2.8]
+  - [10.4, 2.8]
+- id: R020
+  polygon:
+  - [-10.3, 6.0]
+  - [-9.3, 6.0]
+  - [-9.3, 6.3]
+  - [-10.3, 6.3]
+- id: R021
+  polygon:
+  - [-10.2, 7.7]
+  - [-9.2, 7.7]
+  - [-9.2, 8.0]
+  - [-10.2, 8.0]
+- id: R022
+  polygon:
+  - [-4.1, 6.0]
+  - [-3.1, 6.0]
+  - [-3.1, 6.3]
+  - [-4.1, 6.3]
+doors: []
+moving_objects: null
+plan_data:
+  construction_free_area_m2: 459.0
+  min_segment_m: 3.0
+  rack_recesses: 22
+  rows_y_m:
+  - [-8.0, -6.0]
+  - [-4.5, -2.5]
+  - [-1.0, 1.0]
+  - [2.5, 4.5]
+  - [6.0, 8.0]
+  segments_x_m:
+  - [-12.0, -8.6]
+  - [-5.6, -1.7]
+  - [1.3, 5.2]
+  - [8.2, 12.0]
+  sheet_label: 5 rows, loops 20, 22 rack recesses
+  wall_recesses:
+    w: [-7.5, 1.5, 5.7]
+    e: [-7.4, 4.2, 8.0]
+sources:
+- {what: loops and revisits, cite: xu2022explorebench}
+- {what: narrow passages, cite: wettach2016experimental}
+licence: Apache-2.0
+hashes: {sdf: c201d23aeb057c0481e4766db9a0cad712af0cc634be48c7a479f7910439b24a, world_json: 90cdbfed873462c5bbfc2708cc75c0bf51ac967ab7301b06acccaece02961710}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

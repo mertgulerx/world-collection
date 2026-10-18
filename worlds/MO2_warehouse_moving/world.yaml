@@ -1,0 +1,682 @@
+id: MO2
+slug: warehouse_moving
+title: Warehouse with moving objects, high density
+tier: MO
+role: evaluation
+family: MO2
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/E3-warehouse-moving.md
+parameters: {}
+seed: 5301
+selection: null
+expected: {free_area_m2: 1673.3, free_area_tolerance: 0.02, narrowest_passage_m: 1.2, minimum_passage_m: 1.0, loops: 10}
+measured: {free_area_m2: 1673.38, narrowest_passage_m: 1.2, loops: 10, loops_unsized: 16}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 1673.38
+  clearance_m: {median: 1.4, p10: 0.3, p90: 3.324}
+  clearance_max_m: 6.657
+  char_dim_m: {median: 6.95, n: 400, mc_halfwidth: 0.5}
+  dispersion: {mean: 1.96, n: 400, mc_se: 0.066}
+  nav_complexity: {median: 1.0182, p90: 1.2084, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.2
+  min_gap_m: 2.0
+  loops: 10
+  loops_unsized: 16
+  dead_ends: 5
+  junctions: 32
+  regions: 3
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 150.16, n: 400, mc_se: 2.92}
+      visible_fraction: 0.0897
+      area_over_pi_r2: 5.3265
+      spawn_visible_fraction: {S1: 0.0718, S2: 0.1056, S3: 0.1079}
+spawns:
+- {id: S1, x: -26.5, y: -13.0, yaw: 0.0}
+- {id: S2, x: 15.5, y: 11.0, yaw: 3.141593}
+- {id: S3, x: 25.5, y: -11.0, yaw: 1.570796}
+inclusion:
+- - [-28.0, -18.0]
+  - [-21.5, -18.0]
+  - [-21.5, -18.6]
+  - [-18.5, -18.6]
+  - [-18.5, -18.0]
+  - [-14.5, -18.0]
+  - [-14.5, -18.6]
+  - [-11.5, -18.6]
+  - [-11.5, -18.0]
+  - [-6.5, -18.0]
+  - [-6.5, -18.6]
+  - [-3.5, -18.6]
+  - [-3.5, -18.0]
+  - [2.5, -18.0]
+  - [2.5, -18.6]
+  - [5.5, -18.6]
+  - [5.5, -18.0]
+  - [28.0, -18.0]
+  - [28.0, -4.3]
+  - [27.6, -4.3]
+  - [27.6, -3.7]
+  - [28.0, -3.7]
+  - [28.0, -2.5]
+  - [27.6, -2.5]
+  - [27.6, -1.9]
+  - [28.0, -1.9]
+  - [28.0, -0.7]
+  - [27.6, -0.7]
+  - [27.6, -0.1]
+  - [28.0, -0.1]
+  - [28.0, 9.9]
+  - [20.6, 9.9]
+  - [20.6, 10.1]
+  - [22.9, 10.1]
+  - [22.9, 11.4]
+  - [23.1, 11.4]
+  - [23.1, 10.1]
+  - [28.0, 10.1]
+  - [28.0, 18.0]
+  - [23.1, 18.0]
+  - [23.1, 12.6]
+  - [22.9, 12.6]
+  - [22.9, 18.0]
+  - [21.3, 18.0]
+  - [21.3, 17.5]
+  - [19.7, 17.5]
+  - [19.7, 18.0]
+  - [18.1, 18.0]
+  - [18.1, 10.1]
+  - [19.4, 10.1]
+  - [19.4, 9.9]
+  - [17.9, 9.9]
+  - [17.9, 18.0]
+  - [12.0, 18.0]
+  - [12.0, 16.9]
+  - [7.2, 16.9]
+  - [7.2, 16.5]
+  - [6.8, 16.5]
+  - [6.8, 16.9]
+  - [-6.8, 16.9]
+  - [-6.8, 16.5]
+  - [-7.2, 16.5]
+  - [-7.2, 16.9]
+  - [-20.8, 16.9]
+  - [-20.8, 16.5]
+  - [-21.2, 16.5]
+  - [-21.2, 16.9]
+  - [-26.0, 16.9]
+  - [-26.0, 18.0]
+  - [-28.0, 18.0]
+  - [-28.0, 5.6]
+  - [-27.4, 5.6]
+  - [-27.4, 4.4]
+  - [-28.0, 4.4]
+notches:
+- id: DOCK1
+  polygon:
+  - [-21.5, -18.6]
+  - [-18.5, -18.6]
+  - [-18.5, -18.0]
+  - [-21.5, -18.0]
+- id: DOCK2
+  polygon:
+  - [-14.5, -18.6]
+  - [-11.5, -18.6]
+  - [-11.5, -18.0]
+  - [-14.5, -18.0]
+- id: DOCK3
+  polygon:
+  - [-6.5, -18.6]
+  - [-3.5, -18.6]
+  - [-3.5, -18.0]
+  - [-6.5, -18.0]
+- id: DOCK4
+  polygon:
+  - [2.5, -18.6]
+  - [5.5, -18.6]
+  - [5.5, -18.0]
+  - [2.5, -18.0]
+doors:
+- id: D01
+  centre: [20.0, 10.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D02
+  centre: [23.0, 12.0]
+  width_m: 1.2
+  wall_axis: y
+moving_objects:
+  system: benchmark::MovingObjects
+  format_version: 1
+  plan: docs/plans/worlds/E0-moving-object-system.md
+  density: high
+  area_per_object_m2: 60.0
+  free_area_m2: 1673.38
+  count: 28
+  rejected_draws: 0
+  seed: 5301
+  seed_key: []
+  velocity_mode: pose_and_velocity
+  turn_rate_rad_s: 1.0
+  topic: /benchmark/moving_objects/pose
+  publish_period_ms: 50
+  check_horizon_s: 7800.0
+  blockage_limit_s: 10.0
+  doorway_dwell_limit_s: 12.0
+  spawn_exclusion_t0_m: 2.0
+  spawn_clearance_always_m: 1.0
+  doorways:
+  - id: D01
+    polygon:
+    - [19.4, 9.4]
+    - [20.6, 9.4]
+    - [20.6, 10.6]
+    - [19.4, 10.6]
+  - id: D02
+    polygon:
+    - [22.4, 11.4]
+    - [23.6, 11.4]
+    - [23.6, 12.6]
+    - [22.4, 12.6]
+  objects:
+  - id: mo_00
+    type: cart
+    size: [1.2, 0.6, 1.0]
+    radius_m: 0.6708
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 4800000000
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 10
+  - id: mo_01
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.6
+    phase_ns: 38300000000
+    cycle_ns: 42666666666
+    waypoints:
+    - [-23.0, 10.8, 3.0]
+    - [-12.0, 10.8, 3.0]
+    template: rack_run_A4_w
+  - id: mo_02
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 12400000000
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 5
+  - id: mo_03
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.65
+    phase_ns: 21000000000
+    cycle_ns: 55230769230
+    waypoints:
+    - [-26.0, 14.0, 3.0]
+    - [-10.0, 14.0, 3.0]
+    template: north_run_w
+  - id: mo_04
+    type: pallet_truck
+    size: [1.6, 0.8, 1.2]
+    radius_m: 0.8944
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 61621145442
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 5
+  - id: mo_05
+    type: cart
+    size: [1.2, 0.6, 1.0]
+    radius_m: 0.6708
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.4
+    phase_ns: 40100000000
+    cycle_ns: 61000000000
+    waypoints:
+    - [-23.0, -4.3, 3.0]
+    - [-12.0, -4.3, 3.0]
+    template: rack_run_A1_w
+  - id: mo_06
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 48398735511
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 1
+  - id: mo_07
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.75
+    phase_ns: 43600000000
+    cycle_ns: 63333333334
+    waypoints:
+    - [-7.0, -8.0, 3.0]
+    - [-7.0, 13.5, 3.0]
+    template: cross_run
+  - id: mo_08
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 17426921209
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 12
+  - id: mo_09
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.4
+    phase_ns: 56700000000
+    cycle_ns: 61000000000
+    waypoints:
+    - [-2.0, 0.9, 3.0]
+    - [9.0, 0.9, 3.0]
+    template: rack_run_A2_e
+  - id: mo_10
+    type: pallet_truck
+    size: [1.6, 0.8, 1.2]
+    radius_m: 0.8944
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 30399367755
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 7
+  - id: mo_11
+    type: cart
+    size: [1.2, 0.6, 1.0]
+    radius_m: 0.6708
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.8
+    phase_ns: 25900000000
+    cycle_ns: 47250000000
+    waypoints:
+    - [-4.0, 14.0, 3.0]
+    - [12.5, 14.0, 3.0]
+    template: north_run_e
+  - id: mo_12
+    type: cart
+    size: [1.2, 0.6, 1.0]
+    radius_m: 0.6708
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 67934606047
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 6
+  - id: mo_13
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.45
+    phase_ns: 52400000000
+    cycle_ns: 54888888888
+    waypoints:
+    - [-2.0, 10.8, 3.0]
+    - [9.0, 10.8, 3.0]
+    template: rack_run_A4_e
+  - id: mo_14
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 66398103266
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 3
+  - id: mo_15
+    type: pallet_truck
+    size: [1.6, 0.8, 1.2]
+    radius_m: 0.8944
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 42680763628
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 2
+  - id: mo_16
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 55307684837
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 4
+  - id: mo_17
+    type: pallet_truck
+    size: [1.6, 0.8, 1.2]
+    radius_m: 0.8944
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 18700000000
+    cycle_ns: 37428571428
+    waypoints:
+    - [-23.0, 0.9, 3.0]
+    - [-12.0, 0.9, 3.0]
+    template: rack_run_A2_w
+  - id: mo_18
+    type: cart
+    size: [1.2, 0.6, 1.0]
+    radius_m: 0.6708
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 21399683877
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 6
+  - id: mo_19
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 23740381814
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 13
+  - id: mo_20
+    type: cart
+    size: [1.2, 0.6, 1.0]
+    radius_m: 0.6708
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 74248066651
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 7
+  - id: mo_21
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: patrol
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.75
+    phase_ns: 28900000000
+    cycle_ns: 35333333334
+    waypoints:
+    - [-2.0, -4.3, 3.0]
+    - [9.0, -4.3, 3.0]
+    template: rack_run_A1_e
+  - id: mo_22
+    type: pallet_truck
+    size: [1.6, 0.8, 1.2]
+    radius_m: 0.8944
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 57398419388
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 2
+  - id: mo_23
+    type: cart
+    size: [1.2, 0.6, 1.0]
+    radius_m: 0.6708
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 80561527256
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 8
+  - id: mo_24
+    type: pallet_truck
+    size: [1.6, 0.8, 1.2]
+    radius_m: 0.8944
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 30053842418
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 0
+  - id: mo_25
+    type: pallet_truck
+    size: [1.6, 0.8, 1.2]
+    radius_m: 0.8944
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 3400316122
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 4
+  - id: mo_26
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.7
+    phase_ns: 39399051633
+    cycle_ns: 71997471022
+    waypoints:
+    - [14.0, -6.0, 0.0]
+    - [14.0, 7.0, 0.0]
+    - [24.0, 7.0, 0.0]
+    - [24.0, -6.0, 0.0]
+    template: east_convoy
+    convoy_slot: 0
+  - id: mo_27
+    type: box
+    size: [0.6, 0.6, 1.2]
+    radius_m: 0.4243
+    mode: loop
+    yaw_mode: heading
+    yaw: 0.0
+    speed_m_s: 0.95
+    phase_ns: 86874987861
+    cycle_ns: 88388448466
+    waypoints:
+    - [-24.0, -15.5, 0.0]
+    - [10.0, -15.5, 0.0]
+    - [10.0, -10.5, 0.0]
+    - [-24.0, -10.5, 0.0]
+    template: staging_convoy
+    convoy_slot: 9
+  measured: {min_static_clearance_margin_m: 0.5056, min_spawn_distance_t0_m: 2.8916, min_spawn_distance_any_t_m: 2.1, min_object_separation_margin_m: 1.0813,
+    max_doorway_dwell_s: 0.0, max_blockage_s: 0.0}
+plan_data:
+  patrol_clearance_m: 1.5
+  patrol_paths:
+    P-A:
+      what: staging loop
+      polylines_m:
+      - - [-24.0, -15.5]
+        - [10.0, -15.5]
+        - [10.0, -10.5]
+        - [-24.0, -10.5]
+        - [-24.0, -15.5]
+    P-B:
+      what: aisle runs A1, A2, A4
+      polylines_m:
+      - - [-25.0, -4.3]
+        - [12.0, -4.3]
+      - - [-25.0, 0.9]
+        - [12.0, 0.9]
+      - - [-25.0, 10.8]
+        - [12.0, 10.8]
+    P-C:
+      what: cross run
+      polylines_m:
+      - - [-7.0, -9.5]
+        - [-7.0, 14.0]
+    P-D:
+      what: north run
+      polylines_m:
+      - - [-26.0, 14.0]
+        - [12.5, 14.0]
+    P-E:
+      what: east loop
+      polylines_m:
+      - - [14.0, -6.0]
+        - [24.0, -6.0]
+        - [24.0, 7.0]
+        - [14.0, 7.0]
+        - [14.0, -6.0]
+sources: []
+licence: Apache-2.0
+hashes: {sdf: 6398e2ddefdd39df16c1dd0ea7e158a3d9de4a1ccf34bb18453d4d1e69f2db2c, world_json: 87644f015a2d83b00490868d65f090397e81083eb2e8cb88a381821870b6170c}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

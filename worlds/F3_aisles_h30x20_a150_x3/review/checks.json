@@ -1,0 +1,121 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.154
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.5,
+   "detail": "expected 1.5 \u00b1 0.05 m (minimum 1.5 m) at (-11.98, -5.27)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 459.0,
+   "detail": "expected 459.0 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 20,
+    "loops_unsized": 20
+   },
+   "detail": "loops expected 20; loops_unsized expected 20"
+  },
+  {
+   "check": "F3 rows: interior aisles exactly a, wall aisles a + e/2, every aisle clear",
+   "passed": true,
+   "value": {
+    "rows": 5,
+    "aisles_m": [
+     1.5,
+     2.0
+    ],
+    "clear": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F3 segments: c + 1 per row, each \u2265 m_s, summing to L_r; cross and end aisles 3.0 m and clear",
+   "passed": true,
+   "value": {
+    "segments_m": [
+     3.4,
+     3.9,
+     3.9,
+     3.8
+    ],
+    "min_segment_m": 3.0,
+    "clear": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F3 recesses: rack recesses \u2265 1.0 m from segment ends, end-wall recesses \u2265 3.0 m apart",
+   "passed": true,
+   "value": {
+    "rack_recesses": 22,
+    "min_end_m": 1.1,
+    "min_wall_gap_m": 3.8
+   },
+   "detail": ""
+  },
+  {
+   "check": "F3 wall boxes disjoint and on the 0.1 m grid",
+   "passed": true,
+   "value": {
+    "boxes": 92,
+    "overlap_m2": 0.0,
+    "on_grid": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "F3 racks 2.0 m high from z = 0",
+   "passed": true,
+   "value": 64,
+   "detail": ""
+  },
+  {
+   "check": "F3 free area inside the plan's planning range (outside: stop for review)",
+   "passed": true,
+   "value": 459.0,
+   "detail": "range (456.6, 460.2)"
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "c201d23aeb057c04",
+   "detail": ""
+  }
+ ]
+}

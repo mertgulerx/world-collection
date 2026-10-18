@@ -1,0 +1,143 @@
+id: P1
+slug: racetrack_office
+title: Pilot racetrack office
+tier: P
+role: pilot
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/P1-pilot-racetrack-office.md
+parameters: {}
+seed: null
+selection: null
+expected: {free_area_m2: 578.94, free_area_tolerance: 0.02, narrowest_passage_m: 1.2, minimum_passage_m: 1.0, loops: 1, loops_unsized: 1}
+measured: {free_area_m2: 578.94, narrowest_passage_m: 1.2, loops: 1, loops_unsized: 1}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 578.94
+  clearance_m: {median: 0.95, p10: 0.2, p90: 2.75}
+  clearance_max_m: 4.887
+  char_dim_m: {median: 3.95, n: 400, mc_halfwidth: 0.863}
+  dispersion: {mean: 2.595, n: 400, mc_se: 0.071}
+  nav_complexity: {median: 1.2907, p90: 3.6452, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 1.2
+  min_gap_m: 2.4
+  loops: 1
+  loops_unsized: 1
+  dead_ends: 10
+  junctions: 10
+  regions: 6
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 76.95, n: 400, mc_se: 1.67}
+      visible_fraction: 0.1329
+      area_over_pi_r2: 1.8428
+      spawn_visible_fraction: {S1: 0.0846, S2: 0.065, S3: 0.2129}
+spawns:
+- {id: S1, x: 0.0, y: -8.8, yaw: 0.0}
+- {id: S2, x: -13.8, y: -4.0, yaw: 1.570796}
+- {id: S3, x: -6.25, y: -2.55, yaw: -1.570796}
+inclusion:
+- - [-15.4, -2.0]
+  - [-15.0, -2.0]
+  - [-15.0, -10.0]
+  - [-9.5, -10.0]
+  - [-9.5, -10.4]
+  - [-8.5, -10.4]
+  - [-8.5, -10.0]
+  - [3.5, -10.0]
+  - [3.5, -10.4]
+  - [4.5, -10.4]
+  - [4.5, -10.0]
+  - [15.0, -10.0]
+  - [15.0, -5.0]
+  - [15.4, -5.0]
+  - [15.4, -4.0]
+  - [15.0, -4.0]
+  - [15.0, 4.9]
+  - [9.6, 4.9]
+  - [9.6, 5.1]
+  - [15.0, 5.1]
+  - [15.0, 10.0]
+  - [5.1, 10.0]
+  - [5.1, 5.1]
+  - [8.4, 5.1]
+  - [8.4, 4.9]
+  - [2.1, 4.9]
+  - [2.1, 5.1]
+  - [4.9, 5.1]
+  - [4.9, 10.0]
+  - [-4.9, 10.0]
+  - [-4.9, 5.1]
+  - [0.9, 5.1]
+  - [0.9, 4.9]
+  - [-9.4, 4.9]
+  - [-9.4, 5.1]
+  - [-5.1, 5.1]
+  - [-5.1, 10.0]
+  - [-15.0, 10.0]
+  - [-15.0, 5.1]
+  - [-10.6, 5.1]
+  - [-10.6, 4.9]
+  - [-15.0, 4.9]
+  - [-15.0, -1.0]
+  - [-15.4, -1.0]
+notches:
+- id: L3
+  polygon:
+  - [15.0, -5.0]
+  - [15.4, -5.0]
+  - [15.4, -4.0]
+  - [15.0, -4.0]
+- id: L1
+  polygon:
+  - [-9.5, -10.4]
+  - [-8.5, -10.4]
+  - [-8.5, -10.0]
+  - [-9.5, -10.0]
+- id: L2
+  polygon:
+  - [3.5, -10.4]
+  - [4.5, -10.4]
+  - [4.5, -10.0]
+  - [3.5, -10.0]
+- id: L4
+  polygon:
+  - [-15.4, -2.0]
+  - [-15.0, -2.0]
+  - [-15.0, -1.0]
+  - [-15.4, -1.0]
+doors:
+- id: D01
+  centre: [-10.0, 5.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D02
+  centre: [1.5, 5.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D03
+  centre: [9.0, 5.0]
+  width_m: 1.2
+  wall_axis: x
+- id: D04
+  centre: [-6.0, -7.5]
+  width_m: 1.2
+  wall_axis: x
+- id: D05
+  centre: [7.0, 2.4]
+  width_m: 1.2
+  wall_axis: x
+moving_objects: null
+plan_data: {}
+sources: []
+licence: Apache-2.0
+hashes: {sdf: 20a6ca8683b151942147c5b01edce77e75a4a986ac0e021e7e20016afa99dc8d, world_json: bae02732a2570dd521740ce0fb8529697d01c6ff5a7e0af4b06ed40f378850fe}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

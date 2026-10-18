@@ -1,0 +1,55 @@
+family: F4
+plan: docs/plans/worlds/C5-walled-forests.md
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+seed_sequences: {evaluation: '500000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 550000 + 1000·j + i}
+rejected_total: 0
+instances:
+- id: F4-01
+  folder: F4_forest_s40_d003
+  parameters:
+    boulders: 4
+    density_per_m2: 0.03
+    minimum_gap_m: 1.0
+    recesses_per_wall: 4
+    side_m: 40
+    trunk_height_m: 4.0
+    trunk_radius_m: [0.15, 0.4]
+    wall_height_m: 3.0
+  seed: 502000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 74bfef00a597f1b81056ef3176ddd716d57518d41edcbf3db203ab6eba3bf22e
+- id: F4-02
+  folder: F4_forest_s80_d001
+  parameters:
+    boulders: 16
+    density_per_m2: 0.01
+    minimum_gap_m: 1.0
+    recesses_per_wall: 8
+    side_m: 80
+    trunk_height_m: 4.0
+    trunk_radius_m: [0.15, 0.4]
+    wall_height_m: 3.0
+  seed: 503000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: a74d6e32c29ee9347cc723e4a7c3d3eadc4897627586845d4ef41c5fc756a9c8
+- id: F4-03
+  folder: F4_forest_s80_d003
+  parameters:
+    boulders: 16
+    density_per_m2: 0.03
+    minimum_gap_m: 1.0
+    recesses_per_wall: 8
+    side_m: 80
+    trunk_height_m: 4.0
+    trunk_radius_m: [0.15, 0.4]
+    wall_height_m: 3.0
+  seed: 504000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: a909c1cc6cd64495ccdb1e00e497281985c3af957d180d84d141f4cbe21d1fad

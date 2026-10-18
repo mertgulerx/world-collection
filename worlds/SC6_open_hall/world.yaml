@@ -1,0 +1,60 @@
+id: SC6
+slug: open_hall
+title: Open hall
+tier: SC
+role: evaluation
+family: null
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+plan: docs/plans/worlds/B6-open-hall.md
+parameters: {}
+seed: null
+selection: null
+expected: {free_area_m2: 1587.04, free_area_tolerance: 0.02, narrowest_passage_m: 3.7, minimum_passage_m: 1.0, loops: 0, loops_unsized: 36}
+measured: {free_area_m2: 1587.04, narrowest_passage_m: 3.7, loops: 0, loops_unsized: 36}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 1587.04
+  clearance_m: {median: 1.82, p10: 0.55, p90: 2.926}
+  clearance_max_m: 4.311
+  char_dim_m: {median: 11.725, n: 400, mc_halfwidth: 0.737}
+  dispersion: {mean: 1.495, n: 400, mc_se: 0.049}
+  nav_complexity: {median: 1.0, p90: 1.0, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 3.7
+  min_gap_m: 3.7
+  loops: 0
+  loops_unsized: 36
+  dead_ends: 0
+  junctions: 68
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 221.63, n: 400, mc_se: 2.58}
+      visible_fraction: 0.1397
+      area_over_pi_r2: 5.0517
+      spawn_visible_fraction: {S1: 0.1789, S2: 0.0841, S3: 0.1205}
+spawns:
+- {id: S1, x: 0.0, y: 0.0, yaw: 0.0}
+- {id: S2, x: -17.0, y: -17.0, yaw: 0.785398}
+- {id: S3, x: 17.0, y: -6.0, yaw: 3.141593}
+inclusion:
+- - [-20.0, -20.0]
+  - [20.0, -20.0]
+  - [20.0, 20.0]
+  - [-20.0, 20.0]
+notches: []
+doors: []
+moving_objects: null
+plan_data: {}
+sources:
+- {what: layout idea (open map), cite: faigl2015taskallocation}
+licence: Apache-2.0
+hashes: {sdf: 31a10bdb3a0de8aa8ed1c78cc7108d90a72f7bf93bd4678ea4e1132209f5eace, world_json: 8d5c7e7dcc80e9c83a383fbc3a15383a413a0bbf934f9cbaf54b3001489b8e16}
+status: confirmed
+review:
+  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
+      log).}
+  maintainer: {date: '2026-10-19', result: confirmed, notes: Inspected in the Gazebo GUI.}

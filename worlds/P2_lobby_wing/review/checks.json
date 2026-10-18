@@ -1,0 +1,114 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 3.75,
+    "S2": 2.4,
+    "S3": 1.2
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.2,
+   "detail": "expected 1.2 \u00b1 0.05 m (minimum 1.0 m) at (8.88, -1.37)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 438.6,
+   "detail": "expected 438.6 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 1,
+    "loops_unsized": 4
+   },
+   "detail": "loops expected 1; loops_unsized expected 4"
+  },
+  {
+   "check": "P2 pillar, door and recess layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "P2 lobby is 12.0 \u00d7 18.0 m less three pillars",
+   "passed": true,
+   "value": 214.92,
+   "detail": ""
+  },
+  {
+   "check": "P2 every room is 4.8 \u00d7 7.6 m",
+   "passed": true,
+   "value": {
+    "W1": 36.48,
+    "W2": 36.48,
+    "W3": 36.48,
+    "W4": 36.48
+   },
+   "detail": ""
+  },
+  {
+   "check": "P2 every door is 1.2 m at its listed centre",
+   "passed": true,
+   "value": [
+    1.2,
+    1.2,
+    1.2,
+    1.2
+   ],
+   "detail": ""
+  },
+  {
+   "check": "P2 cutting each door separates exactly its room",
+   "passed": true,
+   "value": 4,
+   "detail": ""
+  },
+  {
+   "check": "P2 side and cross corridors 2.0 m, wing corridor 2.4 m",
+   "passed": true,
+   "value": {
+    "side_north": 2.0,
+    "side_south": 2.0,
+    "cross": 2.0,
+    "wing": 2.4
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "37d282d54c9b457d",
+   "detail": ""
+  }
+ ]
+}

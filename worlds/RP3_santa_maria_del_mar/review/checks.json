@@ -1,0 +1,115 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 1.373,
+    "S2": 4.342,
+    "S3": 6.708
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 1.3416,
+   "detail": "expected 1.0 \u00b1 0.5 m (minimum 1.0 m) at (128.23, 11.92)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 9108.28,
+   "detail": "expected 9106.31 m\u00b2 \u00b1 2%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 16,
+    "loops_unsized": 16
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP3 layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "RP3 border polygon closed and simple; georeferencing residual \u2264 3 m",
+   "passed": true,
+   "value": {
+    "vertices": 39,
+    "simple": true,
+    "residual_max_m": 1.56
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP3 solids inside the border except where they reach under the boundary wall (\u2264 0.52 m beyond the border); boundary wall outside the border; no free cell outside it",
+   "passed": true,
+   "value": {
+    "solid_beyond_border_max_m": 0.4,
+    "wall_cells_inside": 0,
+    "free_cells_outside": 0
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP3 solids are simple counter-clockwise polygons",
+   "passed": true,
+   "value": {
+    "polygons": 29,
+    "invalid": []
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP3 street network one connected component after clean-up",
+   "passed": true,
+   "value": {
+    "components": 1
+   },
+   "detail": ""
+  },
+  {
+   "check": "RP3 clean-up recorded; no passage below 1.0 m (one 0.05 m cell tolerance)",
+   "passed": true,
+   "value": {
+    "narrowest_m": 1.3416,
+    "alleys_filled": 1
+   },
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "87b0ce9b9b0b452f",
+   "detail": ""
+  }
+ ]
+}
