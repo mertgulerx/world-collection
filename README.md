@@ -3,9 +3,7 @@
 [![Stars](https://img.shields.io/github/stars/mertgulerx/world-collection?style=for-the-badge)](https://github.com/mertgulerx/world-collection/stargazers)
 [![License](https://img.shields.io/github/license/mertgulerx/world-collection?style=for-the-badge)](https://github.com/mertgulerx/world-collection/blob/main/LICENSE)
 
-<!--
-[![DOI](https://zenodo.org/badge/ZENODO_BADGE_ID.svg)](https://doi.org/ZENODO_DOI)
--->
+[![DOI](https://zenodo.org/badge/1424891966.svg)](https://doi.org/10.5281/zenodo.23460686)
 
 42 Gazebo Harmonic simulation worlds for testing robot exploration, navigation, SLAM and many more.
 
