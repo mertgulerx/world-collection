@@ -15,6 +15,12 @@ authors:
     orcid: "https://orcid.org/0009-0006-6709-7179"
 
 version: "1.0.0"
+doi: "10.5281/zenodo.23460686"
+
+identifiers:
+  - description: "DOI for all versions of World Collection"
+    type: doi
+    value: "10.5281/zenodo.23460686"
 
 license: Apache-2.0
 repository-code: "https://github.com/mertgulerx/world-collection"
