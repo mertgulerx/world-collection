@@ -51,20 +51,22 @@ Ten small worlds, each built around one thing that makes exploration or navigati
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/SC1_square_loop/review/render_overview.png"><img src="media/SC1_square_loop.jpg" width="200" alt="SC1, Square loop"></a><br><b>SC1</b> · <a href="worlds/SC1_square_loop/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/SC2a_narrow_passage_1m2/review/render_overview.png"><img src="media/SC2a_narrow_passage_1m2.jpg" width="200" alt="SC2a, Narrow passage, 1.2 m corridor"></a><br><b>SC2a</b> · <a href="worlds/SC2a_narrow_passage_1m2/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/SC2b_narrow_passage_2m0/review/render_overview.png"><img src="media/SC2b_narrow_passage_2m0.jpg" width="200" alt="SC2b, Narrow passage, 2.0 m corridor"></a><br><b>SC2b</b> · <a href="worlds/SC2b_narrow_passage_2m0/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/SC3_dead_end_comb/review/render_overview.png"><img src="media/SC3_dead_end_comb.jpg" width="200" alt="SC3, Dead-end comb"></a><br><b>SC3</b> · <a href="worlds/SC3_dead_end_comb/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC1_square_loop/review/render_overview.png"><img src="media/SC1_square_loop.jpg" width="280" alt="SC1, Square loop"></a><br><b>SC1</b> · <a href="worlds/SC1_square_loop/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC2a_narrow_passage_1m2/review/render_overview.png"><img src="media/SC2a_narrow_passage_1m2.jpg" width="280" alt="SC2a, Narrow passage, 1.2 m corridor"></a><br><b>SC2a</b> · <a href="worlds/SC2a_narrow_passage_1m2/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC2b_narrow_passage_2m0/review/render_overview.png"><img src="media/SC2b_narrow_passage_2m0.jpg" width="280" alt="SC2b, Narrow passage, 2.0 m corridor"></a><br><b>SC2b</b> · <a href="worlds/SC2b_narrow_passage_2m0/review/plan.png">plan</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="worlds/SC4_office_strip/review/render_overview.png"><img src="media/SC4_office_strip.jpg" width="200" alt="SC4, Office strip"></a><br><b>SC4</b> · <a href="worlds/SC4_office_strip/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/SC5_nested_pockets/review/render_overview.png"><img src="media/SC5_nested_pockets.jpg" width="200" alt="SC5, Nested pockets"></a><br><b>SC5</b> · <a href="worlds/SC5_nested_pockets/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/SC6_open_hall/review/render_overview.png"><img src="media/SC6_open_hall.jpg" width="200" alt="SC6, Open hall"></a><br><b>SC6</b> · <a href="worlds/SC6_open_hall/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/SC7a_clutter_field_low/review/render_overview.png"><img src="media/SC7a_clutter_field_low.jpg" width="200" alt="SC7a, Clutter field, 45 blocks"></a><br><b>SC7a</b> · <a href="worlds/SC7a_clutter_field_low/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC3_dead_end_comb/review/render_overview.png"><img src="media/SC3_dead_end_comb.jpg" width="280" alt="SC3, Dead-end comb"></a><br><b>SC3</b> · <a href="worlds/SC3_dead_end_comb/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC4_office_strip/review/render_overview.png"><img src="media/SC4_office_strip.jpg" width="280" alt="SC4, Office strip"></a><br><b>SC4</b> · <a href="worlds/SC4_office_strip/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC5_nested_pockets/review/render_overview.png"><img src="media/SC5_nested_pockets.jpg" width="280" alt="SC5, Nested pockets"></a><br><b>SC5</b> · <a href="worlds/SC5_nested_pockets/review/plan.png">plan</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="worlds/SC7b_clutter_field_high/review/render_overview.png"><img src="media/SC7b_clutter_field_high.jpg" width="200" alt="SC7b, Clutter field, 90 blocks"></a><br><b>SC7b</b> · <a href="worlds/SC7b_clutter_field_high/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/SC8_zigzag/review/render_overview.png"><img src="media/SC8_zigzag.jpg" width="200" alt="SC8, Zigzag"></a><br><b>SC8</b> · <a href="worlds/SC8_zigzag/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC6_open_hall/review/render_overview.png"><img src="media/SC6_open_hall.jpg" width="280" alt="SC6, Open hall"></a><br><b>SC6</b> · <a href="worlds/SC6_open_hall/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC7a_clutter_field_low/review/render_overview.png"><img src="media/SC7a_clutter_field_low.jpg" width="280" alt="SC7a, Clutter field, 45 blocks"></a><br><b>SC7a</b> · <a href="worlds/SC7a_clutter_field_low/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/SC7b_clutter_field_high/review/render_overview.png"><img src="media/SC7b_clutter_field_high.jpg" width="280" alt="SC7b, Clutter field, 90 blocks"></a><br><b>SC7b</b> · <a href="worlds/SC7b_clutter_field_high/review/plan.png">plan</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="worlds/SC8_zigzag/review/render_overview.png"><img src="media/SC8_zigzag.jpg" width="280" alt="SC8, Zigzag"></a><br><b>SC8</b> · <a href="worlds/SC8_zigzag/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -105,8 +107,8 @@ Two indoor layouts that mix several challenges: rooms, a loop, doors and some op
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/P1_racetrack_office/review/render_overview.png"><img src="media/P1_racetrack_office.jpg" width="200" alt="P1, Pilot racetrack office"></a><br><b>P1</b> · <a href="worlds/P1_racetrack_office/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/P2_lobby_wing/review/render_overview.png"><img src="media/P2_lobby_wing.jpg" width="200" alt="P2, Pilot lobby and wing"></a><br><b>P2</b> · <a href="worlds/P2_lobby_wing/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/P1_racetrack_office/review/render_overview.png"><img src="media/P1_racetrack_office.jpg" width="280" alt="P1, Pilot racetrack office"></a><br><b>P1</b> · <a href="worlds/P1_racetrack_office/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/P2_lobby_wing/review/render_overview.png"><img src="media/P2_lobby_wing.jpg" width="280" alt="P2, Pilot lobby and wing"></a><br><b>P2</b> · <a href="worlds/P2_lobby_wing/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -133,16 +135,18 @@ Use them to see how an explorer copes with backtracking as the dead ends go from
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/F1_maze_s08_perfect_rb/review/render_overview.png"><img src="media/F1_maze_s08_perfect_rb.jpg" width="200" alt="F1-01, Maze 8×8, perfect, recursive backtracker"></a><br><b>F1-01</b> · <a href="worlds/F1_maze_s08_perfect_rb/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F1_maze_s08_perfect_kr/review/render_overview.png"><img src="media/F1_maze_s08_perfect_kr.jpg" width="200" alt="F1-02, Maze 8×8, perfect, Kruskal"></a><br><b>F1-02</b> · <a href="worlds/F1_maze_s08_perfect_kr/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F1_maze_s08_braid50_rb/review/render_overview.png"><img src="media/F1_maze_s08_braid50_rb.jpg" width="200" alt="F1-03, Maze 8×8, braid 0.5, recursive backtracker"></a><br><b>F1-03</b> · <a href="worlds/F1_maze_s08_braid50_rb/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F1_maze_s08_braid50_kr/review/render_overview.png"><img src="media/F1_maze_s08_braid50_kr.jpg" width="200" alt="F1-04, Maze 8×8, braid 0.5, Kruskal"></a><br><b>F1-04</b> · <a href="worlds/F1_maze_s08_braid50_kr/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F1_maze_s08_perfect_rb/review/render_overview.png"><img src="media/F1_maze_s08_perfect_rb.jpg" width="280" alt="F1-01, Maze 8×8, perfect, recursive backtracker"></a><br><b>F1-01</b> · <a href="worlds/F1_maze_s08_perfect_rb/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F1_maze_s08_perfect_kr/review/render_overview.png"><img src="media/F1_maze_s08_perfect_kr.jpg" width="280" alt="F1-02, Maze 8×8, perfect, Kruskal"></a><br><b>F1-02</b> · <a href="worlds/F1_maze_s08_perfect_kr/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F1_maze_s08_braid50_rb/review/render_overview.png"><img src="media/F1_maze_s08_braid50_rb.jpg" width="280" alt="F1-03, Maze 8×8, braid 0.5, recursive backtracker"></a><br><b>F1-03</b> · <a href="worlds/F1_maze_s08_braid50_rb/review/plan.png">plan</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="worlds/F1_maze_s14_perfect_rb/review/render_overview.png"><img src="media/F1_maze_s14_perfect_rb.jpg" width="200" alt="F1-05, Maze 14×14, perfect, recursive backtracker"></a><br><b>F1-05</b> · <a href="worlds/F1_maze_s14_perfect_rb/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F1_maze_s14_perfect_kr/review/render_overview.png"><img src="media/F1_maze_s14_perfect_kr.jpg" width="200" alt="F1-06, Maze 14×14, perfect, Kruskal"></a><br><b>F1-06</b> · <a href="worlds/F1_maze_s14_perfect_kr/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F1_maze_s14_braid50_rb/review/render_overview.png"><img src="media/F1_maze_s14_braid50_rb.jpg" width="200" alt="F1-07, Maze 14×14, braid 0.5, recursive backtracker"></a><br><b>F1-07</b> · <a href="worlds/F1_maze_s14_braid50_rb/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F1_maze_s14_braid50_kr/review/render_overview.png"><img src="media/F1_maze_s14_braid50_kr.jpg" width="200" alt="F1-08, Maze 14×14, braid 0.5, Kruskal"></a><br><b>F1-08</b> · <a href="worlds/F1_maze_s14_braid50_kr/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F1_maze_s08_braid50_kr/review/render_overview.png"><img src="media/F1_maze_s08_braid50_kr.jpg" width="280" alt="F1-04, Maze 8×8, braid 0.5, Kruskal"></a><br><b>F1-04</b> · <a href="worlds/F1_maze_s08_braid50_kr/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F1_maze_s14_perfect_rb/review/render_overview.png"><img src="media/F1_maze_s14_perfect_rb.jpg" width="280" alt="F1-05, Maze 14×14, perfect, recursive backtracker"></a><br><b>F1-05</b> · <a href="worlds/F1_maze_s14_perfect_rb/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F1_maze_s14_perfect_kr/review/render_overview.png"><img src="media/F1_maze_s14_perfect_kr.jpg" width="280" alt="F1-06, Maze 14×14, perfect, Kruskal"></a><br><b>F1-06</b> · <a href="worlds/F1_maze_s14_perfect_kr/review/plan.png">plan</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="worlds/F1_maze_s14_braid50_rb/review/render_overview.png"><img src="media/F1_maze_s14_braid50_rb.jpg" width="280" alt="F1-07, Maze 14×14, braid 0.5, recursive backtracker"></a><br><b>F1-07</b> · <a href="worlds/F1_maze_s14_braid50_rb/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F1_maze_s14_braid50_kr/review/render_overview.png"><img src="media/F1_maze_s14_braid50_kr.jpg" width="280" alt="F1-08, Maze 14×14, braid 0.5, Kruskal"></a><br><b>F1-08</b> · <a href="worlds/F1_maze_s14_braid50_kr/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -165,16 +169,18 @@ These are the worlds for "rooms versus corridors" questions: how exploration tim
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/F2_office_f30x20_r08_d1/review/render_overview.png"><img src="media/F2_office_f30x20_r08_d1.jpg" width="200" alt="F2-01, Office 30×20 m, 8 rooms, 1 door per room"></a><br><b>F2-01</b> · <a href="worlds/F2_office_f30x20_r08_d1/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F2_office_f30x20_r08_d2/review/render_overview.png"><img src="media/F2_office_f30x20_r08_d2.jpg" width="200" alt="F2-02, Office 30×20 m, 8 rooms, 2 doors per room"></a><br><b>F2-02</b> · <a href="worlds/F2_office_f30x20_r08_d2/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F2_office_f30x20_r20_d1/review/render_overview.png"><img src="media/F2_office_f30x20_r20_d1.jpg" width="200" alt="F2-03, Office 30×20 m, 20 rooms, 1 door per room"></a><br><b>F2-03</b> · <a href="worlds/F2_office_f30x20_r20_d1/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F2_office_f30x20_r20_d2/review/render_overview.png"><img src="media/F2_office_f30x20_r20_d2.jpg" width="200" alt="F2-04, Office 30×20 m, 20 rooms, 2 doors per room"></a><br><b>F2-04</b> · <a href="worlds/F2_office_f30x20_r20_d2/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F2_office_f30x20_r08_d1/review/render_overview.png"><img src="media/F2_office_f30x20_r08_d1.jpg" width="280" alt="F2-01, Office 30×20 m, 8 rooms, 1 door per room"></a><br><b>F2-01</b> · <a href="worlds/F2_office_f30x20_r08_d1/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F2_office_f30x20_r08_d2/review/render_overview.png"><img src="media/F2_office_f30x20_r08_d2.jpg" width="280" alt="F2-02, Office 30×20 m, 8 rooms, 2 doors per room"></a><br><b>F2-02</b> · <a href="worlds/F2_office_f30x20_r08_d2/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F2_office_f30x20_r20_d1/review/render_overview.png"><img src="media/F2_office_f30x20_r20_d1.jpg" width="280" alt="F2-03, Office 30×20 m, 20 rooms, 1 door per room"></a><br><b>F2-03</b> · <a href="worlds/F2_office_f30x20_r20_d1/review/plan.png">plan</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="worlds/F2_office_f50x30_r08_d1/review/render_overview.png"><img src="media/F2_office_f50x30_r08_d1.jpg" width="200" alt="F2-05, Office 50×30 m, 8 rooms, 1 door per room"></a><br><b>F2-05</b> · <a href="worlds/F2_office_f50x30_r08_d1/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F2_office_f50x30_r08_d2/review/render_overview.png"><img src="media/F2_office_f50x30_r08_d2.jpg" width="200" alt="F2-06, Office 50×30 m, 8 rooms, 2 doors per room"></a><br><b>F2-06</b> · <a href="worlds/F2_office_f50x30_r08_d2/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F2_office_f50x30_r20_d1/review/render_overview.png"><img src="media/F2_office_f50x30_r20_d1.jpg" width="200" alt="F2-07, Office 50×30 m, 20 rooms, 1 door per room"></a><br><b>F2-07</b> · <a href="worlds/F2_office_f50x30_r20_d1/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F2_office_f50x30_r20_d2/review/render_overview.png"><img src="media/F2_office_f50x30_r20_d2.jpg" width="200" alt="F2-08, Office 50×30 m, 20 rooms, 2 doors per room"></a><br><b>F2-08</b> · <a href="worlds/F2_office_f50x30_r20_d2/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F2_office_f30x20_r20_d2/review/render_overview.png"><img src="media/F2_office_f30x20_r20_d2.jpg" width="280" alt="F2-04, Office 30×20 m, 20 rooms, 2 doors per room"></a><br><b>F2-04</b> · <a href="worlds/F2_office_f30x20_r20_d2/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F2_office_f50x30_r08_d1/review/render_overview.png"><img src="media/F2_office_f50x30_r08_d1.jpg" width="280" alt="F2-05, Office 50×30 m, 8 rooms, 1 door per room"></a><br><b>F2-05</b> · <a href="worlds/F2_office_f50x30_r08_d1/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F2_office_f50x30_r08_d2/review/render_overview.png"><img src="media/F2_office_f50x30_r08_d2.jpg" width="280" alt="F2-06, Office 50×30 m, 8 rooms, 2 doors per room"></a><br><b>F2-06</b> · <a href="worlds/F2_office_f50x30_r08_d2/review/plan.png">plan</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="worlds/F2_office_f50x30_r20_d1/review/render_overview.png"><img src="media/F2_office_f50x30_r20_d1.jpg" width="280" alt="F2-07, Office 50×30 m, 20 rooms, 1 door per room"></a><br><b>F2-07</b> · <a href="worlds/F2_office_f50x30_r20_d1/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F2_office_f50x30_r20_d2/review/render_overview.png"><img src="media/F2_office_f50x30_r20_d2.jpg" width="280" alt="F2-08, Office 50×30 m, 20 rooms, 2 doors per room"></a><br><b>F2-08</b> · <a href="worlds/F2_office_f50x30_r20_d2/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -197,13 +203,13 @@ Narrow and wide aisles show how much a tight squeeze slows down the planner and 
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/F3_aisles_h30x20_a150_x1/review/render_overview.png"><img src="media/F3_aisles_h30x20_a150_x1.jpg" width="200" alt="F3-01, Warehouse aisles 30×20 m, 1.5 m aisles, 1 cross-aisle"></a><br><b>F3-01</b> · <a href="worlds/F3_aisles_h30x20_a150_x1/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F3_aisles_h30x20_a150_x3/review/render_overview.png"><img src="media/F3_aisles_h30x20_a150_x3.jpg" width="200" alt="F3-02, Warehouse aisles 30×20 m, 1.5 m aisles, 3 cross-aisles"></a><br><b>F3-02</b> · <a href="worlds/F3_aisles_h30x20_a150_x3/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F3_aisles_h30x20_a300_x1/review/render_overview.png"><img src="media/F3_aisles_h30x20_a300_x1.jpg" width="200" alt="F3-03, Warehouse aisles 30×20 m, 3.0 m aisles, 1 cross-aisle"></a><br><b>F3-03</b> · <a href="worlds/F3_aisles_h30x20_a300_x1/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F3_aisles_h30x20_a300_x3/review/render_overview.png"><img src="media/F3_aisles_h30x20_a300_x3.jpg" width="200" alt="F3-04, Warehouse aisles 30×20 m, 3.0 m aisles, 3 cross-aisles"></a><br><b>F3-04</b> · <a href="worlds/F3_aisles_h30x20_a300_x3/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F3_aisles_h30x20_a150_x1/review/render_overview.png"><img src="media/F3_aisles_h30x20_a150_x1.jpg" width="280" alt="F3-01, Warehouse aisles 30×20 m, 1.5 m aisles, 1 cross-aisle"></a><br><b>F3-01</b> · <a href="worlds/F3_aisles_h30x20_a150_x1/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F3_aisles_h30x20_a150_x3/review/render_overview.png"><img src="media/F3_aisles_h30x20_a150_x3.jpg" width="280" alt="F3-02, Warehouse aisles 30×20 m, 1.5 m aisles, 3 cross-aisles"></a><br><b>F3-02</b> · <a href="worlds/F3_aisles_h30x20_a150_x3/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F3_aisles_h30x20_a300_x1/review/render_overview.png"><img src="media/F3_aisles_h30x20_a300_x1.jpg" width="280" alt="F3-03, Warehouse aisles 30×20 m, 3.0 m aisles, 1 cross-aisle"></a><br><b>F3-03</b> · <a href="worlds/F3_aisles_h30x20_a300_x1/review/plan.png">plan</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="worlds/F3_aisles_h60x40_a300_x1/review/render_overview.png"><img src="media/F3_aisles_h60x40_a300_x1.jpg" width="200" alt="F3-05, Warehouse aisles 60×40 m, 3.0 m aisles, 1 cross-aisle"></a><br><b>F3-05</b> · <a href="worlds/F3_aisles_h60x40_a300_x1/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F3_aisles_h30x20_a300_x3/review/render_overview.png"><img src="media/F3_aisles_h30x20_a300_x3.jpg" width="280" alt="F3-04, Warehouse aisles 30×20 m, 3.0 m aisles, 3 cross-aisles"></a><br><b>F3-04</b> · <a href="worlds/F3_aisles_h30x20_a300_x3/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F3_aisles_h60x40_a300_x1/review/render_overview.png"><img src="media/F3_aisles_h60x40_a300_x1.jpg" width="280" alt="F3-05, Warehouse aisles 60×40 m, 3.0 m aisles, 1 cross-aisle"></a><br><b>F3-05</b> · <a href="worlds/F3_aisles_h60x40_a300_x1/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -223,9 +229,9 @@ In a sparse forest most lidar beams pass between the trunks; in a dense one, nea
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/F4_forest_s40_d003/review/render_overview.png"><img src="media/F4_forest_s40_d003.jpg" width="200" alt="F4-01, Walled forest 40×40 m, 0.03 trunks per m²"></a><br><b>F4-01</b> · <a href="worlds/F4_forest_s40_d003/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F4_forest_s80_d001/review/render_overview.png"><img src="media/F4_forest_s80_d001.jpg" width="200" alt="F4-02, Walled forest 80×80 m, 0.01 trunks per m²"></a><br><b>F4-02</b> · <a href="worlds/F4_forest_s80_d001/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/F4_forest_s80_d003/review/render_overview.png"><img src="media/F4_forest_s80_d003.jpg" width="200" alt="F4-03, Walled forest 80×80 m, 0.03 trunks per m²"></a><br><b>F4-03</b> · <a href="worlds/F4_forest_s80_d003/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F4_forest_s40_d003/review/render_overview.png"><img src="media/F4_forest_s40_d003.jpg" width="280" alt="F4-01, Walled forest 40×40 m, 0.03 trunks per m²"></a><br><b>F4-01</b> · <a href="worlds/F4_forest_s40_d003/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F4_forest_s80_d001/review/render_overview.png"><img src="media/F4_forest_s80_d001.jpg" width="280" alt="F4-02, Walled forest 80×80 m, 0.01 trunks per m²"></a><br><b>F4-02</b> · <a href="worlds/F4_forest_s80_d001/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F4_forest_s80_d003/review/render_overview.png"><img src="media/F4_forest_s80_d003.jpg" width="280" alt="F4-03, Walled forest 80×80 m, 0.03 trunks per m²"></a><br><b>F4-03</b> · <a href="worlds/F4_forest_s80_d003/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -241,7 +247,7 @@ A 100 × 100 m walled town: a 4 × 4 grid of 17.5 m buildings with 6 m streets. 
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/F5_urban_w06_b15/review/render_overview.png"><img src="media/F5_urban_w06_b15.jpg" width="200" alt="F5-01, Walled urban blocks, 6 m streets, 15 m nominal blocks"></a><br><b>F5-01</b> · <a href="worlds/F5_urban_w06_b15/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/F5_urban_w06_b15/review/render_overview.png"><img src="media/F5_urban_w06_b15.jpg" width="280" alt="F5-01, Walled urban blocks, 6 m streets, 15 m nominal blocks"></a><br><b>F5-01</b> · <a href="worlds/F5_urban_w06_b15/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -257,9 +263,9 @@ Designed worlds are good at isolating one problem. These three check whether wha
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/RP1_aces3_austin/review/render_overview.png"><img src="media/RP1_aces3_austin.jpg" width="200" alt="RP1, ACES3 Austin (rebuilt from the map image)"></a><br><b>RP1</b> · <a href="worlds/RP1_aces3_austin/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/RP2_industrial_warehouse/review/render_overview.png"><img src="media/RP2_industrial_warehouse.jpg" width="200" alt="RP2, Industrial warehouse"></a><br><b>RP2</b> · <a href="worlds/RP2_industrial_warehouse/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/RP3_santa_maria_del_mar/review/render_overview.png"><img src="media/RP3_santa_maria_del_mar.jpg" width="200" alt="RP3, Santa Maria del Mar, El Born (Barcelona)"></a><br><b>RP3</b> · <a href="worlds/RP3_santa_maria_del_mar/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/RP1_aces3_austin/review/render_overview.png"><img src="media/RP1_aces3_austin.jpg" width="280" alt="RP1, ACES3 Austin (rebuilt from the map image)"></a><br><b>RP1</b> · <a href="worlds/RP1_aces3_austin/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/RP2_industrial_warehouse/review/render_overview.png"><img src="media/RP2_industrial_warehouse.jpg" width="280" alt="RP2, Industrial warehouse"></a><br><b>RP2</b> · <a href="worlds/RP2_industrial_warehouse/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/RP3_santa_maria_del_mar/review/render_overview.png"><img src="media/RP3_santa_maria_del_mar.jpg" width="280" alt="RP3, Santa Maria del Mar, El Born (Barcelona)"></a><br><b>RP3</b> · <a href="worlds/RP3_santa_maria_del_mar/review/plan.png">plan</a></td>
   </tr>
 </table>
 
@@ -285,8 +291,8 @@ The static part of each world is identical to a base world, SC4 for MO1 and RP2 
 
 <table>
   <tr>
-    <td align="center"><a href="worlds/MO1_office_strip_moving/review/render_overview.png"><img src="media/MO1_office_strip_moving.jpg" width="200" alt="MO1, Office strip with moving objects (high density)"></a><br><b>MO1</b> · <a href="worlds/MO1_office_strip_moving/review/plan.png">plan</a></td>
-    <td align="center"><a href="worlds/MO2_warehouse_moving/review/render_overview.png"><img src="media/MO2_warehouse_moving.jpg" width="200" alt="MO2, Warehouse with moving objects, high density"></a><br><b>MO2</b> · <a href="worlds/MO2_warehouse_moving/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/MO1_office_strip_moving/review/render_overview.png"><img src="media/MO1_office_strip_moving.jpg" width="280" alt="MO1, Office strip with moving objects (high density)"></a><br><b>MO1</b> · <a href="worlds/MO1_office_strip_moving/review/plan.png">plan</a></td>
+    <td align="center"><a href="worlds/MO2_warehouse_moving/review/render_overview.png"><img src="media/MO2_warehouse_moving.jpg" width="280" alt="MO2, Warehouse with moving objects, high density"></a><br><b>MO2</b> · <a href="worlds/MO2_warehouse_moving/review/plan.png">plan</a></td>
   </tr>
 </table>
 
