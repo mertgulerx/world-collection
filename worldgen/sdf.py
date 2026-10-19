@@ -14,13 +14,13 @@
 
 """SDF 1.9 writer with a design-ledger header (T0 §6).
 
-The world header (physics, system plugins, scene and light) is copied verbatim from the Corridor world, so new
-worlds load like the current ones.
+The world header (physics, system plugins, scene and light) is copied verbatim from the benchmark's Corridor
+world, so new worlds load like the current ones. The copied lines are kept in `corridor_header.sdf` so the
+collection builds without the benchmark repository.
 """
 
 from __future__ import annotations
 
-import hashlib
 import math
 from collections import Counter
 from pathlib import Path
@@ -29,8 +29,10 @@ from xml.sax.saxutils import escape
 from . import WORLDGEN_VERSION
 from .world import MATERIALS, Kind, Primitive, World, sorted_primitives
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-HEADER_SOURCE = REPO_ROOT / "simulation" / "worlds" / "corridor" / "corridor.world"
+HEADER_FILE = Path(__file__).with_name("corridor_header.sdf")
+# Provenance of HEADER_FILE: the benchmark repository's Corridor world and that file's SHA-256.
+HEADER_SOURCE = "simulation/worlds/corridor/corridor.world"
+HEADER_SOURCE_SHA256 = "2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de"
 FLOOR_MARGIN_M = 2.0
 FLOOR_THICKNESS_M = 0.05
 
@@ -47,12 +49,9 @@ def rad(value: float) -> str:
 
 
 def header_block() -> tuple[str, str]:
-    """The Corridor world's lines from `<gravity>` to the end of its first `<light>`, and the file's SHA-256."""
-    raw = HEADER_SOURCE.read_bytes()
-    lines = raw.decode("utf-8").splitlines()
-    start = next(i for i, line in enumerate(lines) if "<gravity>" in line)
-    end = next(i for i, line in enumerate(lines) if "</light>" in line)
-    return "\n".join(lines[start : end + 1]), hashlib.sha256(raw).hexdigest()
+    """The Corridor world's lines from `<gravity>` to the end of its first `<light>`, and the source file's
+    SHA-256."""
+    return HEADER_FILE.read_text(encoding="utf-8").removesuffix("\n"), HEADER_SOURCE_SHA256
 
 
 def split_after_plugins(header: str) -> tuple[str, str]:
@@ -61,12 +60,12 @@ def split_after_plugins(header: str) -> tuple[str, str]:
     lines = header.split("\n")
     starts = [i for i, line in enumerate(lines) if line.strip().startswith("<plugin")]
     if not starts:
-        raise ValueError(f"no <plugin> element in the header copied from {HEADER_SOURCE}")
+        raise ValueError(f"no <plugin> element in {HEADER_FILE.name}")
     last = starts[-1]
     if not lines[last].rstrip().endswith("/>"):  # a plugin with children ends at its closing tag
         closing = [i for i in range(last + 1, len(lines)) if lines[i].strip() == "</plugin>"]
         if not closing:
-            raise ValueError(f"the last <plugin> element in {HEADER_SOURCE} is not closed")
+            raise ValueError(f"the last <plugin> element in {HEADER_FILE.name} is not closed")
         last = closing[0]
     return "\n".join(lines[: last + 1]), "\n".join(lines[last + 1 :])
 
@@ -132,7 +131,7 @@ def ledger(world: World, header_sha: str) -> str:
         f"  Generator: worldgen {WORLDGEN_VERSION}.\n"
         f"  Parameters: {params}. Seed: {world.seed if world.seed is not None else 'none'}.\n"
         f"  Sources: {escape(sources)}.\n"
-        f"  Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 {header_sha}).\n"
+        f"  Header: copied from {HEADER_SOURCE} (SHA-256 {header_sha}).\n"
         f"  Floor: a static box {FLOOR_THICKNESS_M} m thick with its top face at z = 0 (as the Corridor floor).\n"
         f"  Primitives by role: {role_line}. Collision and visual geometry are identical.\n"
         + moving_lines

@@ -40,7 +40,7 @@ from .world import CheckResult, PlanKey, World
 
 ROOT = Path(__file__).resolve().parents[1]
 WORLDS_DIR = ROOT / "worlds"
-REPO_LICENSE = ROOT.parent / "LICENSE"  # worlds carry the repository licence, Apache-2.0
+REPO_LICENSE = ROOT / "LICENSE"  # worlds carry the repository licence, Apache-2.0
 BLENDER = shutil.which("blender") or "blender"
 BLENDER_TIMEOUT_S = 3600.0
 EMIT_TIMEOUT_S = 600.0
