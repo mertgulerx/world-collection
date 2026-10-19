@@ -5,12 +5,13 @@
 
 [![DOI](https://zenodo.org/badge/1424891966.svg)](https://doi.org/10.5281/zenodo.23460686)
 
-42 Gazebo Harmonic simulation worlds for testing robot exploration, navigation, SLAM and many more.
+42 Simulation worlds for testing robot exploration, navigation, SLAM and many more. Compatible with Gazebo and other simulators.
 
 > [!NOTE]
 > New environments with 3D models and textures required for **Agentic Workflows, Perception, 3D Mapping, Object Detection and Worker Robot Training** will be added in the future.
 
 The collection includes simple test layouts, mazes, offices, warehouses, forests, real places and worlds with moving obstacles. Each world has fixed start poses and measured values, so methods can be compared fairly.
+The project works via Python + Blender asset generation and convertion to .sdf world files. Which allows compatibility with different simulation stacks, math calculations and easier customizations to be done.
 
 <p align="center">
   <img src="media/collection_overview.jpg" width="900" alt="Six worlds from the collection: the El Born streets around Santa Maria del Mar, a warehouse with moving carts, a 14 by 14 maze, an office floor with 20 rooms, a walled forest and a clutter field">
