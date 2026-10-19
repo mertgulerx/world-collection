@@ -6,7 +6,6 @@ role: evaluation
 family: F5
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/C6-walled-urban-blocks.md
 parameters: {block_side_m: 17.5, blocks_per_side: 4, building_height_m: 6.0, nominal_block_m: 15.0, plazas: 3, street_width_m: 6.0,
   wall_height_m: 3.0}
 seed: 601000
@@ -777,9 +776,5 @@ sources:
 - {what: feature-poor geometry bounds 2D localisation, cite: censi2007achievable}
 - {what: degeneracy of range-based localisation, cite: zhang2016degeneracy}
 licence: Apache-2.0
-hashes: {sdf: b6b3c7be627608133886b18750c4c6f0a48d1d65e66395cab2fd8a2425fafbfe, world_json: 3dc9bffca9140c02697d36fc21df54626538c341dc7671aa30ac1e6e287eac4b}
+hashes: {sdf: df94f76911772785e084e340a4239631febcbb23ef38e4475a1d7611b689537b, world_json: 3dc9bffca9140c02697d36fc21df54626538c341dc7671aa30ac1e6e287eac4b}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

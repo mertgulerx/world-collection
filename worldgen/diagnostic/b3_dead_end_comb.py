@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC3 Dead-end comb (plan docs/plans/worlds/B3-dead-end-comb.md)."""
+"""SC3 Dead-end comb."""
 
 from __future__ import annotations
 
@@ -100,7 +100,6 @@ def build() -> World:
         title="Dead-end comb",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B3-dead-end-comb.md",
         primitives=(*walls, *fills),
         spawns=(
             Spawn("S1", -17.0, 0.0, 0.0, "west end of the spine, facing along it"),

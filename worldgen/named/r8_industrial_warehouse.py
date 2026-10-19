@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""RP2 Industrial warehouse (plan docs/plans/worlds/R8-industrial-warehouse.md); the base world of E3.
+"""RP2 Industrial warehouse; the base world of E3.
 
 Every element is a primitive defined here (plan §2: our own aisles, no third-party file). All boxes lie on the
 0.05 m grid, so the raster is exact (plan §3).
@@ -30,7 +30,6 @@ from ..geometry import Recess, box, door, walled_rectangle
 from ..layout_checks import door_cut, door_openings, free_length, rect_area
 from ..world import CheckResult, Dimension, Expected, Kind, Point, Role, Spawn, World
 
-PLAN = "docs/plans/worlds/R8-industrial-warehouse.md"
 DOOR_M = 1.2  # designed-world door width (maintainer, 18 October 2026)
 HALL = (-28.0, 28.0, -18.0, 18.0)  # inner faces of the outer wall (plan §3.1)
 OUTER_T, OUTER_H = 0.3, 4.0
@@ -355,7 +354,6 @@ def build() -> World:
         title="Industrial warehouse",
         tier="RP",
         role="evaluation",
-        plan=PLAN,
         primitives=(*walls, *racks, *columns, *office, *loads),
         spawns=(
             Spawn("S1", -26.5, -13.0, 0.0, "west end of the staging area, facing the aisle ends"),

@@ -8,7 +8,7 @@
     their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
     used: Gazebo skips serialising models that carry one.
   Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
-  Generator: worldgen 1.0.1; plan docs/plans/worlds/C1-mazes.md.
+  Generator: worldgen 1.0.1.
   Parameters: algorithm=recursive backtracker, cell_pitch_m=2.5, cells=14, landmarks=33, loops=braid 0.5. Seed: 107000.
   Sources: maze generation algorithms (bellot2021mazes).
   Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).

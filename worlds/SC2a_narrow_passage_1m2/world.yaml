@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/B2-narrow-passage.md
 parameters: {corridor_width_m: 1.2}
 seed: null
 selection: null
@@ -110,9 +109,5 @@ plan_data: {}
 sources:
 - {what: layout idea (narrow-corridor scene), cite: xu2022explorebench}
 licence: Apache-2.0
-hashes: {sdf: c71016e77900a0611d1177bef1422103b086578f8f80fc16570cd81212181b99, world_json: 7de074b742ccff67da234c00a67fc77f8b8bb8d2fa09e3e80ff52aa49fd0ee18}
+hashes: {sdf: ce099da1fc940196939549cf35bd73f9e9e11756d17e0d2552af4a862e68f0dc, world_json: 7de074b742ccff67da234c00a67fc77f8b8bb8d2fa09e3e80ff52aa49fd0ee18}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All eight checklist items hold in plan.png and the five renders;
-      all T0 checks and the four B2 checks pass.}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

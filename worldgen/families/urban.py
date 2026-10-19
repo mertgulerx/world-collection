@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""F5 Walled urban blocks, a generated family of four street grids (plan docs/plans/worlds/C6-walled-urban-blocks.md).
+"""F5 Walled urban blocks, a generated family of four street grids.
 
 The actual block side b_eff = (100 − (n_b + 1)·w)/n_b is not a multiple of 0.1 m for C6-02 and C6-03 (25.3333 and
 17.3333 m), so the construction uses integer units of 0.0001 m, the precision the SDF writes (T0 §4). Block edges
@@ -62,7 +62,6 @@ from .common import (
 )
 
 FAMILY = "F5"
-PLAN = "docs/plans/worlds/C6-walled-urban-blocks.md"
 SEED_BASE = 600000  # setting j tries seeds SEED_BASE + 1000·j + i (plan §3.3)
 UNIT = 1e-4  # construction unit, 0.0001 m
 PER_M = 10_000  # units per metre
@@ -102,7 +101,6 @@ RANGES = {
 DROPPED = frozenset({2, 3, 4})
 BUILT = tuple(j for j in SETTINGS if j not in DROPPED)
 FAMILY_INFO = FamilyInfo(
-    plan=PLAN,
     instances=tuple(f"{FAMILY}-{j:02d}" for j in BUILT),
     columns=2,
     seeds=seed_rules(SEED_BASE),
@@ -390,7 +388,6 @@ def _candidate(j: int, seed: int, candidate: int, rejected: list[dict[str, objec
         title=f"Walled urban blocks, {w_m} m streets, {b_m} m nominal blocks",
         tier="F",
         role="evaluation",
-        plan=PLAN,
         primitives=prims,
         spawns=(Spawn("S1", sx, sy, yaw, "seeded free cell, along the longest open axis ray"),),
         expected=Expected(

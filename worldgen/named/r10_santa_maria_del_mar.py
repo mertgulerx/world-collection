@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""RP3 Santa Maria del Mar, El Born, Barcelona (plan docs/plans/worlds/R10-santa-maria-del-mar.md).
+"""RP3 Santa Maria del Mar, El Born, Barcelona.
 
 The medieval street grid around the basilica inside the border the maintainer drew on OpenStreetMap. Built only
 from the stored files in `sources/RP3/` (no network access): the raw Overpass extract and the georeferenced
@@ -940,7 +940,6 @@ def build() -> World:
         title="Santa Maria del Mar, El Born (Barcelona)",
         tier="RP",
         role="evaluation",
-        plan="docs/plans/worlds/R10-santa-maria-del-mar.md",
         primitives=prims,
         spawns=spawns,
         expected=Expected(

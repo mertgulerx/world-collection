@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC5 Nested pockets (plan docs/plans/worlds/B5-nested-pockets.md).
+"""SC5 Nested pockets.
 
 A start hall with two kinds of exits: 1.2 m doors straight into three large rooms, and 4 m openings into three
 chains of five nested pockets (24, 15, 12, 8 and 6 m² by design), each entered through a side or corner opening
@@ -265,7 +265,6 @@ def build() -> World:
         title="Nested pockets",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B5-nested-pockets.md",
         primitives=prims,
         spawns=spawns,
         expected=Expected(free_area_m2=907.74, narrowest_passage_m=1.2, loops=0, loops_unsized=0),

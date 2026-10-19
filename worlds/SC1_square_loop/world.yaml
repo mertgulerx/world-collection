@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/B1-square-loop.md
 parameters: {}
 seed: null
 selection: null
@@ -103,10 +102,5 @@ sources:
 - {what: layout idea (loop scene), cite: xu2022explorebench}
 - {what: layout idea (loop map), cite: yan2016benchmarking}
 licence: Apache-2.0
-hashes: {sdf: e0cd4e888bc950156e1ee72d513e42db5d4eced4a2f27205b7fdc48c95b77d32, world_json: ad23d430a89c7c35c0e096fefa8139469f48262100d03682b8751e7475bd8924}
+hashes: {sdf: bca8497c77baf9bff2295f00c1ff1a21bff3182b4babe127360436aa12efea61, world_json: ad23d430a89c7c35c0e096fefa8139469f48262100d03682b8751e7475bd8924}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All six checklist items hold in plan.png and the five renders; all
-      eight T0 checks pass.}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: 'Inspected in the Gazebo GUI. Re-emitted with worldgen 1.0.1
-      (no pose relative_to attributes); world.json hash unchanged, so the geometry is identical.'}

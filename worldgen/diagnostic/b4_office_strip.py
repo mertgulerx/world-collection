@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC4 Office strip (plan docs/plans/worlds/B4-office-strip.md). Also the base world of E1."""
+"""SC4 Office strip. Also the base world of E1."""
 
 from __future__ import annotations
 
@@ -105,7 +105,6 @@ def build() -> World:
         title="Office strip",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B4-office-strip.md",
         primitives=(*walls, *inner),
         spawns=(
             Spawn("S1", -11.0, 0.0, 0.0, "west end of the corridor, every room ahead"),

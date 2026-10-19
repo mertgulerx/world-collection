@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""F3 Warehouse aisles, a generated family of eight rack halls (plan docs/plans/worlds/C4-warehouse-aisles.md).
+"""F3 Warehouse aisles, a generated family of eight rack halls.
 
 Lengths of the construction are integers in units of 0.1 m measured from the hall's south-west corner (the inner
 faces of the walls), so every rack lies on the 0.1 m construction grid (plan §3.2).
@@ -56,7 +56,6 @@ from .common import (
 )
 
 FAMILY = "F3"
-PLAN = "docs/plans/worlds/C4-warehouse-aisles.md"
 SEED_BASE = 400000  # setting j tries seeds SEED_BASE + 1000·j + i (plan §3.3)
 UNIT = 0.1
 DEPTH = 20  # rack row depth D, 2.0 m
@@ -102,7 +101,6 @@ def world_id(j: int) -> str:
 
 
 FAMILY_INFO = FamilyInfo(
-    plan=PLAN,
     instances=tuple(world_id(j) for j in BUILT),
     columns=4,
     seeds=seed_rules(SEED_BASE),
@@ -250,7 +248,6 @@ def _candidate(j: int, seed: int, candidate: int, rejected: list[dict[str, objec
         + ("s" if cross > 1 else ""),
         tier="F",
         role="evaluation",
-        plan=PLAN,
         primitives=prims,
         spawns=(Spawn("S1", sx, sy, yaw, "seeded free cell, along the longest open axis ray"),),
         expected=Expected(

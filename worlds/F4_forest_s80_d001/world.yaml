@@ -6,7 +6,6 @@ role: evaluation
 family: F4
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/C5-walled-forests.md
 parameters:
   boulders: 16
   density_per_m2: 0.01
@@ -480,9 +479,5 @@ sources:
 - {what: trunk radius and density, cite: tian2020forest}
 - {what: localisation in feature-poor open space, cite: censi2007achievable}
 licence: Apache-2.0
-hashes: {sdf: a74d6e32c29ee9347cc723e4a7c3d3eadc4897627586845d4ef41c5fc756a9c8, world_json: db2ff7173a47f06caffe869b6cbbac6582665fab4282d4dfdcc1ffb83ec38ae7}
+hashes: {sdf: 7e87e2e638a9ad2e252e2451712bebe7d3eca0df40d2b4499a30fe1486297d6b, world_json: db2ff7173a47f06caffe869b6cbbac6582665fab4282d4dfdcc1ffb83ec38ae7}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

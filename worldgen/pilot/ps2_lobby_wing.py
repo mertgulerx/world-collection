@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""P2 Pilot lobby and wing (plan docs/plans/worlds/P2-pilot-lobby-wing.md). Pilot only."""
+"""P2 Pilot lobby and wing. Pilot only."""
 
 from __future__ import annotations
 
@@ -117,7 +117,6 @@ def build() -> World:
         title="Pilot lobby and wing",
         tier="P",
         role="pilot",
-        plan="docs/plans/worlds/P2-pilot-lobby-wing.md",
         primitives=(*walls, *inner, *pillars),
         spawns=(
             Spawn("S1", -12.0, 0.0, 0.0, "west lobby, facing the core 8.0 m ahead"),

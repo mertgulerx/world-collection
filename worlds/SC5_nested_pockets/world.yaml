@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/B5-nested-pockets.md
 parameters: {}
 seed: null
 selection: null
@@ -230,9 +229,5 @@ plan_data: {}
 sources:
 - {what: 'layout idea (frontier utility, missed small areas)', cite: xu2022explorebench}
 licence: Apache-2.0
-hashes: {sdf: 4f7418ee3b42db85103f50d3b67eb5b719c68b7966702d5918a12f6454f2cdff, world_json: ae8f0c3d34dc543de87da1430261466ecd1792d5b84fb257956b23210fa8d773}
+hashes: {sdf: e2895041d62e129eb35e649b1a8dedde931cfb98668a4b7bc1c9db4dc4f5ea21, world_json: ae8f0c3d34dc543de87da1430261466ecd1792d5b84fb257956b23210fa8d773}
 status: confirmed
-review:
-  image_review: {date: '2026-10-19', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-19', result: confirmed, notes: Inspected in the Gazebo GUI.}

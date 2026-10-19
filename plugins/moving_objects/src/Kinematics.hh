@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // Deterministic path kinematics of the E0 moving-object system
-// (docs/plans/worlds/E0-moving-object-system.md, section 3.4). Header-only and free of Gazebo
+// (design section 3.4). Header-only and free of Gazebo
 // types so that the same code can be compiled outside the plugin. The Python evaluator
 // (world_collection/worldgen/moving.py) implements the same definition; every rule below that the
 // plan leaves open is stated here and must be matched there. Bit-for-bit agreement needs the

@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/B7-clutter-field.md
 parameters:
   attempt_limit: 20000
   block_height_m: 1.2
@@ -108,9 +107,5 @@ sources:
 - {what: obstacle-field difficulty measures, cite: perille2020barn}
 - {what: cluttered scene, cite: xu2022explorebench}
 licence: Apache-2.0
-hashes: {sdf: 83179dcd564ad61246ed4389f0682f35b853c033cd453da995bd4f8e0d96701f, world_json: 013ab352c5edb2eab7a07d8f6555212a0f367af3265c99d26f0a7a9562094592}
+hashes: {sdf: 80a5c9e56b1857c87dd163dbdef7cf34847a2c7b3ead1605e00c91e9e2e2a6b7, world_json: 013ab352c5edb2eab7a07d8f6555212a0f367af3265c99d26f0a7a9562094592}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

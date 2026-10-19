@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""P1 Pilot racetrack office (plan docs/plans/worlds/P1-pilot-racetrack-office.md). Pilot only; the base
+"""P1 Pilot racetrack office. Pilot only; the base
 world of PM1."""
 
 from __future__ import annotations
@@ -109,7 +109,6 @@ def build() -> World:
         title="Pilot racetrack office",
         tier="P",
         role="pilot",
-        plan="docs/plans/worlds/P1-pilot-racetrack-office.md",
         primitives=(*walls, *inner),
         spawns=(
             Spawn(

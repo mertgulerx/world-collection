@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Moving-object path model, drawing engine, checks and writers (plan docs/plans/worlds/E0-moving-object-system.md).
+"""Moving-object path model, drawing engine, checks and writers.
 
 The E0 gz-sim system (`world_collection/plugins/moving_objects/`) implements the same kinematics; this module is
 the reference evaluator used by the checks and the review images. `python -m worldgen.agreement` compares a
@@ -104,7 +104,6 @@ from .world import (
 
 IntArray = npt.NDArray[np.int64]
 
-PLAN = "docs/plans/worlds/E0-moving-object-system.md"
 SYSTEM_NAME = "benchmark::MovingObjects"
 PLUGIN_FILE = "benchmark-moving-objects-system"
 FORMAT_VERSION = 1
@@ -1415,7 +1414,6 @@ def variant(
     world_id: str,
     slug: str,
     title: str,
-    plan: str,
     moving: MovingDefinition,
     family: str,
     extra_checks: tuple[ExtraCheck, ...],
@@ -1429,7 +1427,6 @@ def variant(
         title=title,
         tier="MO",
         family=family,
-        plan=plan,
         seed=moving.seed,
         structure_model=base.structure_name,
         moving=moving,
@@ -1446,7 +1443,7 @@ def sdf_plugin(defn: MovingDefinition, indent: str = "    ") -> str:
     """The `<plugin>` element of the system (E0 §4), indented for the `<world>` level."""
     i1, i2, i3 = indent, indent + "  ", indent + "    "
     lines = [
-        f"{i1}<!-- E0 moving-object system; plan {PLAN}; values written by worldgen -->",
+        f"{i1}<!-- E0 moving-object system; values written by worldgen -->",
         f'{i1}<plugin filename="{PLUGIN_FILE}" name="{SYSTEM_NAME}">',
         f"{i2}<format_version>{FORMAT_VERSION}</format_version>",
         f"{i2}<topic>{defn.topic}</topic>",
@@ -1522,7 +1519,7 @@ def sdf_models(defn: MovingDefinition) -> str:
 
 def ledger_lines(defn: MovingDefinition) -> str:
     return (
-        f"  Moving objects (E0, {PLAN}):\n"
+        f"  Moving objects (E0):\n"
         f"    {defn.count} non-static models mo_00..mo_{defn.count - 1:02d}; density {defn.density}, seed "
         f"{defn.seed}, velocity mode {defn.velocity_mode.value};\n"
         f"    moved by the {SYSTEM_NAME} system plugin ({PLUGIN_FILE}).\n"
@@ -1576,7 +1573,6 @@ def yaml_block(defn: MovingDefinition, measured: Measured | None) -> dict[str, A
     return {
         "system": SYSTEM_NAME,
         "format_version": FORMAT_VERSION,
-        "plan": PLAN,
         "density": defn.density,
         "area_per_object_m2": defn.area_per_object_m2,
         "free_area_m2": None if defn.free_area_m2 is None else round(defn.free_area_m2, 4),
@@ -1888,7 +1884,6 @@ def test_world(velocity_mode: VelocityMode = VelocityMode.POSE_AND_VELOCITY) -> 
         title="Moving-object test floor",
         tier="P",
         role="pilot",
-        plan=PLAN,
         primitives=tuple(walls),
         spawns=(Spawn("S1", -8.5, -8.5, 0.0, "corner, away from every path"),),
         expected=Expected(free_area_m2=400.0, narrowest_passage_m=20.0, loops=0, loops_unsized=0),

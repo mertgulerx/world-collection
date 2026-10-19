@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/B8-zigzag.md
 parameters: {}
 seed: null
 selection: null
@@ -96,9 +95,5 @@ plan_data: {}
 sources:
 - {what: layout idea (zigzag map), cite: yan2016benchmarking}
 licence: Apache-2.0
-hashes: {sdf: 32ce8f8e891cc62a4cfee5117ad12fe23464b264541ee14690052dcb671b2d0d, world_json: b7d1f708376aa016b18394df89db6abd842fbbf3afdaafedee833606e8a7f96d}
+hashes: {sdf: d7074af3f3a6dfbb65909e4c6ec223f153e216ec042db1f937ef8975405378da, world_json: b7d1f708376aa016b18394df89db6abd842fbbf3afdaafedee833606e8a7f96d}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

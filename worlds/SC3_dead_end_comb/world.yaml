@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/B3-dead-end-comb.md
 parameters: {}
 seed: null
 selection: null
@@ -106,9 +105,5 @@ sources:
 - {what: layout idea (maze and corridor maps), cite: yan2016benchmarking}
 - {what: layout idea (corridor and maze worlds), cite: liu2025enhancing}
 licence: Apache-2.0
-hashes: {sdf: b538a8062cf67ca113b769cb5a3ed9e662310eae49bedf9e55c8d75465608f0b, world_json: 1a3cbf5fff867141e3bd37808ec082388057a08f70bf12124ecf2b1bc48b110b}
+hashes: {sdf: ebb86df5f0217bcc86135f7e19a93ad39f42b1c3257b3fe096af75d6addae5ed, world_json: 1a3cbf5fff867141e3bd37808ec082388057a08f70bf12124ecf2b1bc48b110b}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

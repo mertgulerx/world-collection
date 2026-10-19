@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC6 Open hall (plan docs/plans/worlds/B6-open-hall.md)."""
+"""SC6 Open hall."""
 
 from __future__ import annotations
 
@@ -86,7 +86,6 @@ def build() -> World:
         title="Open hall",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B6-open-hall.md",
         primitives=(*walls, *pillars),
         spawns=(
             Spawn("S1", 0.0, 0.0, 0.0, "hall centre; walls out of lidar range"),

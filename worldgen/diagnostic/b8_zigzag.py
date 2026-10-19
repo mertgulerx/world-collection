@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC8 Zigzag (plan docs/plans/worlds/B8-zigzag.md)."""
+"""SC8 Zigzag."""
 
 from __future__ import annotations
 
@@ -86,7 +86,6 @@ def build() -> World:
         title="Zigzag",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B8-zigzag.md",
         primitives=(*walls, *dividers, *pilasters),
         spawns=(
             Spawn("S1", -13.5, -8.4, 0.0, "west end of L1, facing along the path"),

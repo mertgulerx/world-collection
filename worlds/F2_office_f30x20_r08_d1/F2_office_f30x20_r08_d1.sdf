@@ -8,7 +8,7 @@
     their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
     used: Gazebo skips serialising models that carry one.
   Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
-  Generator: worldgen 1.0.1; plan docs/plans/worlds/C2-offices.md.
+  Generator: worldgen 1.0.1.
   Parameters: corridor_width_m=2.0, cross_corridors=1, door_width_m=1.2, doors_per_room=1, floor_m=[30, 20], rooms=8. Seed: 201000.
   Sources: room segmentation in exploration (holz2010evaluating); loops cause revisits (xu2022explorebench).
   Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).

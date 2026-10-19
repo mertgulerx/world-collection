@@ -129,7 +129,7 @@ def ledger(world: World, header_sha: str) -> str:
         "    their parent origins, so every primitive pose is also its world pose. No relative_to attribute is\n"
         "    used: Gazebo skips serialising models that carry one.\n"
         "  Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).\n"
-        f"  Generator: worldgen {WORLDGEN_VERSION}; plan {world.plan}.\n"
+        f"  Generator: worldgen {WORLDGEN_VERSION}.\n"
         f"  Parameters: {params}. Seed: {world.seed if world.seed is not None else 'none'}.\n"
         f"  Sources: {escape(sources)}.\n"
         f"  Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 {header_sha}).\n"

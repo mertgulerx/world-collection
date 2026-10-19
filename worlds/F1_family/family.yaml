@@ -1,5 +1,4 @@
 family: F1
-plan: docs/plans/worlds/C1-mazes.md
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
 seed_sequences: {evaluation: '100000·1 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 150000 + 1000·j + i}
@@ -12,7 +11,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 2eabea4702cb30665f6f7b5e93c6b732bfde9613629b3893a253afd5a998e1f6
+  sdf_sha256: 3936fed4b30da7cc0f6acffa7fa311cb8078fb98f7f90854414fe739b64b472e
 - id: F1-02
   folder: F1_maze_s08_perfect_kr
   parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: perfect}
@@ -20,7 +19,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 96692d999ec62549fd0267ca659cafb86f1e122962056675b8c0d7d5f2450c7f
+  sdf_sha256: 95f0e1a7bae77bab9980c35c6c7fc7d21bbbc81d8ad7ec15c5378f8ba8cbaf11
 - id: F1-03
   folder: F1_maze_s08_braid50_rb
   parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: braid 0.5}
@@ -28,7 +27,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: ff5eada6e8ba7f4bc26a485db67f96e3a5cb81fc5d835bbdbcfc739961e51f07
+  sdf_sha256: 0e19ca9cb94de96270982bcae5fde38809c06497c17ef63053e7a8bf9afa10e3
 - id: F1-04
   folder: F1_maze_s08_braid50_kr
   parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: braid 0.5}
@@ -36,7 +35,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 8fd67127e40e67639256537a6e6a7be561f5bf2d46670a61d382cd718ca10682
+  sdf_sha256: f4635d9599cd4cd3ce31086b8b5e5a7f43084e5bddc08eb5242e17197cfb27f3
 - id: F1-05
   folder: F1_maze_s14_perfect_rb
   parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: perfect}
@@ -44,7 +43,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: e9f8debec796796034a5c4af7c9968f084164d3f4e521636ec2722c04e62519a
+  sdf_sha256: 5dc7d587180507715fe228fdde1e8116f3dacfcd4e7bfeca0c095b426e9f8f40
 - id: F1-06
   folder: F1_maze_s14_perfect_kr
   parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: perfect}
@@ -52,7 +51,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 6ab07cdb02b6b4b471ecb358128781a4e4b075e27a50b21bcaf64c0663df0915
+  sdf_sha256: cbac176917f06b844ed15e9de10aabb39e659672f22f8d42b8fb93d2abab3247
 - id: F1-07
   folder: F1_maze_s14_braid50_rb
   parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: braid 0.5}
@@ -60,7 +59,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: fab269f5c0b2cd55baa17840638ad40ad5607a89e91e3baff1e64e907a9f44b0
+  sdf_sha256: 92f28e144b4ea4168a93ce4e0f2f01730d217aa96ec840ed59155d41eeae14ee
 - id: F1-08
   folder: F1_maze_s14_braid50_kr
   parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: braid 0.5}
@@ -68,4 +67,4 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 22cfb649a8259455b32f462d636295ee385b296810bd4cec914227202e834723
+  sdf_sha256: e0d92a0a3e8be01e9e52420cc5371494aa8c4069e7a17598f97ee61b703279f7

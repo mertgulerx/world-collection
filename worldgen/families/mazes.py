@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""F1 Mazes, a generated family of eight grid mazes (plan docs/plans/worlds/C1-mazes.md).
+"""F1 Mazes, a generated family of eight grid mazes.
 
 Lengths of the construction are integers in units of 0.1 m measured from the maze's south-west outer wall
 centreline, so every wall lies on the 0.1 m construction grid (plan §3.2).
@@ -54,7 +54,6 @@ from .common import (
 )
 
 FAMILY = "F1"
-PLAN = "docs/plans/worlds/C1-mazes.md"
 SEED_BASE = 100000  # setting j tries seeds SEED_BASE + 1000·j + i (plan §3.3)
 PITCH = 25  # cell pitch, 2.5 m in 0.1 m units
 UNIT = 0.1
@@ -87,7 +86,6 @@ RANGES = {
 }
 ALGORITHM_NAMES = {"rb": "recursive backtracker", "kr": "Kruskal"}
 FAMILY_INFO = FamilyInfo(
-    plan=PLAN,
     instances=tuple(f"{FAMILY}-{j:02d}" for j in SETTINGS),
     columns=4,
     # The recorded C1 text (worlds/C1_family/family.yaml) writes the family index: 100000·1.
@@ -319,7 +317,6 @@ def _candidate(j: int, seed: int, candidate: int, rejected: list[dict[str, objec
         title=f"Maze {n}×{n}, {loop_text}, {ALGORITHM_NAMES[algorithm]}",
         tier="F",
         role="evaluation",
-        plan=PLAN,
         primitives=prims,
         spawns=(Spawn("S1", sx, sy, yaw, f"centre of cell {cell}, along the longest open ray"),),
         expected=Expected(

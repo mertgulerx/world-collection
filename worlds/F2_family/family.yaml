@@ -1,5 +1,4 @@
 family: F2
-plan: docs/plans/worlds/C2-offices.md
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
 seed_sequences: {evaluation: '200000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 250000 + 1000·j + i}
@@ -18,7 +17,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 7714464aced11a055a94162251ff0c03cd201028ec61fa9c781c211777912ebd
+  sdf_sha256: 96df57896cad9edc52bb0804ca02544a07d3677b1536436384339389fa24149d
 - id: F2-02
   folder: F2_office_f30x20_r08_d2
   parameters:
@@ -32,7 +31,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 97a6090132ff8714cb22860c2c14e6e89ef6ccf5e94defd31c16208099693c7a
+  sdf_sha256: 501160c5e0a208fec35c96e52c3f0a7d216e7eb2576e52229c08c0650cb75e3a
 - id: F2-03
   folder: F2_office_f30x20_r20_d1
   parameters:
@@ -46,7 +45,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 1ea572d5e06e5943ea3e3cfb9d54541fe48fae86738a9b52db865505c20d8434
+  sdf_sha256: 105472a53321c84d561996b4782854588c563eb2768ae9a53eb7e48162c7bca5
 - id: F2-04
   folder: F2_office_f30x20_r20_d2
   parameters:
@@ -60,7 +59,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 342ab70fe72fcb1d458efbd278c20a6f93a80ab61b907f0d64f9365aee20c320
+  sdf_sha256: 8c0f59756a464419f5a46ab526a3dc00dc0fb59c95008fff2f0d846ad5c26ded
 - id: F2-05
   folder: F2_office_f50x30_r08_d1
   parameters:
@@ -74,7 +73,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 860c6a185c8761d0cab0e3141e86069f58cfdbd7e68f2724eb111793ac498aed
+  sdf_sha256: a9fcfc0b78b2ae60feb3f5f57afc168bf234098cdb0e832e7bbe786f461230da
 - id: F2-06
   folder: F2_office_f50x30_r08_d2
   parameters:
@@ -88,7 +87,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 29a4e4c779a5183642d4d6eb7a04c8dbf8fbcf0a6ea1ef9c20a8d812a966f840
+  sdf_sha256: fa70e945cc947854e90c45bc9fc764b28bda3ad621e7affe3ac0c12d2ecb951b
 - id: F2-07
   folder: F2_office_f50x30_r20_d1
   parameters:
@@ -102,7 +101,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: cad7816f9c1150e0f0631513546577f1832ca62f1e717cf777511c4e06a14ca8
+  sdf_sha256: 13de31e5401deb111594f1f16265f160543bfabcb716ccfce0b0a5c361a1eb88
 - id: F2-08
   folder: F2_office_f50x30_r20_d2
   parameters:
@@ -116,4 +115,4 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 640ffc90d57558f56b839791b33e0ae6a194f88bb8bcf5f0fc21a884f9ad366a
+  sdf_sha256: 3cfe01f8bae8252ee7f6781c9d4c12415efbe27301ebf40afcf9ba0c39d0c3be

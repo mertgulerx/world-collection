@@ -173,7 +173,6 @@ class Expected:
 class FamilyInfo:
     """A generated family (C1–C6): its instances in contact-sheet order and its seed rules."""
 
-    plan: str
     instances: tuple[str, ...]
     columns: int
     seeds: dict[str, str]
@@ -215,7 +214,6 @@ class World:
     title: str
     tier: str
     role: str
-    plan: str
     primitives: tuple[Primitive, ...]
     spawns: tuple[Spawn, ...]
     expected: Expected

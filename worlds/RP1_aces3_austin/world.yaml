@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/R3-aces3-austin.md
 parameters: {}
 seed: null
 selection: null
@@ -257,9 +256,5 @@ sources:
 - {what: 'layout of the ACES3 floor (map image; rebuilt, not converted)', cite: howard2003radish}
 - {what: ACES3 data set in the SLAM benchmark, cite: kummerle2009slam}
 licence: Apache-2.0
-hashes: {sdf: a934293f1e517f8cac10bbc026417dd0c6e1572cf83bf0fe9276cd53c0d18a72, world_json: 441f9843d0f289da880778a6a144a91b007b4c32db2fef3017bd27ddf9b9024f}
+hashes: {sdf: 75b0d01bc0aaf6abecddc75fcfe0a6b255567c3a2848df49a22fe855072ddc3c, world_json: 441f9843d0f289da880778a6a144a91b007b4c32db2fef3017bd27ddf9b9024f}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

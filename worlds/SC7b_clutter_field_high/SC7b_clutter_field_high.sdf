@@ -8,7 +8,7 @@
     their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
     used: Gazebo skips serialising models that carry one.
   Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
-  Generator: worldgen 1.0.1; plan docs/plans/worlds/B7-clutter-field.md.
+  Generator: worldgen 1.0.1.
   Parameters: attempt_limit=20000, block_height_m=1.2, block_side_m=[0.5, 2.0, 0.1], blocks=90, generator=numpy.random.Generator(PCG64(seed)).random(4) per attempt, min_gap_blocks_m=1.0, min_gap_wall_m=1.0, spawn_exclusion_m=1.5. Seed: 7100.
   Sources: obstacle-field difficulty measures (perille2020barn); cluttered scene (xu2022explorebench).
   Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).

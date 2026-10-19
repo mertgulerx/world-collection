@@ -8,7 +8,7 @@
     their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
     used: Gazebo skips serialising models that carry one.
   Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
-  Generator: worldgen 1.0.1; plan docs/plans/worlds/C5-walled-forests.md.
+  Generator: worldgen 1.0.1.
   Parameters: boulders=16, density_per_m2=0.01, minimum_gap_m=1.0, recesses_per_wall=8, side_m=80, trunk_height_m=4.0, trunk_radius_m=[0.15, 0.4], wall_height_m=3.0. Seed: 503000.
   Sources: Poisson forest model (karaman2012forest); trunk radius and density (tian2020forest); localisation in feature-poor open space (censi2007achievable).
   Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).

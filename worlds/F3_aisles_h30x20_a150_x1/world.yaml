@@ -6,7 +6,6 @@ role: evaluation
 family: F3
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/C4-warehouse-aisles.md
 parameters:
   aisle_width_m: 1.5
   cross_aisles: 1
@@ -182,9 +181,5 @@ sources:
 - {what: loops and revisits, cite: xu2022explorebench}
 - {what: narrow passages, cite: wettach2016experimental}
 licence: Apache-2.0
-hashes: {sdf: ac9b58239bb53ba2ec484f86864c19b031090d3e60ce46b6c7b699151b29fef5, world_json: f31ae8e4f7c198ec62447aff16eebf7cc2155153bee9964c274f1b825a784ce4}
+hashes: {sdf: 7a8bec3c52b0bb228548503d6668ed74297fb591d67ad445e80a0e3b95f055f0, world_json: f31ae8e4f7c198ec62447aff16eebf7cc2155153bee9964c274f1b825a784ce4}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

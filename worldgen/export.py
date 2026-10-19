@@ -39,7 +39,7 @@ from .world import (
     sorted_primitives,
 )
 
-STATUS_KEYS = ("status", "review")
+STATUS_KEYS = ("status",)
 
 
 def sha256_text(text: str) -> str:
@@ -143,7 +143,6 @@ def world_yaml_data(
             "scipy": _version("scipy"),
             "matplotlib": _version("matplotlib"),
         },
-        "plan": world.plan,
         "parameters": dict(sorted(world.parameters.items())),
         "seed": world.seed,
         "selection": world.plan_data.get(PlanKey.SELECTION),
@@ -175,7 +174,6 @@ def world_yaml_data(
         "licence": world.licence,
         "hashes": {"sdf": sha256_text(sdf_text), "world_json": sha256_text(json_text)},
         "status": "built",
-        "review": {"image_review": None, "maintainer": None},
     }
 
 
@@ -186,7 +184,7 @@ def dump_yaml(data: dict[str, Any]) -> str:
 
 
 def keep_status(data: dict[str, Any], previous: Path) -> dict[str, Any]:
-    """Keep the review status of an existing world.yaml when the SDF is unchanged."""
+    """Keep the status of an existing world.yaml when the SDF is unchanged."""
     if not previous.exists():
         return data
     old = yaml.safe_load(previous.read_text(encoding="utf-8")) or {}

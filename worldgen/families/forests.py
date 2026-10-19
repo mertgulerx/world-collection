@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""F4 Walled forests, a generated family of four walled squares of trunks (plan docs/plans/worlds/C5-walled-forests.md).
+"""F4 Walled forests, a generated family of four walled squares of trunks.
 
 Origin at the centre of the square, x east, y north (plan §3.2). Trunk radii and positions and boulder centres are
 rounded to 0.1 mm when drawn, so every gap test runs on the values the SDF writes (T0 §4: 4 decimals for metres,
@@ -57,7 +57,6 @@ from .common import (
 )
 
 FAMILY = "F4"
-PLAN = "docs/plans/worlds/C5-walled-forests.md"
 SEED_BASE = 500000  # setting j tries seeds SEED_BASE + 1000·j + i (plan §3.3)
 GAP = 1.0  # minimum surface gap between trunks, boulders and walls (plan §3.2)
 R_MIN, R_MAX = 0.15, 0.40  # trunk radius (m)
@@ -97,7 +96,6 @@ def world_id(j: int) -> str:
 
 
 FAMILY_INFO = FamilyInfo(
-    plan=PLAN,
     instances=tuple(world_id(j) for j in BUILT),
     columns=2,
     seeds=seed_rules(SEED_BASE),
@@ -367,7 +365,6 @@ def _candidate(j: int, seed: int, candidate: int, rejected: list[dict[str, objec
         title=f"Walled forest {side}×{side} m, {density:g} trunks per m²",
         tier="F",
         role="evaluation",
-        plan=PLAN,
         primitives=prims,
         spawns=(Spawn("S1", sx, sy, yaw, "seeded free cell, along the longest open axis ray"),),
         expected=Expected(

@@ -6,7 +6,6 @@ role: evaluation
 family: F1
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/C1-mazes.md
 parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: braid 0.5}
 seed: 108000
 selection:
@@ -54,9 +53,5 @@ plan_data: {braided_walls: 22, construction_free_area_m2: 1133.895, dead_end_cel
 sources:
 - {what: maze generation algorithms, cite: bellot2021mazes}
 licence: Apache-2.0
-hashes: {sdf: 22cfb649a8259455b32f462d636295ee385b296810bd4cec914227202e834723, world_json: 479cb94ae3f764ce50d87d7943118f63c8defe7683aaedf699a4a1ee54796f41}
+hashes: {sdf: e0d92a0a3e8be01e9e52420cc5371494aa8c4069e7a17598f97ee61b703279f7, world_json: 479cb94ae3f764ce50d87d7943118f63c8defe7683aaedf699a4a1ee54796f41}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

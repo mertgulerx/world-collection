@@ -2,8 +2,8 @@
 
 `benchmark::MovingObjects` is a Gazebo Harmonic (gz-sim 8) world system. It moves solid objects along
 scripted loops or patrols as a pure function of simulation time, and publishes their actual world poses as
-`gz.msgs.Pose_V` on `/benchmark/moving_objects/pose`, stamped with simulation time. The design is plan
-`docs/plans/worlds/E0-moving-object-system.md`; the `<plugin>` block of each world is written by `worldgen`.
+`gz.msgs.Pose_V` on `/benchmark/moving_objects/pose`, stamped with simulation time. The
+`<plugin>` block of each world is written by `worldgen`.
 
 ## Build
 Needs ROS 2 Jazzy with its Gazebo vendor packages (`gz-sim8`, `gz-plugin2`, `gz-transport13`, `gz-msgs10`).

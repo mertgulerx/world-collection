@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""World descriptors `world-descriptors-v1` (plan docs/plans/worlds/T1-world-descriptors.md).
+"""World descriptors `world-descriptors-v1`.
 
 All values come from the reachable free space F of the 0.05 m raster and its clearance D. Sampled values use one
 numpy PCG64 generator per world, `SeedSequence([2026])`, drawing in a fixed order.

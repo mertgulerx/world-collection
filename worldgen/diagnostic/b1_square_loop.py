@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC1 Square loop (plan docs/plans/worlds/B1-square-loop.md)."""
+"""SC1 Square loop."""
 
 from __future__ import annotations
 
@@ -47,7 +47,6 @@ def build() -> World:
         title="Square loop",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B1-square-loop.md",
         primitives=(*walls, core),
         spawns=(
             Spawn("S1", 0.0, -13.5, 0.0, "middle of the south corridor"),

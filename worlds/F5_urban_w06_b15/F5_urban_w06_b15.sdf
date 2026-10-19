@@ -8,7 +8,7 @@
     their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
     used: Gazebo skips serialising models that carry one.
   Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
-  Generator: worldgen 1.0.1; plan docs/plans/worlds/C6-walled-urban-blocks.md.
+  Generator: worldgen 1.0.1.
   Parameters: block_side_m=17.5, blocks_per_side=4, building_height_m=6.0, nominal_block_m=15.0, plazas=3, street_width_m=6.0, wall_height_m=3.0. Seed: 601000.
   Sources: large campus scene for 3D-lidar exploration (cao2022cmuexploration); feature-poor geometry bounds 2D localisation (censi2007achievable); degeneracy of range-based localisation (zhang2016degeneracy).
   Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).

@@ -6,7 +6,6 @@ role: pilot
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/P1-pilot-racetrack-office.md
 parameters: {}
 seed: null
 selection: null
@@ -135,9 +134,5 @@ moving_objects: null
 plan_data: {}
 sources: []
 licence: Apache-2.0
-hashes: {sdf: 20a6ca8683b151942147c5b01edce77e75a4a986ac0e021e7e20016afa99dc8d, world_json: bae02732a2570dd521740ce0fb8529697d01c6ff5a7e0af4b06ed40f378850fe}
+hashes: {sdf: 8ceac38112e984c238014aae5936e099968a3994a48aea97b1eb1132505ef037, world_json: bae02732a2570dd521740ce0fb8529697d01c6ff5a7e0af4b06ed40f378850fe}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

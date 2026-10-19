@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""E1 Office strip with moving objects (plan docs/plans/worlds/E1-office-strip-moving.md).
+"""E1 Office strip with moving objects.
 
 The B4 office strip with solid moving objects at the high density (`E1-high`; E1-low was removed by the
 maintainer, the nested low density of E0 §6 stays its first n_low objects). The geometry below is checked against
@@ -73,7 +73,6 @@ from ..moving import (
 from ..raster import EIGHT
 from ..world import CheckResult, Kind, World
 
-PLAN = "docs/plans/worlds/E1-office-strip-moving.md"
 SEED = 5101
 BASE_WORLD = "SC4"
 # Fixed for the study (maintainer decision 36, 18 October 2026).
@@ -543,7 +542,6 @@ def build_high() -> World:
         world_id="MO1",
         slug="office_strip_moving",
         title="Office strip with moving objects (high density)",
-        plan=PLAN,
         moving=high_definition(),
         family="MO1",
         extra_checks=(_checks,),

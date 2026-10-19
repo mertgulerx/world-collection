@@ -8,7 +8,7 @@
     their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
     used: Gazebo skips serialising models that carry one.
   Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
-  Generator: worldgen 1.0.1; plan docs/plans/worlds/C4-warehouse-aisles.md.
+  Generator: worldgen 1.0.1.
   Parameters: aisle_width_m=1.5, cross_aisles=3, hall_m=[30, 20], rack_depth_m=2.0, rows=5. Seed: 402000.
   Sources: loops and revisits (xu2022explorebench); narrow passages (wettach2016experimental).
   Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).

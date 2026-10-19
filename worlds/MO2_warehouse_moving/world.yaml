@@ -6,7 +6,6 @@ role: evaluation
 family: MO2
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/E3-warehouse-moving.md
 parameters: {}
 seed: 5301
 selection: null
@@ -152,7 +151,6 @@ doors:
 moving_objects:
   system: benchmark::MovingObjects
   format_version: 1
-  plan: docs/plans/worlds/E0-moving-object-system.md
   density: high
   area_per_object_m2: 60.0
   free_area_m2: 1673.38
@@ -674,9 +672,5 @@ plan_data:
         - [14.0, -6.0]
 sources: []
 licence: Apache-2.0
-hashes: {sdf: 6398e2ddefdd39df16c1dd0ea7e158a3d9de4a1ccf34bb18453d4d1e69f2db2c, world_json: 87644f015a2d83b00490868d65f090397e81083eb2e8cb88a381821870b6170c}
+hashes: {sdf: f1a2bf982a9dd502b28043aeba51d4e04ad70925fa26031c4d01fa0c3a6ef650, world_json: 87644f015a2d83b00490868d65f090397e81083eb2e8cb88a381821870b6170c}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

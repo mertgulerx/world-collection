@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""World generation for the exploration benchmark (plan docs/plans/worlds/T0-worldgen-tooling.md).
+"""World generation for the exploration benchmark.
 
 Each world is defined once, as primitives, spawns and annotations; the SDF, `world.yaml`, the checks and the
 review images are all generated from that definition.

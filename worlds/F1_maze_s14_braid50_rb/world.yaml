@@ -6,7 +6,6 @@ role: evaluation
 family: F1
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/C1-mazes.md
 parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: braid 0.5}
 seed: 107000
 selection:
@@ -54,9 +53,5 @@ plan_data: {braided_walls: 8, construction_free_area_m2: 1127.065, dead_end_cell
 sources:
 - {what: maze generation algorithms, cite: bellot2021mazes}
 licence: Apache-2.0
-hashes: {sdf: fab269f5c0b2cd55baa17840638ad40ad5607a89e91e3baff1e64e907a9f44b0, world_json: 0eec33fe753b3ef82257e3bacfb8328061e3ca845240eba1a2a90a74a36b7aad}
+hashes: {sdf: 92f28e144b4ea4168a93ce4e0f2f01730d217aa96ec840ed59155d41eeae14ee, world_json: 0eec33fe753b3ef82257e3bacfb8328061e3ca845240eba1a2a90a74a36b7aad}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

@@ -8,13 +8,13 @@
     their parent origins, so every primitive pose is also its world pose. No relative_to attribute is
     used: Gazebo skips serialising models that carry one.
   Names: each primitive gives a collision `<name>_col` and a visual `<name>_vis` (unique siblings).
-  Generator: worldgen 1.0.1; plan docs/plans/worlds/E3-warehouse-moving.md.
+  Generator: worldgen 1.0.1.
   Parameters: none. Seed: 5301.
   Sources: none.
   Header: copied from simulation/worlds/corridor/corridor.world (SHA-256 2b52a0ad88202c2f2b72f39a9101340ae9b9443c4245356c7a2c6ea11a5c07de).
   Floor: a static box 0.05 m thick with its top face at z = 0 (as the Corridor floor).
   Primitives by role: boundary wall: 20, furniture: 1, landmark: 4, obstacle: 23, wall: 5. Collision and visual geometry are identical.
-  Moving objects (E0, docs/plans/worlds/E0-moving-object-system.md):
+  Moving objects (E0):
     28 non-static models mo_00..mo_27; density high, seed 5301, velocity mode pose_and_velocity;
     moved by the benchmark::MovingObjects system plugin (benchmark-moving-objects-system).
 -->
@@ -39,7 +39,7 @@
     <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
     <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
 
-    <!-- E0 moving-object system; plan docs/plans/worlds/E0-moving-object-system.md; values written by worldgen -->
+    <!-- E0 moving-object system; values written by worldgen -->
     <plugin filename="benchmark-moving-objects-system" name="benchmark::MovingObjects">
       <format_version>1</format_version>
       <topic>/benchmark/moving_objects/pose</topic>

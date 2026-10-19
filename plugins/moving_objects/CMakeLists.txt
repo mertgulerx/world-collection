@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# E0 moving-object system (docs/plans/worlds/E0-moving-object-system.md). Plain CMake; the
+# E0 moving-object system. Plain CMake; the
 # Gazebo Harmonic libraries come from the ROS 2 Jazzy vendor packages, whose prefixes
 # /opt/ros/jazzy/setup.bash adds to CMAKE_PREFIX_PATH.
 cmake_minimum_required(VERSION 3.16)

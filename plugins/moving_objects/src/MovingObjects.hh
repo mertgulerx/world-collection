@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // World system that moves scripted solid objects as a pure function of simulation time and
-// publishes their actual world poses (plan docs/plans/worlds/E0-moving-object-system.md).
+// publishes their actual world poses.
 
 #ifndef BENCHMARK_MOVING_OBJECTS__MOVING_OBJECTS_HH_
 #define BENCHMARK_MOVING_OBJECTS__MOVING_OBJECTS_HH_

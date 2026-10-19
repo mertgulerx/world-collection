@@ -1,5 +1,4 @@
 family: F4
-plan: docs/plans/worlds/C5-walled-forests.md
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
 seed_sequences: {evaluation: '500000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 550000 + 1000·j + i}
@@ -20,7 +19,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: 74bfef00a597f1b81056ef3176ddd716d57518d41edcbf3db203ab6eba3bf22e
+  sdf_sha256: ffc54c09848551c0f9b8cedf69d37a72914b8bd6d5d88b7f2d254623cedff8eb
 - id: F4-02
   folder: F4_forest_s80_d001
   parameters:
@@ -36,7 +35,7 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: a74d6e32c29ee9347cc723e4a7c3d3eadc4897627586845d4ef41c5fc756a9c8
+  sdf_sha256: 7e87e2e638a9ad2e252e2451712bebe7d3eca0df40d2b4499a30fe1486297d6b
 - id: F4-03
   folder: F4_forest_s80_d003
   parameters:
@@ -52,4 +51,4 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: a909c1cc6cd64495ccdb1e00e497281985c3af957d180d84d141f4cbe21d1fad
+  sdf_sha256: 836d985b38f039b4d21767f6477028a65ba823979b99f6cc070fa03b5a92201d

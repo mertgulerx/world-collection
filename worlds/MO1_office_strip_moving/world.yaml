@@ -6,7 +6,6 @@ role: evaluation
 family: MO1
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/E1-office-strip-moving.md
 parameters: {}
 seed: 5101
 selection: null
@@ -170,7 +169,6 @@ doors:
 moving_objects:
   system: benchmark::MovingObjects
   format_version: 1
-  plan: docs/plans/worlds/E0-moving-object-system.md
   density: high
   area_per_object_m2: 60.0
   free_area_m2: 329.8
@@ -329,9 +327,5 @@ sources:
 - {what: layout idea (rooms scene), cite: xu2022explorebench}
 - {what: layout idea (many-room and office maps), cite: holz2010evaluating}
 licence: Apache-2.0
-hashes: {sdf: 81959da08fb06e57aa8629029d3d1367d5295fba5c3fd0965fa377582c9313a0, world_json: a3df436c5580317f6f120ae3ff40ef4cdc6b53fb4d711c1e53aa4dff175c96b3}
+hashes: {sdf: ea7d4755f10a2173d51b418603b0f0a71c1a227082e295bf5cb207b60fdc120e, world_json: a3df436c5580317f6f120ae3ff40ef4cdc6b53fb4d711c1e53aa4dff175c96b3}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

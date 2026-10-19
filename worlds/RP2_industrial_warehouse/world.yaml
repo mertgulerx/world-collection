@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/R8-industrial-warehouse.md
 parameters: {}
 seed: null
 selection: null
@@ -190,9 +189,5 @@ plan_data:
         - [14.0, -6.0]
 sources: []
 licence: Apache-2.0
-hashes: {sdf: 62ee3b0cc994a4ee5cd8859cf86ee9afbe0ec82e104efd3d734b5dc25d069546, world_json: f1c5d1d7f0680a58bf7bdb0b05e48b53e1a42d9ed93b38e9dcd0823ae60c0324}
+hashes: {sdf: 3e6c14a22ee895f0cc0af08979a1e2a91e3738d2ef8f15bfc77448193f92c3d7, world_json: f1c5d1d7f0680a58bf7bdb0b05e48b53e1a42d9ed93b38e9dcd0823ae60c0324}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

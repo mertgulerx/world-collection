@@ -59,7 +59,7 @@ class Emitted:
     """What `emit` wrote and computed."""
 
     sdf_text: str
-    yaml_text: str  # the fresh world.yaml text, review status not kept; `emit` does not write it
+    yaml_text: str  # the fresh world.yaml text, status not kept; `emit` does not write it
     analysis: checks.Analysis
     data: dict[str, Any]  # the world.yaml data behind `yaml_text`
     measured: moving.Measured | None  # moving-object measures; None for static worlds
@@ -68,7 +68,7 @@ class Emitted:
 def emit(world: World, folder: Path) -> Emitted:
     """Write the SDF, `review/world.json`, LICENSE and NOTICE into `folder`, compute the analysis, the
     moving-object measures and the descriptors, and return them with the fresh `world.yaml` text. The caller
-    writes `world.yaml`: `build` keeps the previous review status, `emit` does not."""
+    writes `world.yaml`: `build` keeps the previous status, `emit` does not."""
     folder.mkdir(parents=True, exist_ok=True)
     (folder / "review").mkdir(exist_ok=True)
     sdf_text = write_sdf(world)
@@ -247,7 +247,6 @@ def cmd_review_family(args: argparse.Namespace) -> int:
         )
     family = {
         "family": args.family,
-        "plan": info.plan,
         "worldgen_version": entries[0][2]["worldgen_version"],
         "generator": entries[0][2]["generator"],
         "seed_sequences": info.seeds,

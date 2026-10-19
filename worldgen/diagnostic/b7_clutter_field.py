@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC7 Clutter field, variants B7a (45 blocks) and B7b (90 blocks) (plan docs/plans/worlds/B7-clutter-field.md).
+"""SC7 Clutter field, variants B7a (45 blocks) and B7b (90 blocks).
 
 All lengths of the placement are integers in units of 0.05 m (the raster cell), so block edges lie on cell
 boundaries. B7a's blocks are the first 45 blocks of B7b.
@@ -180,7 +180,6 @@ def build(variant: str) -> World:
         title=f"Clutter field, {count} blocks",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B7-clutter-field.md",
         primitives=(*walls, *_primitives(mine)),
         spawns=SPAWNS,
         expected=Expected(

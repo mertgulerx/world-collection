@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""RP1 ACES3 Austin, rebuilt as a clean designed world from the ACES3 map image (plan
-docs/plans/worlds/R3-aces3-austin.md, revision 2, report §9 decision 32).
+"""RP1 ACES3 Austin, rebuilt as a clean designed world from the ACES3 map image.
 
 The layout follows the third floor of the ACES building as mapped by the Radish/Freiburg data set: a corridor ring
 around four room blocks, a cross of two corridors, a round rotunda where they meet, two entrance vestibules and a
@@ -250,7 +249,6 @@ def build() -> World:
         title="ACES3 Austin (rebuilt from the map image)",
         tier="RP",
         role="evaluation",
-        plan="docs/plans/worlds/R3-aces3-austin.md",
         primitives=prims,
         spawns=(
             Spawn(

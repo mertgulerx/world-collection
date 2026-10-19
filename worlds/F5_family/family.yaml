@@ -1,5 +1,4 @@
 family: F5
-plan: docs/plans/worlds/C6-walled-urban-blocks.md
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
 seed_sequences: {evaluation: '600000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 650000 + 1000·j + i}
@@ -13,4 +12,4 @@ instances:
   candidate: 0
   rejected: 0
   status: confirmed
-  sdf_sha256: b6b3c7be627608133886b18750c4c6f0a48d1d65e66395cab2fd8a2425fafbfe
+  sdf_sha256: df94f76911772785e084e340a4239631febcbb23ef38e4475a1d7611b689537b

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""E3 Warehouse with moving objects (plan docs/plans/worlds/E3-warehouse-moving.md): R8 plus solid moving
+"""E3 Warehouse with moving objects: R8 plus solid moving
 objects at the high density (`E3-high`), drawn by the E0 engine (`worldgen/moving.py`). E3-low was removed by the
 maintainer; the nested low density of E0 §6 stays the high draw's first n_low objects.
 
@@ -64,7 +64,6 @@ from ..named import r8_industrial_warehouse as r8
 from ..raster import EIGHT
 from ..world import BoolArray, CheckResult, FloatArray, Kind, Point, World
 
-PLAN = "docs/plans/worlds/E3-warehouse-moving.md"
 BASE_ID = "RP2"
 SEED = 5301
 # Fixed for the study (maintainer decision 36, E0 §3.3).
@@ -343,7 +342,6 @@ def build_high() -> World:
         world_id=WORLD_ID,
         slug=SLUG,
         title=TITLE,
-        plan=PLAN,
         moving=definition(),
         family=FAMILY,
         extra_checks=(e3_checks,),

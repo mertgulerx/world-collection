@@ -6,7 +6,6 @@ role: evaluation
 family: F2
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/C2-offices.md
 parameters:
   corridor_width_m: 2.0
   cross_corridors: 2
@@ -229,9 +228,5 @@ sources:
 - {what: room segmentation in exploration, cite: holz2010evaluating}
 - {what: loops cause revisits, cite: xu2022explorebench}
 licence: Apache-2.0
-hashes: {sdf: 640ffc90d57558f56b839791b33e0ae6a194f88bb8bcf5f0fc21a884f9ad366a, world_json: 6ef6eee6d655ae96f5f6008922dd1695b32200ed8ac9f719c648868a55950628}
+hashes: {sdf: 3cfe01f8bae8252ee7f6781c9d4c12415efbe27301ebf40afcf9ba0c39d0c3be, world_json: 6ef6eee6d655ae96f5f6008922dd1695b32200ed8ac9f719c648868a55950628}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

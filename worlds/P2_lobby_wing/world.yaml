@@ -6,7 +6,6 @@ role: pilot
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/P2-pilot-lobby-wing.md
 parameters: {}
 seed: null
 selection: null
@@ -127,9 +126,5 @@ moving_objects: null
 plan_data: {}
 sources: []
 licence: Apache-2.0
-hashes: {sdf: 37d282d54c9b457db467973d9cff5c135744aafca1a795d4c0f0e722c1fbeac0, world_json: 3215735cc868bf6918f7a654e0629fcabc11f0fa04a90fb48ffdeab1d8f30b26}
+hashes: {sdf: 5899891bdaf1b3b05d5e230158bcb8ee9bf14818c489a0f72d7d8c090f882284, world_json: 3215735cc868bf6918f7a654e0629fcabc11f0fa04a90fb48ffdeab1d8f30b26}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

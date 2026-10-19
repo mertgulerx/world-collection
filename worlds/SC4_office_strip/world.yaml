@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/B4-office-strip.md
 parameters: {}
 seed: null
 selection: null
@@ -173,8 +172,5 @@ sources:
 - {what: layout idea (rooms scene), cite: xu2022explorebench}
 - {what: layout idea (many-room and office maps), cite: holz2010evaluating}
 licence: Apache-2.0
-hashes: {sdf: 87190b9b58a28e71d3661f2636aca0d10fe1411030d26d6378de7f0eee438f70, world_json: a5bbb0a8d09e27413a3b3ff9051f558a9d3dfd8a97827fff5730b8e54805dc64}
+hashes: {sdf: 2991ac68f2aed35ae9cafb4c49d7cb14d11a8e8fe88b973c8b1db789ff9b413f, world_json: a5bbb0a8d09e27413a3b3ff9051f558a9d3dfd8a97827fff5730b8e54805dc64}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: Rebuilt with 1.2 m doors; all checklist items hold; all checks pass.}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

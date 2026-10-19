@@ -6,7 +6,6 @@ role: evaluation
 family: null
 worldgen_version: 1.0.1
 generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
-plan: docs/plans/worlds/R10-santa-maria-del-mar.md
 parameters: {}
 seed: null
 selection: null
@@ -217,9 +216,5 @@ sources:
 - {what: 'building footprints, streets and names (Overpass extract, sources/RP3/)', cite: OpenStreetMap contributors}
 - {what: 'border drawn by the maintainer on the OpenStreetMap map, georeferenced (sources/RP3/border.json)', cite: 'https://www.openstreetmap.org/?#map=18/41.384370/2.180633'}
 licence: Apache-2.0
-hashes: {sdf: f11e2f2f1850e8c42f3fc4cf91c5a5a3fd2effd01d12f99ba271f52812d8bbc0, world_json: 4098652d443885df26c69fe538f1fd078c320bb5fe7c9176537f4dc8fe9d9dda}
+hashes: {sdf: 071540239d28ecd48f5108e6a816b8bf481778f4df12a126cace85c67e0da7e1, world_json: 4098652d443885df26c69fe538f1fd078c320bb5fe7c9176537f4dc8fe9d9dda}
 status: confirmed
-review:
-  image_review: {date: '2026-10-18', result: pass, notes: All checklist items hold; all checks pass (see the plan's review
-      log).}
-  maintainer: {date: '2026-10-18', result: confirmed, notes: Inspected in the Gazebo GUI.}

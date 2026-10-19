@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""SC2 Narrow passage, variants B2a (1.2 m corridor) and B2b (2.0 m) (plan docs/plans/worlds/B2-narrow-passage.md)."""
+"""SC2 Narrow passage, variants B2a (1.2 m corridor) and B2b (2.0 m)."""
 
 from __future__ import annotations
 
@@ -124,7 +124,6 @@ def build(variant: str) -> World:
         title=f"Narrow passage, {width:.1f} m corridor",
         tier="SC",
         role="evaluation",
-        plan="docs/plans/worlds/B2-narrow-passage.md",
         primitives=tuple(prims),
         spawns=(
             Spawn("S1", -10.5, 0.0, 0.0, "west hall centre, facing the corridor mouth"),

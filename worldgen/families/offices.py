@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""F2 Offices, a generated family of eight office floors (plan docs/plans/worlds/C2-offices.md).
+"""F2 Offices, a generated family of eight office floors.
 
 Lengths of the construction are integers in units of 0.1 m measured from the floor's south-west corner (the
 inner faces of the outer wall), so every wall lies on the 0.1 m construction grid (plan §3.2).
@@ -57,7 +57,6 @@ from .common import (
 )
 
 FAMILY = "F2"
-PLAN = "docs/plans/worlds/C2-offices.md"
 SEED_BASE = 200000  # setting j tries seeds SEED_BASE + 1000·j + i (plan §3.3)
 UNIT = 0.1
 CORRIDOR_HALF = 10  # clear half-width, 1.0 m
@@ -117,7 +116,6 @@ RANGE_REVIEWED = {
     ),
 }
 FAMILY_INFO = FamilyInfo(
-    plan=PLAN,
     instances=tuple(f"{FAMILY}-{j:02d}" for j in SETTINGS),
     columns=4,
     seeds=seed_rules(SEED_BASE),
@@ -537,7 +535,6 @@ def _candidate(j: int, seed: int, candidate: int, rejected: list[dict[str, objec
         title=f"Office {w_m}×{h_m} m, {n_rooms} rooms, {per_room} door{'s' if per_room > 1 else ''} per room",
         tier="F",
         role="evaluation",
-        plan=PLAN,
         primitives=prims,
         spawns=(Spawn("S1", sx, sy, yaw, "seeded free cell, along the longest open axis ray"),),
         expected=Expected(
