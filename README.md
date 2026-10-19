@@ -5,7 +5,7 @@
 
 [![DOI](https://zenodo.org/badge/1424891966.svg)](https://doi.org/10.5281/zenodo.23460686)
 
-42 Gazebo Harmonic Simulation worlds for testing robot exploration, navigation, SLAM and many more. 
+42 Gazebo Simulation worlds for testing robot exploration, navigation, SLAM and many more. 
 
 > [!NOTE]
 > New environments with 3D models and textures required for **Agentic Workflows, Perception, 3D Mapping, Object Detection and Worker Robot Training** will be added in the future.
