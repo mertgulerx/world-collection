@@ -312,7 +312,7 @@ Very extreme scenario because there are a lot of moving objects.
 
 ## Quick start
 
-Requirements: Gazebo Harmonic (included with ROS 2 Jazzy). Run the commands from this folder.
+Requirements: Gazebo Harmonic (included with ROS 2 Jazzy). Run the commands from this folder. The files are compatible with other simulators so you can follow official guides on how to load worlds for your own stack if you are not using Gazebo.
 
 Open a world:
 
