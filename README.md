@@ -12,7 +12,7 @@
 
 The collection includes simple test layouts, mazes, offices, warehouses, forests, real places and worlds with moving obstacles. Worlds have fixed start poses and measured values, so methods can be compared fairly.
 
-Designed specifically for scientific research and experimentation, each world is generated using mathematical models and algorithms based on predefined, environment-specific rules.
+Designed specifically for **scientific research** and **experimentation**, each world is generated using mathematical models and algorithms based on predefined, environment-specific rules.
 
 The project works via **Python SDF asset generation**. Which allows **math calculations** and **easier customizations** to be done.
 
