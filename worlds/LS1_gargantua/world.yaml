@@ -171,4 +171,4 @@ sources:
 - {what: maze generation algorithms, cite: bellot2021mazes}
 licence: Apache-2.0
 hashes: {sdf: 4233c9ce63144cc31dce871d6568eab9b1a6f1fae168b53416c6150a031061e8, world_json: 6d43d564e2da70d203e170d84e1f03d91a144a82a48138a29e0ad120970a4f5a}
-status: reviewed
+status: confirmed
