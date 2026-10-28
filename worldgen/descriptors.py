@@ -130,8 +130,9 @@ def _nav_complexity(
     n = len(cells)
     sources = cells[rng.choice(n, size=min(N_SOURCES, n), replace=False)]
     ratios: list[float] = []
-    dist = csgraph.dijkstra(graph, directed=False, indices=index[sources[:, 0], sources[:, 1]])
-    for k, (sr, sc) in enumerate(sources):
+    for sr, sc in sources:
+        # one source at a time: the same distances, without a sources × cells matrix (7 GB for LS1)
+        dist = csgraph.dijkstra(graph, directed=False, indices=int(index[sr, sc]))
         got = 0
         for _ in range(PAIR_DRAWS):
             tr, tc = cells[int(rng.integers(n))]
@@ -139,7 +140,7 @@ def _nav_complexity(
             if math.hypot(dx, dy) * grid_h < PAIR_MIN_M:
                 continue
             octile = grid_h * (max(dx, dy) + (math.sqrt(2.0) - 1.0) * min(dx, dy))
-            geodesic = float(dist[k, index[tr, tc]])
+            geodesic = float(dist[index[tr, tc]])
             if math.isfinite(geodesic):
                 ratios.append(geodesic / octile)
             got += 1

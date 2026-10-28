@@ -1,0 +1,174 @@
+id: LS1
+slug: gargantua
+title: Gargantua
+tier: LS
+role: evaluation
+family: null
+worldgen_version: 1.1.0
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+parameters:
+  boundary_height_m: 3.0
+  boundary_wall_m: 0.6
+  cell_wall_m: 0.2
+  corridor_spacing_m: [6.2, 10.2]
+  district_max_m: 160.0
+  district_wall_m: 0.6
+  door_width_m: [3.0, 5.0]
+  furnishing_clearance_m: 3.5
+  interior_m: 500.0
+  wall_height_m: 2.0
+  wide_opening_m: [6.0, 14.0]
+seed: 900000
+selection:
+  candidate: 0
+  rejected: []
+expected: {free_area_m2: 243701.12, free_area_tolerance: 0.005, narrowest_passage_m: 3.0, minimum_passage_m: 3.0}
+measured: {free_area_m2: 243701.12, narrowest_passage_m: 3.0, loops: 217, loops_unsized: 217}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 243701.12
+  clearance_m: {median: 2.4, p10: 0.5, p90: 5.35}
+  clearance_max_m: 14.1
+  char_dim_m: {median: 9.925, n: 400, mc_halfwidth: 0.625}
+  dispersion: {mean: 1.04, n: 400, mc_se: 0.051}
+  nav_complexity: {median: 1.3906, p90: 1.9244, n: 400, grid_m: 0.1}
+  narrowest_passage_m: 3.0
+  min_gap_m: 3.0
+  loops: 217
+  loops_unsized: 217
+  dead_ends: 605
+  junctions: 1032
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 192.07, n: 400, mc_se: 2.77}
+      visible_fraction: 0.0008
+      area_over_pi_r2: 775.7248
+      spawn_visible_fraction: {S1: 0.0008, S2: 0.0005, S3: 0.0006}
+spawns:
+- {id: S1, x: -1.45, y: -0.45, yaw: 1.570796}
+- {id: S2, x: 247.55, y: 247.55, yaw: 3.141593}
+- {id: S3, x: -247.45, y: -247.45, yaw: 0.0}
+inclusion:
+- - [-250.0, -250.0]
+  - [250.0, -250.0]
+  - [250.0, 250.0]
+  - [-250.0, 250.0]
+notches: []
+doors: []
+moving_objects: null
+plan_data:
+  cells: 907
+  construction_free_area_m2: 243701.12
+  corridor_cells: 399
+  distinguishing_stubs: 4
+  districts:
+  - id: 0
+    office_maze_mix: 0.959
+    rect_m: [-250.0, -140.0, -250.0, -143.0]
+    cells: 46
+  - id: 1
+    office_maze_mix: 0.345
+    rect_m: [-140.0, -82.0, -250.0, -159.0]
+    cells: 20
+  - id: 2
+    office_maze_mix: 0.899
+    rect_m: [-82.0, 25.0, -250.0, -192.0]
+    cells: 20
+  - id: 3
+    office_maze_mix: 0.637
+    rect_m: [25.0, 154.0, -250.0, -153.0]
+    cells: 50
+  - id: 4
+    office_maze_mix: 0.478
+    rect_m: [154.0, 250.0, -250.0, -158.0]
+    cells: 36
+  - id: 5
+    office_maze_mix: 0.01
+    rect_m: [-82.0, 25.0, -192.0, -88.0]
+    cells: 37
+  - id: 6
+    office_maze_mix: 0.655
+    rect_m: [-140.0, -82.0, -159.0, -88.0]
+    cells: 20
+  - id: 7
+    office_maze_mix: 0.856
+    rect_m: [154.0, 250.0, -158.0, -37.0]
+    cells: 45
+  - id: 8
+    office_maze_mix: 0.17
+    rect_m: [25.0, 154.0, -153.0, -37.0]
+    cells: 48
+  - id: 9
+    office_maze_mix: 0.735
+    rect_m: [-250.0, -140.0, -143.0, -88.0]
+    cells: 22
+  - id: 10
+    office_maze_mix: 0.796
+    rect_m: [-250.0, -134.0, -88.0, 26.0]
+    cells: 48
+  - id: 11
+    office_maze_mix: 0.744
+    rect_m: [-134.0, -73.0, -88.0, 26.0]
+    cells: 24
+  - id: 12
+    office_maze_mix: 0.187
+    rect_m: [-73.0, 25.0, -88.0, 26.0]
+    cells: 36
+  - id: 13
+    office_maze_mix: 0.586
+    rect_m: [25.0, 121.0, -37.0, 46.0]
+    cells: 23
+  - id: 14
+    office_maze_mix: 0.254
+    rect_m: [121.0, 250.0, -37.0, 21.0]
+    cells: 25
+  - id: 15
+    office_maze_mix: 0.083
+    rect_m: [121.0, 250.0, 21.0, 135.0]
+    cells: 51
+  - id: 16
+    office_maze_mix: 0.451
+    rect_m: [-250.0, -100.0, 26.0, 103.0]
+    cells: 42
+  - id: 17
+    office_maze_mix: 0.385
+    rect_m: [-100.0, 25.0, 26.0, 161.0]
+    cells: 54
+  - id: 18
+    office_maze_mix: 0.563
+    rect_m: [25.0, 121.0, 46.0, 135.0]
+    cells: 32
+  - id: 19
+    office_maze_mix: 0.114
+    rect_m: [-250.0, -100.0, 103.0, 250.0]
+    cells: 76
+  - id: 20
+    office_maze_mix: 0.27
+    rect_m: [25.0, 128.0, 135.0, 250.0]
+    cells: 48
+  - id: 21
+    office_maze_mix: 0.432
+    rect_m: [128.0, 250.0, 135.0, 250.0]
+    cells: 58
+  - id: 22
+    office_maze_mix: 0.933
+    rect_m: [-100.0, 25.0, 161.0, 250.0]
+    cells: 46
+  extra_openings: 194
+  fragments_removed: 19
+  opening_width_m: {min: 3.0, median: 6.6, max: 81.7}
+  openings_by_kind: {door: 457, full: 435, wide: 208}
+  partitions: 42
+  room_cells: 508
+  shared_walls: 2352
+  stubs: 101
+  tree_openings: 906
+sources:
+- {what: maze generation algorithms, cite: bellot2021mazes}
+licence: Apache-2.0
+hashes: {sdf: 4233c9ce63144cc31dce871d6568eab9b1a6f1fae168b53416c6150a031061e8, world_json: 6d43d564e2da70d203e170d84e1f03d91a144a82a48138a29e0ad120970a4f5a}
+status: reviewed

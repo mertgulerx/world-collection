@@ -18,4 +18,4 @@ Each world is defined once, as primitives, spawns and annotations; the SDF, `wor
 review images are all generated from that definition.
 """
 
-WORLDGEN_VERSION = "1.0.1"
+WORLDGEN_VERSION = "1.1.0"

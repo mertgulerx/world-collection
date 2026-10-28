@@ -29,6 +29,7 @@ from .diagnostic import (
     b8_zigzag,
 )
 from .families import aisles, forests, mazes, offices, urban
+from .large import ls1_gargantua
 from .moving_worlds import e1_office_strip_moving, e3_warehouse_moving
 from .named import r3_aces3_austin, r8_industrial_warehouse, r10_santa_maria_del_mar
 from .pilot import ps1_racetrack_office, ps2_lobby_wing
@@ -60,6 +61,7 @@ WORLDS: dict[str, Callable[[], World]] = {
     "MO2": e3_warehouse_moving.build_high,
     # E1-low is not built (maintainer, 18 October 2026; report §9 decision 45)
     "MO1": e1_office_strip_moving.build_high,
+    "LS1": ls1_gargantua.build,
 }
 
 

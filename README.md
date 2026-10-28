@@ -5,12 +5,12 @@
 
 [![DOI](https://zenodo.org/badge/1424891966.svg)](https://doi.org/10.5281/zenodo.23460686)
 
-42 Gazebo Simulation worlds for testing robot exploration, navigation, SLAM and many more. 
+43 Gazebo Simulation worlds for testing robot exploration, navigation, SLAM and many more.
 
 > [!NOTE]
 > New environments with 3D models and textures required for **Agentic Workflows, Perception, 3D Mapping, Object Detection and Worker Robot Training** will be added in the future.
 
-The collection includes simple test layouts, mazes, offices, warehouses, forests, real places and worlds with moving obstacles. Worlds have fixed start poses and measured values, so methods can be compared fairly.
+The collection includes simple test layouts, mazes, offices, warehouses, forests, real places, worlds with moving obstacles and one 500 × 500 m office maze. Worlds have fixed start poses and measured values, so methods can be compared fairly.
 
 Designed specifically for **scientific research** and **experimentation**, each world is generated using mathematical models and algorithms based on predefined, environment-specific rules.
 
@@ -32,6 +32,7 @@ The worlds are plain SDF files with no robot inside, so they work with any robot
 - [Generated families (F)](#generated-families-f)
 - [Real places (RP)](#real-places-rp)
 - [Moving objects (MO)](#moving-objects-mo)
+- [Large-scale worlds (LS)](#large-scale-worlds-ls)
 - [Quick start](#quick-start)
 - [Technical notes](#technical-notes)
 - [License](#license)
@@ -44,6 +45,7 @@ The worlds are plain SDF files with no robot inside, so they work with any robot
 - **Studying how a method scales:** an F family. Its worlds change one thing at a time, such as size, number of rooms or density.
 - **Realistic layouts:** RP1, RP2 or RP3.
 - **Dynamic obstacles:** an MO world and its static twin.
+- **Long-range exploration:** LS1, where a single run takes hours rather than minutes.
 
 Click a thumbnail for the full 3D render, or "plan" for the top-down map with the start poses and the narrowest spot marked in red. In the tables, **free area** is the floor the robot can actually reach, and **narrowest** is the tightest gap it has to pass somewhere in the world. **Loops** are routes that go around a large obstacle and come back. **Dead ends** are places that can only be left the way they were entered; a room with one door counts as one.
 
@@ -312,6 +314,24 @@ Very extreme scenario because there are a lot of moving objects.
 
 <p align="right"><a href="#world-collection">back to top</a></p>
 
+## Large-scale worlds (LS)
+
+A world far larger than the others, for testing exploration at scale. It has three start poses: one in the centre and two in opposite corners.
+
+<table>
+  <tr>
+    <td align="center"><a href="worlds/LS1_gargantua/review/render_overview.png"><img src="media/LS1_gargantua.jpg" width="280" alt="LS1, Gargantua, a 500 by 500 m office maze"></a><br><b>LS1</b> · <a href="worlds/LS1_gargantua/review/plan.png">plan</a></td>
+  </tr>
+</table>
+
+| World | Folder          | What it is                                      | Free area (m²) | Narrowest (m) | Loops | Dead ends |
+| ----- | --------------- | ----------------------------------------------- | -------------: | ------------: | ----: | --------: |
+| LS1   | `LS1_gargantua` | A 500 × 500 m mix of offices and maze corridors |        243,701 |           3.0 |   217 |       605 |
+
+**LS1, Gargantua.** 500 × 500 m of rooms and corridors in 23 districts. Each district sits somewhere between an office (larger rooms off corridors, mostly doors) and a maze (corridor labyrinths, smaller rooms, more loops), and districts join through a few openings in thicker walls. No two of its 907 rooms and corridors look alike, even at 1 m resolution, and every opening is at least 3 m wide, with corridors 6 to 10 m wide. Use it to test what changes at scale: long-range route planning, frontier bookkeeping on a large map, memory and computation over hours, and backtracking over hundreds of metres.
+
+<p align="right"><a href="#world-collection">back to top</a></p>
+
 ## Quick start
 
 Requirements: Gazebo Harmonic (included with ROS 2 Jazzy). Run the commands from this folder.
@@ -414,7 +434,7 @@ python -m worldgen review SC1         # 3D renders with Blender
 python -m worldgen status            # status of every world
 ```
 
-A build checks that the SDF parses, the outer wall is closed, every start pose has room and the measured values match the design. Building the same world twice gives identical files. Every world can be rebuilt this way except RP3, which is provided as built.
+A build checks that the SDF parses, the outer wall is closed, every start pose has room and the measured values match the design. Building the same world twice gives identical files. Every world can be rebuilt this way except RP3, which is provided as built. LS1 takes about an hour and 12 GB of memory to build.
 
 <p align="right"><a href="#world-collection">back to top</a></p>
 

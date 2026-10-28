@@ -1,0 +1,143 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "1 gz sdf -k",
+   "passed": true,
+   "value": "Valid.",
+   "detail": ""
+  },
+  {
+   "check": "2 boundary closed, no sealed pockets",
+   "passed": true,
+   "value": {
+    "touches_border": false,
+    "sealed_m2": 0.0
+   },
+   "detail": ""
+  },
+  {
+   "check": "3 spawns reachable with 0.5 m clearance",
+   "passed": true,
+   "value": {
+    "S1": 2.35,
+    "S2": 2.5,
+    "S3": 2.6
+   },
+   "detail": ""
+  },
+  {
+   "check": "4 narrowest passage",
+   "passed": true,
+   "value": 3.0,
+   "detail": "expected 3.0 \u00b1 0.05 m (minimum 3.0 m) at (107.03, -227.12)"
+  },
+  {
+   "check": "5 heights by role",
+   "passed": true,
+   "value": 0,
+   "detail": ""
+  },
+  {
+   "check": "6 free area",
+   "passed": true,
+   "value": 243701.12,
+   "detail": "expected 243701.12 m\u00b2 \u00b1 0%"
+  },
+  {
+   "check": "7 loops",
+   "passed": true,
+   "value": {
+    "loops": 217,
+    "loops_unsized": 217
+   },
+   "detail": ""
+  },
+  {
+   "check": "LS1 cell graph: every cell reachable, openings = cells \u2212 1 + extra",
+   "passed": true,
+   "value": {
+    "cells": 907,
+    "shared_walls": 2352,
+    "tree": 906,
+    "extra": 194
+   },
+   "detail": ""
+  },
+  {
+   "check": "LS1 openings at least 3.0 m wide and inside their shared walls",
+   "passed": true,
+   "value": {
+    "openings": 1100,
+    "min_m": 3.0,
+    "kinds": {
+     "door": 457,
+     "full": 435,
+     "wide": 208
+    }
+   },
+   "detail": ""
+  },
+  {
+   "check": "LS1 no two cells alike on 1 m blocks (rotations and mirror images included)",
+   "passed": true,
+   "value": {
+    "cells": 907,
+    "distinct": 907
+   },
+   "detail": ""
+  },
+  {
+   "check": "LS1 no free-standing wall piece shorter than 2.5 m",
+   "passed": true,
+   "value": {
+    "free_standing_pieces": 217,
+    "shorter_than_2_5_m": 0
+   },
+   "detail": ""
+  },
+  {
+   "check": "LS1 stubs and partitions at least 3.5 m from everything else in their room",
+   "passed": true,
+   "value": 3.5,
+   "detail": ""
+  },
+  {
+   "check": "LS1 free space one 4-connected component on the construction grid",
+   "passed": true,
+   "value": 1,
+   "detail": ""
+  },
+  {
+   "check": "LS1 raster free area equals the construction",
+   "passed": true,
+   "value": {
+    "raster_m2": 243701.12,
+    "construction_m2": 243701.12
+   },
+   "detail": ""
+  },
+  {
+   "check": "LS1 wall boxes disjoint and on the 0.1 m grid",
+   "passed": true,
+   "value": {
+    "boxes": 2154,
+    "overlap_m2": 0.0,
+    "on_grid": true
+   },
+   "detail": ""
+  },
+  {
+   "check": "LS1 layout has no symmetry",
+   "passed": true,
+   "value": "none",
+   "detail": ""
+  },
+  {
+   "check": "8 determinism",
+   "passed": true,
+   "value": "4233c9ce63144cc3",
+   "detail": ""
+  }
+ ]
+}

@@ -43,7 +43,7 @@ WORLDS_DIR = ROOT / "worlds"
 REPO_LICENSE = ROOT / "LICENSE"  # worlds carry the repository licence, Apache-2.0
 BLENDER = shutil.which("blender") or "blender"
 BLENDER_TIMEOUT_S = 3600.0
-EMIT_TIMEOUT_S = 600.0
+EMIT_TIMEOUT_S = 7200.0  # LS1's emit, analysis and descriptors take about an hour
 
 
 def moving_measured(world: World, analysis: checks.Analysis) -> moving.Measured | None:

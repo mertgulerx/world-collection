@@ -14,7 +14,7 @@
 
 [project]
 name = "worldgen"
-version = "1.0.1"  # equal to worldgen.WORLDGEN_VERSION (worldgen/__init__.py)
+version = "1.1.0"  # equal to worldgen.WORLDGEN_VERSION (worldgen/__init__.py)
 description = "Generator, checks and review images for the benchmark's world collection"
 requires-python = ">=3.12"
 license = "Apache-2.0"
